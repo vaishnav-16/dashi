@@ -6,7 +6,7 @@ Before you start: open the app once so the first page load and clips are warm. U
 T-1042 only. **Avoid trip T-1044**: its simulated rider comment ("Drop-off was a bit rushed") contradicts
 its video, which shows only handled-well moments.
 
-Say out loud, once: ratings, comments, routes and the driver are simulated; the footage is a public
+Say out loud, once: ratings, comments, routes and the driver are simulated; the footage is a
 Toronto dashcam research set standing in for a driver's trips.
 
 | Time | Say | Show |
