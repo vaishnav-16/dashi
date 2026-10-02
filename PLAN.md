@@ -80,10 +80,15 @@ Only edit files you own. Need a change in someone else's file? Ask them.
 
 ## Getting the code on the other VM
 
+Repo: `vaishnav-ajai/dashi` on Cursor (private; ask Vaishnav for access first).
+
 ```sh
+curl -fsSL https://downloads.cursor.com/origin/install.sh | sh
+~/.local/bin/origin auth login        # your own Cursor account
 cd ~/vast-builders-challenge
-git clone <REPO URL> dashi
+~/.local/bin/origin repo clone vaishnav-ajai/dashi dashi
 echo 'dashi/' >> .git/info/exclude
+cd dashi && git config user.name "team-7" && git config user.email "team-7@dashi.local"
 ```
 
 Then start Cursor in `~/vast-builders-challenge` (so the VAST skills load) and give it:
