@@ -267,12 +267,40 @@ def search_answer(tools, message):
             "next_steps": steps, "intent": "search", "source": "search"}
 
 
+def _stems(text):
+    return {w[:5] for w in re.findall(r"[a-z]{4,}", (text or "").lower())} - {"show", "find", "where", "when"}
+
+
+def cached_search_answer(tools, message):
+    """Used when live search is slow: match the question against the reviewed trips' captions."""
+    q = _stems(message)
+    scored = sorted(((len(q & _stems(m["caption"])), m) for m in tools.data["moments"]),
+                    key=lambda x: -x[0])
+    hits = [m for s, m in scored if s > 0][:3]
+    if not hits:
+        raise LookupError("no cached match")
+    top, trip = hits[0], tools.get_trip(hits[0]["trip_id"])
+    text = (f"Live search is slow right now, so I checked your reviewed trips. Best match on {_trip_label(trip)} "
+            f"at {_ts(top['start_sec'])}: \u201c{_best_sentence(top['caption'], message)}\u201d")
+    clips = [{"source": m["sources"][0], "caption": m["caption"], "start_sec": m["start_sec"], "trip_id": m["trip_id"],
+              "label": f"Trip {m['trip_id']} at {_ts(m['start_sec'])}"} for m in hits]
+    return {"answer": text, "moment_ids": [], "trip_id": trip["trip_id"], "clips": clips,
+            "next_steps": [_step("See the full trip", "open_trip", trip["trip_id"]),
+                           _step(CHIPS["improve"], "ask", CHIPS["improve"])],
+            "intent": "search", "source": "search-cache"}
+
+
 def answer(tools, message):
     intent = route(message)
     if intent is None:
-        if tools.vss and _FOOTAGE_RE.search(message or ""):
+        if _FOOTAGE_RE.search(message or ""):
+            if tools.vss:
+                try:
+                    return _pool.submit(search_answer, tools, message).result(timeout=10)
+                except Exception:  # noqa: BLE001
+                    pass
             try:
-                return _pool.submit(search_answer, tools, message).result(timeout=20)
+                return cached_search_answer(tools, message)
             except Exception:  # noqa: BLE001
                 pass
         return {"answer": HELP_TEXT, "moment_ids": [], "trip_id": None,
