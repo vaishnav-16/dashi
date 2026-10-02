@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Dashi app icon</title>
+  <desc id="desc">Dashi's road, safety shield, and AI sparkle symbol on a rounded background.</desc>
+  <rect width="128" height="128" rx="28" fill="#F7F7F8"/>
+  <g transform="translate(18 18) scale(1.44)">
+    <defs>
+      <mask id="dashi-icon-cutout">
+        <rect width="64" height="64" fill="#fff"/>
+        <path d="M23 19h7c10.5 0 16.5 4.8 16.5 13S40.5 45 30 45h-7z" fill="#000"/>
+      </mask>
+    </defs>
+    <path
+      d="M10 7h20.5C48 7 58 16.2 58 31.8c0 13.7-8.4 22-27.5 27.2L10 49.2z"
+      fill="#111111"
+      mask="url(#dashi-icon-cutout)"
+    />
+    <path
+      d="M20 51c1.2-8.8 14.2-9.7 15.2-17.4.7-5.5-4.2-9.4-10.2-12.4"
+      fill="none"
+      stroke="#111111"
+      stroke-width="8"
+      stroke-linecap="round"
+    />
+    <path
+      d="M20 51c1.2-8.8 14.2-9.7 15.2-17.4.7-5.5-4.2-9.4-10.2-12.4"
+      fill="none"
+      stroke="#7A4FD6"
+      stroke-width="2.4"
+      stroke-linecap="round"
+      stroke-dasharray="8 5"
+    />
+    <path d="M19.8 51.1c.2-1.9 1-3.4 2.1-4.7" fill="none" stroke="#2E9C5A" stroke-width="2.8" stroke-linecap="round"/>
+    <path d="M53 5.5c.7 4.3 2.8 6.4 7.2 7.2-4.4.7-6.5 2.8-7.2 7.2-.8-4.4-2.9-6.5-7.2-7.2 4.3-.8 6.4-2.9 7.2-7.2z" fill="#7A4FD6"/>
+  </g>
+</svg>

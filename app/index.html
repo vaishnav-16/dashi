@@ -5,6 +5,7 @@
 <base href="/app/">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dashi</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20128%20128%22%20role%3D%22img%22%20aria-labelledby%3D%22title%20desc%22%3E%20%3Ctitle%20id%3D%22title%22%3EDashi%20app%20icon%3C/title%3E%20%3Cdesc%20id%3D%22desc%22%3EDashi%27s%20road%2C%20safety%20shield%2C%20and%20AI%20sparkle%20symbol%20on%20a%20rounded%20background.%3C/desc%3E%20%3Crect%20width%3D%22128%22%20height%3D%22128%22%20rx%3D%2228%22%20fill%3D%22%23F7F7F8%22/%3E%20%3Cg%20transform%3D%22translate%2818%2018%29%20scale%281.44%29%22%3E%20%3Cdefs%3E%20%3Cmask%20id%3D%22dashi-icon-cutout%22%3E%20%3Crect%20width%3D%2264%22%20height%3D%2264%22%20fill%3D%22%23fff%22/%3E%20%3Cpath%20d%3D%22M23%2019h7c10.5%200%2016.5%204.8%2016.5%2013S40.5%2045%2030%2045h-7z%22%20fill%3D%22%23000%22/%3E%20%3C/mask%3E%20%3C/defs%3E%20%3Cpath%20d%3D%22M10%207h20.5C48%207%2058%2016.2%2058%2031.8c0%2013.7-8.4%2022-27.5%2027.2L10%2049.2z%22%20fill%3D%22%23111111%22%20mask%3D%22url%28%23dashi-icon-cutout%29%22%20/%3E%20%3Cpath%20d%3D%22M20%2051c1.2-8.8%2014.2-9.7%2015.2-17.4.7-5.5-4.2-9.4-10.2-12.4%22%20fill%3D%22none%22%20stroke%3D%22%23111111%22%20stroke-width%3D%228%22%20stroke-linecap%3D%22round%22%20/%3E%20%3Cpath%20d%3D%22M20%2051c1.2-8.8%2014.2-9.7%2015.2-17.4.7-5.5-4.2-9.4-10.2-12.4%22%20fill%3D%22none%22%20stroke%3D%22%237A4FD6%22%20stroke-width%3D%222.4%22%20stroke-linecap%3D%22round%22%20stroke-dasharray%3D%228%205%22%20/%3E%20%3Cpath%20d%3D%22M19.8%2051.1c.2-1.9%201-3.4%202.1-4.7%22%20fill%3D%22none%22%20stroke%3D%22%232E9C5A%22%20stroke-width%3D%222.8%22%20stroke-linecap%3D%22round%22/%3E%20%3Cpath%20d%3D%22M53%205.5c.7%204.3%202.8%206.4%207.2%207.2-4.4.7-6.5%202.8-7.2%207.2-.8-4.4-2.9-6.5-7.2-7.2%204.3-.8%206.4-2.9%207.2-7.2z%22%20fill%3D%22%237A4FD6%22/%3E%20%3C/g%3E%20%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap">
 <style>
@@ -23,7 +24,7 @@
     display: flex; flex-direction: column; box-shadow: 0 0 0 1px var(--divider); }
   header { position: sticky; top: 0; z-index: 5; background: var(--surface); border-bottom: 1px solid var(--divider); }
   .bar { height: 64px; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; }
-  .logo { font-size: 24px; font-weight: 800; letter-spacing: -0.03em; color: var(--ink); }
+  .logo { display: flex; align-items: center; gap: 8px; font-size: 24px; font-weight: 800; letter-spacing: -0.03em; color: var(--ink); }
   .who { display: flex; align-items: center; gap: 10px; font-size: 14px; white-space: nowrap; }
   .avatar { width: 32px; height: 32px; border-radius: 50%; background: var(--ink); color: #fff;
     display: inline-flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; }
@@ -155,7 +156,7 @@
 <div class="phone">
   <header>
     <div class="bar">
-      <div class="logo">Dashi</div>
+      <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="30" height="30" aria-hidden="true"> <defs> <mask id="dashi-cutout"> <rect width="64" height="64" fill="#fff"/> <path d="M23 19h7c10.5 0 16.5 4.8 16.5 13S40.5 45 30 45h-7z" fill="#000"/> </mask> </defs> <path d="M10 7h20.5C48 7 58 16.2 58 31.8c0 13.7-8.4 22-27.5 27.2L10 49.2z" fill="#111111" mask="url(#dashi-cutout)" /> <path d="M20 51c1.2-8.8 14.2-9.7 15.2-17.4.7-5.5-4.2-9.4-10.2-12.4" fill="none" stroke="#111111" stroke-width="8" stroke-linecap="round" /> <path d="M20 51c1.2-8.8 14.2-9.7 15.2-17.4.7-5.5-4.2-9.4-10.2-12.4" fill="none" stroke="#7A4FD6" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="8 5" /> <path d="M19.8 51.1c.2-1.9 1-3.4 2.1-4.7" fill="none" stroke="#2E9C5A" stroke-width="2.8" stroke-linecap="round"/> <path d="M53 5.5c.7 4.3 2.8 6.4 7.2 7.2-4.4.7-6.5 2.8-7.2 7.2-.8-4.4-2.9-6.5-7.2-7.2 4.3-.8 6.4-2.9 7.2-7.2z" fill="#7A4FD6"/> </svg><span>Dashi</span></div>
       <div class="who" id="who"></div>
     </div>
     <nav>
