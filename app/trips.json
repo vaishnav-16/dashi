@@ -1,0 +1,90 @@
+{
+  "about": "SYNTHETIC ratings/comments/routes/driver; video is real pie_cam-3 Toronto dashcam.",
+  "driver": {
+    "driver_id": "driver-001",
+    "display_name": "Alex",
+    "city": "Toronto",
+    "rider_rating_avg": 4.71
+  },
+  "simulated_fields": [
+    "rider_rating",
+    "rider_comment",
+    "pickup",
+    "dropoff",
+    "driver"
+  ],
+  "story_roles": {
+    "unfair_low_rating": {
+      "assign_to": "The trip whose strongest moment is handled_well (ideally pedestrian_yield) and that has no coachable moment of severity 2 or 3.",
+      "rider_rating": 3,
+      "rider_comment": "Driver braked hard out of nowhere. Did not feel safe."
+    },
+    "missed_risk": {
+      "assign_to": "The trip with the clearest coachable moment of severity 2 or 3.",
+      "rider_rating": 5,
+      "rider_comment": "Quick trip, friendly driver."
+    },
+    "mixed": {
+      "assign_to": "A trip with both a handled_well and a coachable moment.",
+      "rider_rating": 4,
+      "rider_comment": "Fine overall. Drop-off was a bit rushed."
+    },
+    "clean": {
+      "assign_to": "A trip with no coachable moments.",
+      "rider_rating": 5,
+      "rider_comment": "Smooth and careful driving."
+    },
+    "live_demo": {
+      "assign_to": "One short trip left OUT of moments.json so it can be analysed live in the demo.",
+      "rider_rating": 4,
+      "rider_comment": "Good ride."
+    }
+  },
+  "trips": [
+    {
+      "trip_id": "T-1041",
+      "date": "2026-09-28",
+      "start_time": "08:12",
+      "pickup": "Kensington Market",
+      "dropoff": "Union Station",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_071651_set06_video_chunk_0015.mp4",
+      "story_role": "unfair_low_rating"
+    },
+    {
+      "trip_id": "T-1042",
+      "date": "2026-09-28",
+      "start_time": "17:40",
+      "pickup": "Yonge-Dundas Square",
+      "dropoff": "The Annex",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_065754_set05_video_chunk_0000.mp4",
+      "story_role": "missed_risk"
+    },
+    {
+      "trip_id": "T-1043",
+      "date": "2026-09-29",
+      "start_time": "12:05",
+      "pickup": "Liberty Village",
+      "dropoff": "Distillery District",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_071510_set06_video_chunk_0011.mp4",
+      "story_role": "clean"
+    },
+    {
+      "trip_id": "T-1044",
+      "date": "2026-09-30",
+      "start_time": "09:30",
+      "pickup": "Bloor-Yonge",
+      "dropoff": "Harbourfront",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_071742_set06_video_chunk_0017.mp4",
+      "story_role": "mixed"
+    },
+    {
+      "trip_id": "T-1045",
+      "date": "2026-10-01",
+      "start_time": "18:20",
+      "pickup": "Queen Street West",
+      "dropoff": "Yorkville",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_064154_set03_video_chunk_0024.mp4",
+      "story_role": "live_demo"
+    }
+  ]
+}

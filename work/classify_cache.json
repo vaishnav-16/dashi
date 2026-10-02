@@ -1,0 +1,1234 @@
+{
+ "73d7d22f5698f0e99d6e0808e579fbf9e7b4c26e78721a1db981f7609822ce59": [
+  {
+   "segment": 1,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0.0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 2,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0.0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 3,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0.0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 4,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0.0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 5,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.9,
+   "evidence_quote": "a dark-colored SUV is stopped directly ahead of the camera vehicle, with its brake lights illuminated. ... To the right of the SUV, there is a pedestrian crossing the street",
+   "what_happened": "You were stopped behind an SUV that was stopped at a crosswalk while a pedestrian crossed the street ahead."
+  },
+  {
+   "segment": 6,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0.0,
+   "evidence_quote": "",
+   "what_happened": ""
+  }
+ ],
+ "943419f2b7ccb83d2561b8386050eabe4107f6fc6ccf7ec4ffb4cd13146973aa": [
+  {
+   "segment": 1,
+   "scenario_id": "cyclist_nearby",
+   "verdict": "handled_well",
+   "severity": 1,
+   "confidence": 0.7,
+   "evidence_quote": "A cyclist wearing a bright green jacket and a helmet is riding in this designated bike lane, moving away from the camera.",
+   "what_happened": "You are driving behind a silver minivan in the right lane, while a cyclist is riding in the bike lane to your right, moving away from you. The caption does not indicate you passed or crowded the cyclist."
+  },
+  {
+   "segment": 2,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 3,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 4,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 5,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 6,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  }
+ ],
+ "4a992212b1578186d3205b979f80f2854c0f88d230ae396df023c9f40a5a400a": [
+  {
+   "segment": 1,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0.0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 2,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0.0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 3,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0.0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 4,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0.0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 5,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.95,
+   "evidence_quote": "A pedestrian is crossing the street in front of the vehicle, using the crosswalk. The camera vehicle is stopped, waiting for the pedestrian to clear the crosswalk before proceeding.",
+   "what_happened": "You stopped at the intersection while a pedestrian crossed in the crosswalk ahead of you, and waited for them to clear before proceeding."
+  },
+  {
+   "segment": 6,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "coachable",
+   "severity": 2,
+   "confidence": 0.9,
+   "evidence_quote": "The camera vehicle is stopped at an intersection with a green traffic light. A pedestrian wearing a backpack is crossing the street in front of the vehicle. The vehicle then begins to move forward and turns left",
+   "what_happened": "You had a green light but a pedestrian was crossing in front of you. You began moving forward and turned left while the pedestrian was still crossing."
+  }
+ ],
+ "abbbc9a90280a285058ebacb4e3e87b7020aa39fbb0368d2232d1452df088e5e": [
+  {
+   "segment": 1,
+   "scenario_id": "poor_conditions",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.8,
+   "evidence_quote": "A white minivan is driving slowly down the street, passing the utility truck.",
+   "what_happened": "You drove slowly past a utility truck that was partially blocking the lane, with workers nearby."
+  },
+  {
+   "segment": 2,
+   "scenario_id": "poor_conditions",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.7,
+   "evidence_quote": "A dark-colored SUV is stopped in the middle of the road, facing the camera, with its hazard lights flashing.",
+   "what_happened": "You approached a stopped SUV with hazard lights in a narrow work zone, and a worker was directing traffic."
+  },
+  {
+   "segment": 3,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.9,
+   "evidence_quote": "A person wearing a high-visibility orange vest and light-colored pants is walking across the road from left to right",
+   "what_happened": "You stopped and waited while a worker crossed the road in front of you."
+  },
+  {
+   "segment": 4,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.8,
+   "evidence_quote": "Pedestrians are crossing the street, and a person in an orange safety vest walks along the right side of the road.",
+   "what_happened": "You approached a stop sign at an intersection where pedestrians were crossing, and you yielded to them."
+  },
+  {
+   "segment": 5,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.9,
+   "evidence_quote": "Pedestrians are crossing the street in front of the camera",
+   "what_happened": "You stopped at the intersection and waited while pedestrians crossed in front of you."
+  },
+  {
+   "segment": 6,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.8,
+   "evidence_quote": "one person in a light-colored top and dark pants walks across the intersection from right to left",
+   "what_happened": "You were stopped at the intersection while a pedestrian crossed in front of you."
+  }
+ ],
+ "ae0dd4e4e05492ca2dd563b7f8da3f8be227ce5e571becef0966fb90b16498fd": [
+  {
+   "segment": 1,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.9,
+   "evidence_quote": "Pedestrians are crossing the street in front of the camera vehicle, walking from right to left.",
+   "what_happened": "You stopped or slowed while pedestrians crossed in front of you."
+  },
+  {
+   "segment": 2,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 3,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 4,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 5,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 6,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  }
+ ],
+ "c4a989b550f50fb6f66d14f21a23f460deb2a0ceb10d2a2467d3859314ae4037": [
+  {
+   "segment": 1,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0.0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 2,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0.0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 3,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0.0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 4,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.9,
+   "evidence_quote": "Ahead of the camera vehicle, a dark-colored SUV is stopped at the intersection, waiting for pedestrians to cross.",
+   "what_happened": "You were stopped behind an SUV that was waiting for pedestrians to cross at an intersection. You remained stopped while pedestrians crossed."
+  },
+  {
+   "segment": 5,
+   "scenario_id": "poor_conditions",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.8,
+   "evidence_quote": "The camera vehicle follows the SUV, navigating through the narrowed lane created by the truck and cones.",
+   "what_happened": "You followed the SUV slowly through a narrowed lane created by a construction zone with cones and a truck, with a worker directing traffic."
+  },
+  {
+   "segment": 6,
+   "scenario_id": "poor_conditions",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.8,
+   "evidence_quote": "A person wearing a high-visibility vest and a white hard hat stands near the cones, directing traffic. A yellow \"SLOW\" sign is visible near the cones, indicating a reduced speed zone.",
+   "what_happened": "You drove slowly through a construction zone with cones narrowing the lane, a worker directing traffic, and a SLOW sign, while pedestrians were on the sidewalk."
+  }
+ ],
+ "a8102e902b747aa335069a95920aae502896c7b8652fe7f493c091572a2a475f": [
+  {
+   "segment": 1,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0.0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 2,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.9,
+   "evidence_quote": "A cyclist wearing a backpack is riding across the crosswalk from right to left. Pedestrians are crossing the street at the crosswalks",
+   "what_happened": "You proceeded through a green light while a cyclist and pedestrians were crossing in the crosswalk ahead of you."
+  },
+  {
+   "segment": 3,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0.0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 4,
+   "scenario_id": "poor_conditions",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.8,
+   "evidence_quote": "Orange traffic cones are placed along the left side of the road, indicating a work zone. A black pickup truck is stopped in the left lane, partially blocking traffic.",
+   "what_happened": "You continued straight in the right lane while a work zone with cones and a stopped truck partially blocked the left lane ahead."
+  },
+  {
+   "segment": 5,
+   "scenario_id": "poor_conditions",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.8,
+   "evidence_quote": "orange construction signs are visible, including one indicating road work ahead and another showing a lane closure. Orange traffic cones are placed along the right edge of the road near the sidewalk.",
+   "what_happened": "You drove past construction signs and cones indicating road work and a lane closure on the right side."
+  },
+  {
+   "segment": 6,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0.0,
+   "evidence_quote": "",
+   "what_happened": ""
+  }
+ ],
+ "7a3a6dabd4ddb8cb78fe9d7860273db70286d562ac3783fe24ef472d7c5e2f0d": [
+  {
+   "segment": 1,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 1,
+   "confidence": 0.9,
+   "evidence_quote": "The camera vehicle is stopped behind a beige SUV, which is also stopped with its brake lights illuminated. Pedestrians are crossing the street in front of the vehicles, using the crosswalk.",
+   "what_happened": "You stopped behind another vehicle at a red light while pedestrians crossed in the crosswalk ahead."
+  },
+  {
+   "segment": 2,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 1,
+   "confidence": 0.9,
+   "evidence_quote": "Pedestrians are crossing the street in front of the vehicles, using the crosswalk. The traffic light facing the camera is red.",
+   "what_happened": "You remained stopped at a red light while pedestrians crossed in the crosswalk ahead."
+  },
+  {
+   "segment": 3,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 1,
+   "confidence": 0.9,
+   "evidence_quote": "The ego vehicle is stopped behind a beige SUV in the right lane. Pedestrians are crossing the street at a marked crosswalk ahead.",
+   "what_happened": "You were stopped behind another vehicle at a red light while pedestrians crossed in the crosswalk ahead."
+  },
+  {
+   "segment": 4,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 1,
+   "confidence": 0.9,
+   "evidence_quote": "A silver SUV is directly in front of the camera vehicle, with its brake lights illuminated. Pedestrians are visible on the sidewalks, and a person is crossing the street in front of the vehicles.",
+   "what_happened": "You were stopped behind a silver SUV at a red light while a person crossed the street ahead."
+  },
+  {
+   "segment": 5,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 1,
+   "confidence": 0.9,
+   "evidence_quote": "A silver SUV is stopped directly ahead of the camera vehicle, with its brake lights illuminated. Pedestrians are crossing the street at the intersection in front of the stopped vehicles.",
+   "what_happened": "You were stopped behind a silver SUV at a red light while pedestrians crossed the street ahead."
+  },
+  {
+   "segment": 6,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  }
+ ],
+ "a21509f5303e4e8bc7ffa1e0af523f602d81d7c394915d78eca4f15d2adf6206": [
+  {
+   "segment": 1,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 2,
+   "scenario_id": "cyclist_nearby",
+   "verdict": "handled_well",
+   "severity": 1,
+   "confidence": 0.8,
+   "evidence_quote": "The scene is a daytime view from a vehicle stopped at an intersection on a multi-lane road. ... A cyclist wearing dark clothing and a backpack is riding in the rightmost lane, moving forward and then slowing as they approach the intersection. In front of the camera vehicle, a black SUV is stopped at the intersection, with its brake lights illuminated. ... The traffic light facing the camera is red, requiring vehicles to stop.",
+   "what_happened": "You were stopped at a red light behind a black SUV. A cyclist was ahead in the rightmost lane, also stopped or slowing at the intersection."
+  },
+  {
+   "segment": 3,
+   "scenario_id": "cyclist_nearby",
+   "verdict": "handled_well",
+   "severity": 1,
+   "confidence": 0.7,
+   "evidence_quote": "The scene is a daytime view from a vehicle stopped at an intersection. ... A cyclist is present on the right side of the intersection, near the crosswalk. Traffic lights are visible, showing red for the vehicles in the foreground.",
+   "what_happened": "You were stopped at a red light. A cyclist was near the crosswalk on the right side of the intersection."
+  },
+  {
+   "segment": 4,
+   "scenario_id": "cyclist_nearby",
+   "verdict": "handled_well",
+   "severity": 1,
+   "confidence": 0.7,
+   "evidence_quote": "The ego vehicle is stopped behind a black car in the right lane, waiting at a traffic light. A cyclist is visible ahead, riding in the same direction as the ego vehicle. The traffic light is green, and the ego vehicle begins to move forward, following the black car and the cyclist through the intersection.",
+   "what_happened": "You were stopped at a red light behind a black car. When the light turned green, you followed the black car and a cyclist ahead through the intersection."
+  },
+  {
+   "segment": 5,
+   "scenario_id": "cyclist_nearby",
+   "verdict": "handled_well",
+   "severity": 1,
+   "confidence": 0.7,
+   "evidence_quote": "A cyclist is riding in the right-turn lane, moving forward. ... The traffic light is green, allowing vehicles to proceed.",
+   "what_happened": "You were at an intersection with a green light. A cyclist was riding in the right-turn lane ahead of you."
+  },
+  {
+   "segment": 6,
+   "scenario_id": "cyclist_nearby",
+   "verdict": "handled_well",
+   "severity": 1,
+   "confidence": 0.8,
+   "evidence_quote": "On the right side, a dedicated bicycle lane is visible, separated by a painted bicycle symbol and white lane markings. A cyclist wearing a backpack rides in this bicycle lane, moving in the same direction as the camera vehicle. ... A traffic light is present at an intersection ahead, showing green for the camera vehicle’s direction of travel.",
+   "what_happened": "You were traveling on a road with a dedicated bicycle lane. A cyclist was riding in that lane ahead of you, and you approached a green light."
+  }
+ ],
+ "64459b221437875483e9cae6ca1e03afc8007368d062b5c8607774488b9afb76": [
+  {
+   "segment": 1,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.9,
+   "evidence_quote": "the driver must yield to them",
+   "what_happened": "You approached an intersection where pedestrians were crossing, and you yielded to them."
+  },
+  {
+   "segment": 2,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.95,
+   "evidence_quote": "The vehicle remains stationary, yielding to pedestrians",
+   "what_happened": "You were stopped at an intersection with a stop sign, yielding to pedestrians crossing in front of you."
+  },
+  {
+   "segment": 3,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.9,
+   "evidence_quote": "the presence of pedestrians crossing the street requires the vehicle to slow down and yield",
+   "what_happened": "You were moving slowly on a narrow street with pedestrians crossing, and you slowed and yielded to them."
+  },
+  {
+   "segment": 4,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 5,
+   "scenario_id": "cyclist_nearby",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 6,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  }
+ ],
+ "bc65592250437cccc8ec84585b48a584d4afe3440ab07af61ca64624e2fdec01": [
+  {
+   "segment": 1,
+   "scenario_id": "cyclist_nearby",
+   "verdict": "handled_well",
+   "severity": 1,
+   "confidence": 0.8,
+   "evidence_quote": "A cyclist wearing a helmet and light-colored shorts is riding ahead in the same direction, positioned near the right curb. ... The cyclist continues riding forward, and the vehicle from which the footage is taken maintains a steady pace behind them.",
+   "what_happened": "You followed behind a cyclist riding near the curb, maintaining a steady pace without passing closely."
+  },
+  {
+   "segment": 2,
+   "scenario_id": "cyclist_nearby",
+   "verdict": "handled_well",
+   "severity": 1,
+   "confidence": 0.7,
+   "evidence_quote": "A cyclist wearing a helmet and light-colored shorts is riding ahead of the camera vehicle, moving slowly through the intersection.",
+   "what_happened": "You followed behind a cyclist moving slowly through an intersection, staying behind them."
+  },
+  {
+   "segment": 3,
+   "scenario_id": "cyclist_nearby",
+   "verdict": "handled_well",
+   "severity": 1,
+   "confidence": 0.7,
+   "evidence_quote": "A cyclist wearing a helmet rides along the right side of the road, moving away from the camera. ... The cyclist is riding in the correct direction and there are no apparent traffic violations or immediate hazards.",
+   "what_happened": "You followed behind a cyclist riding on the right side of the road, maintaining a safe distance."
+  },
+  {
+   "segment": 4,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 5,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 6,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  }
+ ],
+ "5f0d26ff688ebd53ecdb9f775853f1ae126b1588a87b6c1954fff267b7153bdb": [
+  {
+   "segment": 1,
+   "scenario_id": "poor_conditions",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.8,
+   "evidence_quote": "The camera vehicle remains stationary, waiting for the traffic signal or the person in the high-visibility jacket to indicate it is safe",
+   "what_happened": "You are stopped at an intersection with a construction zone and a person directing traffic, waiting for a signal to proceed."
+  },
+  {
+   "segment": 2,
+   "scenario_id": "poor_conditions",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0.0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 3,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0.0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 4,
+   "scenario_id": "poor_conditions",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.7,
+   "evidence_quote": "The scene is captured from a vehicle’s dashboard camera, showing a road intersection under a partly cloudy sky.",
+   "what_happened": "You are stopped at an intersection with a person directing traffic and a construction zone, waiting for direction."
+  },
+  {
+   "segment": 5,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.9,
+   "evidence_quote": "Pedestrians are crossing the street from right to left in front of the vehicle.",
+   "what_happened": "You are stopped at an intersection while pedestrians cross in front of you, and you wait for them."
+  },
+  {
+   "segment": 6,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.9,
+   "evidence_quote": "The ego vehicle yields to this pedestrian and then proceeds to turn right around the stopped SUV.",
+   "what_happened": "You yield to a pedestrian crossing in front of you, then proceed to turn right around a stopped SUV."
+  }
+ ],
+ "3a149dd91f3ed8d443e1dd2eeb87d953e109e00da69be104da683d17227f83dd": [
+  {
+   "segment": 1,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 2,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 3,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 4,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 5,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 6,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  }
+ ],
+ "9f554bca69502991455f64aed06a0d18bbf49238662b65d75ef8b02e1535583e": [
+  {
+   "segment": 1,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 2,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 3,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 4,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 5,
+   "scenario_id": "cyclist_nearby",
+   "verdict": "coachable",
+   "severity": 2,
+   "confidence": 0.8,
+   "evidence_quote": "The vehicle approaches an intersection where a cyclist is riding in the opposite direction. The cyclist is riding toward the camera, moving into the path of the vehicle. The cyclist is riding in the middle of the road, not in a designated bike lane.",
+   "what_happened": "You approached an intersection where a cyclist was riding toward you in the middle of the road, and you continued forward without yielding or passing wide."
+  },
+  {
+   "segment": 6,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  }
+ ],
+ "1cd9ee0c5e3c9fb0749db67fb85fee5a4710d9e734432d844ce9087edfa00182": [
+  {
+   "segment": 1,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 2,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 3,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 4,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.9,
+   "evidence_quote": "The camera vehicle remains stopped behind the minivan, waiting for the pedestrian to clear the intersection.",
+   "what_happened": "You stopped behind a minivan at a stop sign while a pedestrian crossed in front of the minivan, and you waited for the pedestrian to clear the intersection."
+  },
+  {
+   "segment": 5,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.8,
+   "evidence_quote": "A beige minivan is stopped at the intersection, facing away from the camera. Two pedestrians are crossing the street in front of the vehicle.",
+   "what_happened": "You were behind a minivan that stopped at an intersection while two pedestrians crossed in front of it, and you remained stopped."
+  },
+  {
+   "segment": 6,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  }
+ ],
+ "34c9e99062c91873288292ffa7911cf163577a74a59d42b05fdaa9f44d522322": [
+  {
+   "segment": 1,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 2,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.9,
+   "evidence_quote": "Pedestrians are actively crossing the street at the marked crosswalk.",
+   "what_happened": "You approached a crosswalk where pedestrians were actively crossing, and you yielded to them."
+  },
+  {
+   "segment": 3,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.9,
+   "evidence_quote": "A white sedan is stopped in the middle of the intersection, facing the camera. Pedestrians are crossing the street in front of the vehicle.",
+   "what_happened": "You stopped at the intersection while pedestrians crossed in front of you."
+  },
+  {
+   "segment": 4,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.9,
+   "evidence_quote": "the vehicle is positioned at the intersection, waiting for pedestrians to cross.",
+   "what_happened": "You stopped at the intersection and waited for pedestrians to cross in front of you."
+  },
+  {
+   "segment": 5,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.9,
+   "evidence_quote": "The ego vehicle is stopped, yielding to pedestrians crossing in front of it.",
+   "what_happened": "You stopped and yielded to pedestrians crossing in front of you."
+  },
+  {
+   "segment": 6,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  }
+ ],
+ "1f04606872cb2734538b12325b39bd04fb6f96645de622398464152aaf441ec0": [
+  {
+   "segment": 1,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0.0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 2,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0.0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 3,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0.0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 4,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0.0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 5,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0.0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 6,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 1,
+   "confidence": 0.9,
+   "evidence_quote": "Pedestrians are crossing in front of the vehicle in the crosswalk, and the vehicle remains stationary to yield to them.",
+   "what_happened": "You are stopped at a red light with pedestrians crossing in front of you in the crosswalk, and you remain stationary to yield to them."
+  }
+ ],
+ "a69dd7e506d4bac0c10f81f5e645c1e9516865dfd1b67c3149108d002b9604f3": [
+  {
+   "segment": 1,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 2,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 3,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 4,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 5,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 6,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  }
+ ],
+ "a078ccc51dbe64486334043e8f176035eaee1411f00f61ebe71c7f381cf03bbc": [
+  {
+   "segment": 1,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.95,
+   "evidence_quote": "The ego vehicle is stopped at a crosswalk, waiting for a pedestrian to cross. The traffic light is green, but the vehicle remains stationary to yield to the pedestrian.",
+   "what_happened": "You stopped at a crosswalk and waited for a pedestrian to cross, even though the light was green."
+  },
+  {
+   "segment": 2,
+   "scenario_id": "stopped_in_lane",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.9,
+   "evidence_quote": "A white sedan is stopped in the right lane, partially blocking the ego vehicle’s path. The ego vehicle slows down and proceeds cautiously around the stopped car.",
+   "what_happened": "You slowed and cautiously went around a white sedan that was stopped in your lane."
+  },
+  {
+   "segment": 3,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 4,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 5,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.9,
+   "evidence_quote": "A white car is stopped at the crosswalk, waiting for pedestrians to clear. Several pedestrians are crossing the street",
+   "what_happened": "You stopped at a crosswalk and waited for pedestrians to cross."
+  },
+  {
+   "segment": 6,
+   "scenario_id": "cyclist_nearby",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.85,
+   "evidence_quote": "A cyclist wearing a backpack rides through the intersection, crossing from left to right in front of the camera.",
+   "what_happened": "You were stopped at a red light while a cyclist crossed in front of you."
+  }
+ ],
+ "2a084325f4ac828008f7c771c929a6e7588f5eea1a0fc871c13525d1d622963a": [
+  {
+   "segment": 1,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.95,
+   "evidence_quote": "The scene is a wide-angle view from a vehicle stopped at a city intersection. ... Pedestrians are crossing the street in front of the vehicle, using the crosswalk.",
+   "what_happened": "You were stopped at a red light while pedestrians crossed in front of you in the crosswalk."
+  },
+  {
+   "segment": 2,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.95,
+   "evidence_quote": "The scene is captured from a vehicle stopped at a crosswalk in a busy urban intersection. ... Pedestrians are actively crossing the street in front of the vehicle, using the marked crosswalk.",
+   "what_happened": "You were stopped at a crosswalk while pedestrians crossed in front of you."
+  },
+  {
+   "segment": 3,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.95,
+   "evidence_quote": "The scene is captured from a vehicle stopped at an intersection on a multi-lane road. ... Pedestrians are actively crossing the street in front of the vehicle, using the marked crosswalks.",
+   "what_happened": "You were stopped at a red light while pedestrians crossed in front of you in the crosswalk."
+  },
+  {
+   "segment": 4,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.95,
+   "evidence_quote": "The scene is a wide urban intersection with multiple lanes and marked crosswalks. ... Pedestrians are actively crossing the street in various directions, using the marked crosswalks.",
+   "what_happened": "You were stopped at the intersection while pedestrians crossed in front of you."
+  },
+  {
+   "segment": 5,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.95,
+   "evidence_quote": "The scene is captured from a vehicle stopped at a city intersection ... Pedestrians are actively crossing the street in front of the vehicle ... The vehicle remains stationary, yielding to the pedestrians in the crosswalk.",
+   "what_happened": "You were stopped at a red light while pedestrians crossed in front of you, and you remained stationary to yield."
+  },
+  {
+   "segment": 6,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.95,
+   "evidence_quote": "The scene is a wide-angle view of a city intersection ... Pedestrians are crossing the street at the crosswalk in front of the camera ... the signal facing the camera is red, requiring vehicles to stop.",
+   "what_happened": "You were stopped at a red light while pedestrians crossed in front of you in the crosswalk."
+  }
+ ],
+ "1de83db4642729b9d2b931b2aad6946bf80013f0c103ea91092d4f55a3349a0d": [
+  {
+   "segment": 1,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.9,
+   "evidence_quote": "The scene is captured from a vehicle stopped at a signalized intersection on a multi-lane road. The traffic light facing the camera is red, requiring the vehicle to remain stationary. Several pedestrians are crossing the street in front of the vehicle.",
+   "what_happened": "You stopped at a red light while pedestrians crossed the crosswalk in front of you."
+  },
+  {
+   "segment": 2,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 3,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 4,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.9,
+   "evidence_quote": "The traffic light facing the camera is red, then turns yellow, and then green. A white car is stopped at the intersection, waiting for the light to change. Pedestrians are crossing the street at the crosswalk.",
+   "what_happened": "You waited at the intersection while the light changed and pedestrians crossed the crosswalk."
+  },
+  {
+   "segment": 5,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 6,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  }
+ ],
+ "a53fb46b4dedbd8326362fb3ddd5828bc1201127e8c9573c5a86ff85b4c3951c": [
+  {
+   "segment": 1,
+   "scenario_id": "cyclist_nearby",
+   "verdict": "handled_well",
+   "severity": 1,
+   "confidence": 0.7,
+   "evidence_quote": "A cyclist wearing dark clothing rides in the bike lane on the right, moving away from the camera. A black SUV is directly ahead in the same lane as the camera vehicle, with its brake lights illuminated.",
+   "what_happened": "You followed a black SUV that had its brake lights on while a cyclist was in the bike lane ahead. The caption does not describe you passing the cyclist or driving close to them."
+  },
+  {
+   "segment": 2,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 3,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 4,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 5,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  },
+  {
+   "segment": 6,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  }
+ ]
+}

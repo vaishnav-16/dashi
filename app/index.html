@@ -242,6 +242,9 @@ function momentCard(m, opts = {}) {
     ${opts.compact ? `<button class="ghost" data-open-trip="${esc(m.trip_id)}" data-focus="${esc(m.moment_id)}">Open in trip →</button>` : `
       ${m.why_it_matters ? `<p class="small muted" style="margin:12px 0 0"><b>Why it matters:</b> ${esc(m.why_it_matters)}</p>` : ""}
       <blockquote>Camera description: “${esc(m.evidence_quote)}”</blockquote>
+      ${m.ideal_video_prompt ? `<details><summary>✦ Ideal replay: what this could look like</summary>
+        <code>${esc(m.ideal_video_prompt)}</code>
+        <span class="small">Prompt for a video generation model (Cosmos Predict / Transfer) to render the same scene driven the playbook way. Not generated yet.</span></details>` : ""}
       <div class="disclaimer">✦ AI-reviewed, confidence ${Math.round((m.confidence || 0) * 100)}%. Watch the clip and decide for yourself.</div>`}
   </div>`;
 }

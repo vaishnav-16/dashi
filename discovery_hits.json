@@ -1,0 +1,1051 @@
+{
+  "pedestrian_yield": [
+    {
+      "query": "pedestrian crossing the road in front of the vehicle",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_072246_set06_video_chunk_0029_segment_004_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_072246_set06_video_chunk_0029.mp4",
+      "segment_number": 4,
+      "score": 0.3888,
+      "convincing": true,
+      "caption": "The scene is captured from a vehicle stopped at an intersection on a partly cloudy day. The road is a two-way street with a single lane in each direction, and the vehicle is positioned at the intersection, waiting for pedestrians to cross. There are no traffic lights or stop signs visible in the immediate view. Pedestrians are crossing the street in front of the vehicle, moving from right to left. Some are walking in pairs, while others are alone. They appear to be adults dressed in casual clothing, and one person is carrying what looks like a tray or plate. The pedestrians are crossing the road in front of the vehicle, and the vehicle remains stationary, yielding to them. On the left side of the intersection, a large white box truck is parked or stopped, with its rear doors open. The truck is positioned parallel to the curb, and there are no visible workers or activity around it. The truck is clearly visible and does not appear to be blocking the lane in which the vehicle is stopped. In the background..."
+    },
+    {
+      "query": "pedestrian crossing the road in front of the vehicle",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_070645_set05_video_chunk_0021_segment_005_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_070645_set05_video_chunk_0021.mp4",
+      "segment_number": 5,
+      "score": 0.365,
+      "convincing": true,
+      "caption": "The scene is a residential street intersection under a partly cloudy sky. The road has a single lane in each direction with a yellow center line. A stop sign is visible on the right side of the intersection. A beige minivan is stopped at the intersection, facing away from the camera. Two pedestrians are crossing the street in front of the vehicle. One pedestrian is wearing a blue jacket and dark pants, while the other is wearing a light-colored top and dark pants. The pedestrian in the blue jacket is closer to the camera and continues walking across the street. The pedestrian in the light-colored top is further ahead and also continues crossing. There are no trucks or buses visible in the scene. The vehicles and pedestrians are moving in a manner that suggests normal traffic flow and pedestrian crossing behavior."
+    },
+    {
+      "query": "pedestrian crossing the road in front of the vehicle",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_063353_set03_video_chunk_0005_segment_001_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_063353_set03_video_chunk_0005.mp4",
+      "segment_number": 1,
+      "score": 0.3649,
+      "convincing": true,
+      "caption": "The scene is a daytime view from a vehicle stopped at an intersection. A black car is directly ahead, with a silver car to the left. A pedestrian wearing a backpack walks across the intersection in front of the silver car. A cyclist on a bicycle rides through the intersection from right to left. Traffic lights are visible at the intersection, and lane markings are present on the road surface."
+    },
+    {
+      "query": "pedestrian crossing the road in front of the vehicle",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_064244_set03_video_chunk_0026_segment_006_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_064244_set03_video_chunk_0026.mp4",
+      "segment_number": 6,
+      "score": 0.3416,
+      "convincing": true,
+      "caption": "The scene is a daytime urban intersection with a clear sky and scattered clouds. The road surface is dry and marked with crosswalks and lane lines. A traffic light is visible and shows red, requiring vehicles to stop. A pedestrian crossing is present, and the camera vehicle is stationary at the intersection. A man in a dark suit and light shirt, carrying a dark briefcase, walks across the crosswalk from the left side of the frame toward the right. Another man, wearing a dark t-shirt and jeans, carrying a red and black bag, also crosses the crosswalk from the right side toward the left. Both pedestrians move in front of the camera vehicle, which remains stopped. In the background, a black SUV and a white SUV are visible, with the black SUV turning right through the intersection. A bicycle is seen moving along the street behind the intersection. A large billboard is visible in the distance, displaying the text \"9-1-1\" and an image of a pizza. No trucks or buses are clearly visible in the scene."
+    },
+    {
+      "query": "pedestrian crossing the road in front of the vehicle",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_062900_set02_video_chunk_0025_segment_006_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_062900_set02_video_chunk_0025.mp4",
+      "segment_number": 6,
+      "score": 0.2805,
+      "convincing": true,
+      "caption": "The scene is captured from a vehicle stopped at a cross intersection on a partly cloudy day. The road surface is dry and features clearly marked pedestrian crosswalks. Traffic lights are visible at the intersection, with the signal facing the camera showing red. A white SUV is stopped in the adjacent lane, and a white van is visible further ahead in the same direction. A cyclist wearing a backpack rides through the intersection, crossing from left to right in front of the camera. Pedestrians are actively using the crosswalk, with some walking across the street and others waiting on the sidewalks. A person carrying a suitcase is also seen crossing the street. The surrounding area includes modern high-rise buildings with glass facades and a brick building on the right side of the intersection. No vehicles are blocking the lane, and there are no visible traffic violations or immediate hazards in the scene."
+    },
+    {
+      "query": "pedestrian crossing the road in front of the vehicle",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_062835_set02_video_chunk_0024_segment_005_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_062835_set02_video_chunk_0024.mp4",
+      "segment_number": 5,
+      "score": 0.2742,
+      "convincing": true,
+      "caption": "The scene is captured from a vehicle stopped at a city intersection on a partly cloudy day. The road surface is dry and features a marked pedestrian crosswalk directly in front of the vehicle. Traffic lights are visible at the intersection, with signals facing the vehicle showing red. Pedestrians are actively crossing the street in front of the vehicle, including a man in a light blue patterned shirt and dark pants walking from left to right, and another person in a dark shirt and shorts crossing from right to left. Additional pedestrians are visible on the sidewalks and further down the street. A white car is parked along the curb on the right side of the intersection. The surrounding area includes tall buildings with glass facades and commercial signage, including a visible “RBC Royal Bank” sign on the right. No trucks, buses, or bicycles are clearly visible in the immediate foreground. The vehicle remains stationary, yielding to the pedestrians in the crosswalk."
+    },
+    {
+      "query": "pedestrian crossing the road in front of the vehicle",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_070001_set05_video_chunk_0005_segment_001_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_070001_set05_video_chunk_0005.mp4",
+      "segment_number": 1,
+      "score": 0.2727,
+      "convincing": true,
+      "caption": "The scene is captured from a vehicle’s dashboard camera, showing a view of an intersection and a street ahead. The sky is partly cloudy with blue patches visible. The road surface is dry and marked with crosswalks and lane lines. A black car is stopped at the intersection on the left side of the frame, and another black car is seen driving away from the camera on the right side of the road. A silver SUV is also visible driving in the opposite direction on the left side of the road. Pedestrians are present on the sidewalks, with one person walking on the left sidewalk and another person standing near the crosswalk on the right sidewalk. The surrounding area includes modern buildings with glass facades and some older residential-style buildings with brick facades. Trees line the sidewalks, and there are streetlights and traffic signals at the intersection. No traffic violations or specific hazards are evident in the scene."
+    },
+    {
+      "query": "pedestrian crossing the road in front of the vehicle",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_062925_set02_video_chunk_0026_segment_001_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_062925_set02_video_chunk_0026.mp4",
+      "segment_number": 1,
+      "score": 0.2623,
+      "convincing": true,
+      "caption": "The scene is captured from a vehicle stopped at a signalized intersection on a multi-lane road. The traffic light facing the camera is red, requiring the vehicle to remain stationary. The road surface is dry and marked with standard lane lines and crosswalks. Several pedestrians are crossing the street in front of the vehicle. One man in a white shirt and brown shorts carries a brown suitcase and walks across the crosswalk. Another man in a light blue shirt and gray pants also crosses the street. A cyclist wearing a backpack rides through the intersection, moving from left to right. Other pedestrians are visible on the sidewalks and crossing the street in the background. Vehicles are present in the intersection and along the road. A white SUV and a black SUV are stopped or moving slowly near the intersection. A white van is visible further down the road. A truck is also present in the scene, though its exact position and movement are not clearly detailed. Traffic signs are visible, including a parking sign..."
+    },
+    {
+      "query": "pedestrian crossing the road in front of the vehicle",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_062538_set02_video_chunk_0017_segment_006_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_062538_set02_video_chunk_0017.mp4",
+      "segment_number": 6,
+      "score": 0.2552,
+      "convincing": true,
+      "caption": "The scene is a busy city intersection with a marked crosswalk and traffic lights. Pedestrians are crossing the street from right to left in front of the camera. A black car is stopped at the intersection, waiting for the pedestrians to clear. Another black car is visible in the background, moving through the intersection. A red truck is parked on the right side of the street. The traffic lights are visible and appear to be functioning normally. There are no visible violations or hazards in the scene."
+    },
+    {
+      "query": "pedestrian crossing the road in front of the vehicle",
+      "source": "s3://team-7-vss-chunks-segments/segments/reingest/f60a4abef5584570ae37fbb8868ba596/20261001_065754_set05_video_chunk_0000_segment_005_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_065754_set05_video_chunk_0000.mp4",
+      "segment_number": 5,
+      "score": 0.2476,
+      "convincing": true,
+      "caption": "The camera vehicle is in the left lane of a two-lane road, approaching an intersection. It is moving forward slowly and preparing to turn left. The traffic light ahead is red. A pedestrian is crossing the street in front of the vehicle, using the crosswalk. The camera vehicle is stopped, waiting for the pedestrian to clear the crosswalk before proceeding. A red Jeep is visible ahead in the same lane, also stopped at the intersection. There are no other vehicles, cones, or construction visible in the immediate vicinity."
+    },
+    {
+      "query": "person stepping off the curb into the roadway ahead of the car",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_061746_set01_video_chunk_0029_segment_001_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_061746_set01_video_chunk_0029.mp4",
+      "segment_number": 1,
+      "score": 0.2459,
+      "convincing": false,
+      "caption": "The scene is captured from a vehicle’s dashboard camera, showing a street with a single lane in each direction. The road surface is dry and appears to be asphalt. On the left side of the frame, a black sedan is parked along the curb, with orange traffic cones placed in front of it. Ahead of the camera vehicle, a silver SUV is stopped in the lane, facing forward. To the right, a sidewalk runs alongside the street, where two people are standing and conversing. Further down the sidewalk, a person is walking away from the camera. On the right side of the street, there are storefronts with awnings, including one with a red awning and another with a green awning. A bicycle is parked near the sidewalk. The sky is partly cloudy, and trees line the left side of the street. No traffic lights or stop signs are visible in the immediate foreground."
+    },
+    {
+      "query": "person stepping off the curb into the roadway ahead of the car",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_071535_set06_video_chunk_0012_segment_004_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_071535_set06_video_chunk_0012.mp4",
+      "segment_number": 4,
+      "score": 0.2262,
+      "convincing": false,
+      "caption": "The scene is captured from a vehicle traveling along a two-lane road. The road surface is dry and appears to be in good condition. There are no traffic lights or stop signs visible in the immediate area. A black car is directly ahead of the camera vehicle, moving in the same direction. Another black car is visible in the opposite lane, traveling toward the camera. A pedestrian is walking on the sidewalk to the right, moving away from the camera. A bicycle is parked on the sidewalk near the pedestrian. A bench is visible on the left side of the road. The sky is partly cloudy, and the overall lighting suggests daytime conditions. No vehicles are blocking the lanes, and there are no visible traffic violations or immediate hazards."
+    },
+    {
+      "query": "person stepping off the curb into the roadway ahead of the car",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_071626_set06_video_chunk_0014_segment_001_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_071626_set06_video_chunk_0014.mp4",
+      "segment_number": 1,
+      "score": 0.2175,
+      "convincing": false,
+      "caption": "The scene is captured from a vehicle’s dashboard camera, showing a view of a road with a dark blue SUV directly ahead. The SUV’s brake lights are illuminated, indicating it is stopped or moving very slowly. The road appears to be a two-way street with a sidewalk on the right side, where a person in orange work clothing is walking. On the left side of the road, there is a sign that reads “Toronto Carpet Factory.” In the background, there are trees with autumn foliage and a tall brick building with large windows. A Canadian flag is visible on the right side of the frame. The sky is partly cloudy, and there are utility poles and power lines running along the left side of the road. No other vehicles, trucks, or buses are clearly visible in the immediate vicinity."
+    },
+    {
+      "query": "person stepping off the curb into the roadway ahead of the car",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_071601_set06_video_chunk_0013_segment_002_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_071601_set06_video_chunk_0013.mp4",
+      "segment_number": 2,
+      "score": 0.2156,
+      "convincing": false,
+      "caption": "The scene is captured from a vehicle’s dashboard camera, showing a view of a road with a dark blue SUV directly ahead. The SUV’s brake lights are illuminated, indicating it is stopped or moving very slowly. The road appears to be a two-way street with a sidewalk on the right side. On the right, there is a large brick building with a Canadian flag flying from its roof. A person wearing a backpack is walking along the sidewalk, moving away from the camera. There are also some potted plants and benches near the building. On the left side of the road, there are trees and a sign that reads “Toronto Car Factory.” The sky is partly cloudy, and there are utility poles and wires running along the street. No traffic lights or stop signs are visible in the immediate area. The overall setting suggests an urban environment with light traffic and pedestrian activity."
+    },
+    {
+      "query": "person stepping off the curb into the roadway ahead of the car",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_072155_set06_video_chunk_0027_segment_006_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_072155_set06_video_chunk_0027.mp4",
+      "segment_number": 6,
+      "score": 0.2145,
+      "convincing": true,
+      "caption": "The scene is captured from a vehicle stopped at an intersection on a partly cloudy day. The road surface is dry asphalt with visible lane markings. A black SUV is stopped ahead in the same lane, facing away from the camera. To the right, a black pickup truck is parked along the curb. Pedestrians are present on the sidewalks and crossing the street; one person in a light-colored top and dark pants walks across the intersection from right to left, while others stand or walk along the right-hand sidewalk. A construction crane is visible in the background on the right side of the frame, indicating nearby development. There are no traffic lights or stop signs clearly visible in the immediate foreground. The surrounding area includes multi-story buildings, some with brick facades and others under construction with exposed wooden framing. No vehicles are blocking the lane, and no traffic violations or immediate hazards are evident."
+    },
+    {
+      "query": "person stepping off the curb into the roadway ahead of the car",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_070439_set05_video_chunk_0016_segment_005_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_070439_set05_video_chunk_0016.mp4",
+      "segment_number": 5,
+      "score": 0.209,
+      "convincing": false,
+      "caption": "The scene is captured from a vehicle traveling along a two-lane road in a residential area. The road is paved with visible cracks and has a double yellow center line separating opposing traffic. On the right side, a white car is driving ahead of the camera vehicle, and a speed limit sign reading \"30\" is visible on a pole near the curb. On the left side, a cyclist is riding in the opposite direction, and a dark-colored car is also traveling in the opposite lane. A pedestrian is visible on the left side of the road, walking along the sidewalk. The sky is partly cloudy, and trees line both sides of the street, with houses and fences visible in the background. Traffic lights are present at an intersection ahead, but their signals are not clearly visible. There are no trucks or buses present in the scene."
+    },
+    {
+      "query": "person stepping off the curb into the roadway ahead of the car",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_064128_set03_video_chunk_0023_segment_002_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_064128_set03_video_chunk_0023.mp4",
+      "segment_number": 2,
+      "score": 0.2087,
+      "convincing": false,
+      "caption": "The scene is a daytime view from a vehicle stopped at an intersection on a multi-lane urban road. Direct sunlight and scattered clouds are visible in the sky. The road surface is dry and marked with lane lines. In front of the camera vehicle, a white SUV is stopped at the intersection, with its brake lights illuminated. To the left, a dark-colored pickup truck is also stopped in the adjacent lane. A silver sedan is visible further ahead in the same lane as the white SUV. On the right side of the road, a fire hydrant is positioned near the curb. Pedestrians are visible on the sidewalk to the right, and one person appears to be walking a bicycle. Traffic lights are present at the intersection, though their specific signals are not clearly visible. No vehicles are blocking the lane in front of the camera vehicle, and there are no apparent traffic violations or immediate hazards in the scene."
+    },
+    {
+      "query": "person stepping off the curb into the roadway ahead of the car",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_071626_set06_video_chunk_0014_segment_005_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_071626_set06_video_chunk_0014.mp4",
+      "segment_number": 5,
+      "score": 0.207,
+      "convincing": true,
+      "caption": "The scene is captured from a vehicle’s dashboard camera, showing a view of a city street intersection. The sky is partly cloudy, and the road surface is dry. In the foreground, a dark-colored SUV is stopped directly ahead of the camera vehicle, with its brake lights illuminated. The SUV’s license plate is visible, and it appears to be a Subaru model. To the right of the SUV, there is a pedestrian crossing the street, wearing dark clothing and a light-colored hat. Further along the sidewalk, another pedestrian is visible, walking away from the camera. On the right side of the street, there is a large brick building with a clock tower, and a green circular sign indicating a bus stop or transit-related facility. Traffic signs are present on the right side of the road, including a red octagonal stop sign and a white rectangular sign with a red triangle and text that reads “TO ONCOMING TRAFFIC.” Orange traffic cones are placed near the curb, suggesting some form of road work or lane closure. In the background..."
+    },
+    {
+      "query": "person stepping off the curb into the roadway ahead of the car",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_071535_set06_video_chunk_0012_segment_005_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_071535_set06_video_chunk_0012.mp4",
+      "segment_number": 5,
+      "score": 0.2047,
+      "convincing": false,
+      "caption": "The scene is captured from a vehicle’s dashboard camera, showing a view of a road with a single lane in each direction. The road surface is dry and appears to be in good condition. On the right side of the frame, there is a large brick building with multiple windows, and a Canadian flag is visible on top of the structure. A fire hydrant is positioned near the curb on the right side of the road. A bicycle is parked on the sidewalk next to the building. A bench is visible on the left side of the road, near the sidewalk. Several pedestrians are walking along the sidewalk on the left side of the road. A dark-colored SUV is directly ahead of the camera vehicle, and its brake lights are illuminated, indicating that it is slowing down or stopped. A silver SUV is seen approaching from the opposite direction and passes by the camera vehicle. The sky is partly cloudy, and the overall lighting suggests it is daytime."
+    }
+  ],
+  "curb_crowd": [
+    {
+      "query": "people standing in the road near parked cars",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_071717_set06_video_chunk_0016_segment_002_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_071717_set06_video_chunk_0016.mp4",
+      "segment_number": 2,
+      "score": 0.3526,
+      "convincing": false,
+      "caption": "The scene is captured from a vehicle traveling along a two-lane road with parked cars lining both sides. The road surface is dry and the weather appears partly cloudy. On the right side of the road, a large brick building with multiple windows is visible, and a few pedestrians are walking along the sidewalk in front of it. Some of these pedestrians are carrying bags or bottles. A white van and a black SUV are parked on the right side of the road, while a line of vehicles, including a white van, a black SUV, and a large truck, is parked on the left side. The truck is a heavy-duty vehicle with a flatbed or dump body. There are no visible traffic lights or stop signs in the immediate area. The camera vehicle continues forward, passing the parked vehicles and pedestrians."
+    },
+    {
+      "query": "group of pedestrians crowding the curb or sidewalk edge next to traffic",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_065150_set04_video_chunk_0016_segment_005_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_065150_set04_video_chunk_0016.mp4",
+      "segment_number": 5,
+      "score": 0.2922,
+      "convincing": true,
+      "caption": "The scene is a city street with a red traffic light ahead. A white SUV is stopped directly in front of the camera vehicle, with its brake lights illuminated. To the left of the SUV, a white sedan is also stopped. On the right side of the road, a group of pedestrians is standing on the sidewalk near a Scotiabank branch. A bicycle is parked on the sidewalk near the group. The street has tram tracks running down the center. Overhead, there are numerous wires and cables crisscrossing the sky. The traffic light is red, indicating that vehicles must stop. The SUV in front is the primary vehicle blocking the lane, and there are no visible violations or immediate hazards in the scene."
+    },
+    {
+      "query": "group of pedestrians crowding the curb or sidewalk edge next to traffic",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_065358_set04_video_chunk_0021_segment_005_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_065358_set04_video_chunk_0021.mp4",
+      "segment_number": 5,
+      "score": 0.2875,
+      "convincing": true,
+      "caption": "The scene unfolds on a narrow, busy urban street lined with parked cars on both sides. The road surface is dry and appears to be a single-lane, two-way street with no visible lane markings. A silver SUV is directly ahead of the camera vehicle, moving forward at a slow pace. To the right, a group of pedestrians is walking along the sidewalk, some carrying bags or backpacks. A cyclist wearing a light-colored top and dark pants rides toward the camera in the opposite direction, passing by the parked cars on the left. Further down the street, more pedestrians are visible, including a person pushing a stroller. On the right side, outdoor seating with umbrellas is set up outside a restaurant or café, and a large mural is painted on the wall of a building. The sky is bright blue with scattered white clouds, and overhead power lines crisscross the street. No traffic lights or stop signs are clearly visible in the immediate foreground."
+    },
+    {
+      "query": "group of pedestrians crowding the curb or sidewalk edge next to traffic",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_063831_set03_video_chunk_0016_segment_005_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_063831_set03_video_chunk_0016.mp4",
+      "segment_number": 5,
+      "score": 0.2872,
+      "convincing": false,
+      "caption": "The scene is a narrow, busy city street with two lanes of traffic moving forward. The road surface is dry and marked with white lane lines. A silver sedan is directly ahead in the same lane, followed by a beige SUV. To the left, a white pickup truck with blue and black markings is visible, and further ahead, a white car is partially visible. On the right side of the street, a large dark building with a modern facade stands alongside a sidewalk where pedestrians are walking. A person in an orange high-visibility jacket and another person in dark clothing are visible on the right sidewalk. A cyclist rides past on the right side of the street, moving in the same direction as the traffic. A potted plant with red flowers is placed near the curb on the right. The sky is partly cloudy, and the overall lighting suggests daytime. No traffic lights or stop signs are clearly visible in the immediate foreground."
+    },
+    {
+      "query": "group of pedestrians crowding the curb or sidewalk edge next to traffic",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_064709_set04_video_chunk_0005_segment_002_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_064709_set04_video_chunk_0005.mp4",
+      "segment_number": 2,
+      "score": 0.2863,
+      "convincing": false,
+      "caption": "The scene is a multi-lane urban road with a bicycle lane marked on the right. Traffic is stopped or moving very slowly, with vehicles in the left, middle, and right lanes. A white SUV with a spare tire mounted on the rear is directly ahead in the middle lane. To the left, a dark-colored SUV is partially visible. In the rightmost lane, a silver SUV is also stopped. A bicycle lane runs along the right side of the road, and a cyclist is visible riding in that lane. Pedestrians are walking along the sidewalk on the right side of the road. The sky is partly cloudy with blue patches visible. No traffic lights, signs, or other specific road markings are clearly readable in the frame."
+    },
+    {
+      "query": "group of pedestrians crowding the curb or sidewalk edge next to traffic",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_065358_set04_video_chunk_0021_segment_003_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_065358_set04_video_chunk_0021.mp4",
+      "segment_number": 3,
+      "score": 0.285,
+      "convincing": true,
+      "caption": "The scene is captured from a vehicle moving along a narrow, busy urban street lined with small shops and buildings. The road is paved and appears to be a single-lane, two-way street with parked cars lining both sides. There are no visible traffic lights or stop signs controlling the flow of traffic. Pedestrians are crossing the street in front of the vehicle, and several people are walking along the sidewalks on both sides. Some individuals are carrying backpacks, handbags, or suitcases. A few people are standing near the storefronts, possibly waiting or conversing. The sidewalks are crowded, and the presence of pedestrians crossing the street requires the vehicle to slow down and yield. On the left side of the street, there is a building with a colorful mural and a sign that reads \"HOTBOX.\" On the right side, there are various shops with awnings and signs, including one with a red and yellow flag. The sky is partly cloudy with bright sunlight, indicating a clear day. The vehicle is moving forward slowly..."
+    },
+    {
+      "query": "group of pedestrians crowding the curb or sidewalk edge next to traffic",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_061746_set01_video_chunk_0029_segment_001_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_061746_set01_video_chunk_0029.mp4",
+      "segment_number": 1,
+      "score": 0.2719,
+      "convincing": false,
+      "caption": "The scene is captured from a vehicle’s dashboard camera, showing a street with a single lane in each direction. The road surface is dry and appears to be asphalt. On the left side of the frame, a black sedan is parked along the curb, with orange traffic cones placed in front of it. Ahead of the camera vehicle, a silver SUV is stopped in the lane, facing forward. To the right, a sidewalk runs alongside the street, where two people are standing and conversing. Further down the sidewalk, a person is walking away from the camera. On the right side of the street, there are storefronts with awnings, including one with a red awning and another with a green awning. A bicycle is parked near the sidewalk. The sky is partly cloudy, and trees line the left side of the street. No traffic lights or stop signs are visible in the immediate foreground."
+    },
+    {
+      "query": "group of pedestrians crowding the curb or sidewalk edge next to traffic",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_065423_set04_video_chunk_0022_segment_002_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_065423_set04_video_chunk_0022.mp4",
+      "segment_number": 2,
+      "score": 0.2698,
+      "convincing": false,
+      "caption": "The scene is a busy urban street intersection under a partly cloudy sky. The road surface is dry asphalt with visible lane markings. A white car is stopped at the intersection, waiting for pedestrians to cross. Pedestrians are actively crossing the street in front of the vehicle, including a person in a yellow jacket and another in dark clothing. Several other pedestrians are standing or walking along the sidewalks on both sides of the intersection. A stop sign is clearly visible on the right side of the frame. There are no trucks or buses present in the scene. No vehicles are blocking the lanes, and there are no apparent traffic violations or immediate hazards."
+    },
+    {
+      "query": "group of pedestrians crowding the curb or sidewalk edge next to traffic",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_064502_set04_video_chunk_0000_segment_006_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_064502_set04_video_chunk_0000.mp4",
+      "segment_number": 6,
+      "score": 0.2656,
+      "convincing": false,
+      "caption": "The scene is captured from a vehicle’s dashboard camera, showing a multi-lane urban road with moderate traffic. The road surface is dry and marked with white lane lines. On the right side, a sidewalk runs alongside the street, where a person wearing a backpack is standing near a bicycle. The person appears to be adjusting or preparing the bicycle, with an umbrella visible nearby. Several cars are visible ahead and in adjacent lanes, including a white SUV in the left lane and a silver sedan directly in front of the camera vehicle. The surrounding environment features tall modern buildings with glass facades, and the sky is clear and blue. No traffic signals, signs, or other specific road markings are clearly readable in the frame."
+    },
+    {
+      "query": "group of pedestrians crowding the curb or sidewalk edge next to traffic",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_062809_set02_video_chunk_0023_segment_005_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_062809_set02_video_chunk_0023.mp4",
+      "segment_number": 5,
+      "score": 0.2651,
+      "convincing": false,
+      "caption": "The scene is captured from a vehicle stopped at a crosswalk in a busy city intersection. Pedestrians are crossing the street in front of the camera, including a man in a dark shirt and another in a light purple shirt. A white delivery truck with the text \"Executive Furniture Rentals\" and contact information is visible, moving through the intersection. Several cars are present, including a white SUV and a black sedan, navigating the crosswalk area. Traffic lights are visible, with some showing red and others yellow, indicating a controlled intersection. The surrounding area features tall buildings with glass facades and commercial signage, including a Royal Bank branch. The sky is partly cloudy, and the overall environment suggests a typical urban setting with active pedestrian and vehicular traffic."
+    },
+    {
+      "query": "group of pedestrians crowding the curb or sidewalk edge next to traffic",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_063856_set03_video_chunk_0017_segment_006_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_063856_set03_video_chunk_0017.mp4",
+      "segment_number": 6,
+      "score": 0.2643,
+      "convincing": false,
+      "caption": "The scene is a narrow city street with two lanes of traffic moving in the same direction. A white pickup truck with blue lettering on its side is in the left lane, while a beige SUV is directly ahead in the right lane. The SUV’s brake lights are illuminated, indicating it is slowing or stopped. Behind the SUV, a silver sedan is also visible in the right lane. On the right side of the street, there is a sidewalk bordered by a small landscaped area with green shrubs and orange flowers. Several bicycles are parked along the sidewalk near the curb. A person is walking on the sidewalk to the right, moving away from the camera. The buildings on both sides of the street are tall and modern, with glass facades and multiple stories. The sky is partly cloudy, and the overall lighting suggests it is daytime. There are no visible traffic lights or road signs in the immediate view. The vehicles are stationary or moving very slowly, suggesting a traffic jam or a stop at an intersection ahead."
+    },
+    {
+      "query": "people standing in the road near parked cars",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_070001_set05_video_chunk_0005_segment_001_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_070001_set05_video_chunk_0005.mp4",
+      "segment_number": 1,
+      "score": 0.2586,
+      "convincing": false,
+      "caption": "The scene is captured from a vehicle’s dashboard camera, showing a view of an intersection and a street ahead. The sky is partly cloudy with blue patches visible. The road surface is dry and marked with crosswalks and lane lines. A black car is stopped at the intersection on the left side of the frame, and another black car is seen driving away from the camera on the right side of the road. A silver SUV is also visible driving in the opposite direction on the left side of the road. Pedestrians are present on the sidewalks, with one person walking on the left sidewalk and another person standing near the crosswalk on the right sidewalk. The surrounding area includes modern buildings with glass facades and some older residential-style buildings with brick facades. Trees line the sidewalks, and there are streetlights and traffic signals at the intersection. No traffic violations or specific hazards are evident in the scene."
+    },
+    {
+      "query": "people standing in the road near parked cars",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_061917_set02_video_chunk_0002_segment_001_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_061917_set02_video_chunk_0002.mp4",
+      "segment_number": 1,
+      "score": 0.2572,
+      "convincing": false,
+      "caption": "The scene is captured from a vehicle's dashboard camera, showing a view of a parked dark blue minivan with a visible license plate reading BYTW 138. The minivan is positioned on a paved road in a residential or mixed-use area, with buildings, trees, and a hedge lining the left side. The sky is partly cloudy, and the lighting suggests daytime. Two pedestrians walk past the parked minivan on the left side of the frame. One wears a pink sleeveless top and black pants, while the other is dressed in darker clothing. They move from the left edge of the frame toward the center, walking along the sidewalk or near the curb. No other vehicles, traffic signals, or road signs are clearly visible in the immediate vicinity. The overall environment appears calm, with no apparent traffic congestion or unusual activity beyond the pedestrians passing by."
+    },
+    {
+      "query": "people standing in the road near parked cars",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_062422_set02_video_chunk_0014_segment_005_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_062422_set02_video_chunk_0014.mp4",
+      "segment_number": 5,
+      "score": 0.2517,
+      "convincing": false,
+      "caption": "The scene unfolds at an intersection on a partly cloudy day. The road surface is dry and features a double yellow centerline, indicating a two-way street. A black sedan is stopped at the intersection, positioned in the lane the camera vehicle is approaching. A pedestrian in a dark suit is crossing the street in front of the camera vehicle, moving from left to right. The camera vehicle yields to this pedestrian, who is walking across the road in front of it. The camera vehicle then proceeds forward and makes a right turn onto a street lined with parked cars on both sides. The street the camera vehicle enters has a single lane in each direction. A stop sign is visible on the left side of the intersection. No traffic lights are visible in the scene."
+    },
+    {
+      "query": "people standing in the road near parked cars",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_070117_set05_video_chunk_0008_segment_002_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_070117_set05_video_chunk_0008.mp4",
+      "segment_number": 2,
+      "score": 0.2502,
+      "convincing": false,
+      "caption": "The scene unfolds on a two-lane road with a single yellow centerline, suggesting opposing directions of travel. The road is lined with parked vehicles on the left side, including a dark SUV and several sedans. On the right, there is a sidewalk bordered by trees showing early autumn colors, with a pedestrian walking along it. A person in a striped shirt and shorts is visible on the right sidewalk, walking away from the camera. Another person is seen further ahead on the right sidewalk, accompanied by a small dog. The sky is partly cloudy, and the overall environment appears to be a residential or mixed-use street. No traffic signals, signs, or lane markings indicating special rules are clearly visible. The camera vehicle continues straight along the road, passing the parked cars and pedestrians without any apparent interaction or incident."
+    },
+    {
+      "query": "people standing in the road near parked cars",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_065449_set04_video_chunk_0023_segment_003_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_065449_set04_video_chunk_0023.mp4",
+      "segment_number": 3,
+      "score": 0.2464,
+      "convincing": true,
+      "caption": "The scene unfolds on a narrow, single-lane urban street under a partly cloudy sky. The road is flanked by parked vehicles on both sides, including a black SUV on the left and a white van further ahead. Orange traffic cones are placed along the left side of the lane, partially blocking the view of the parked vehicles and indicating a work zone or restricted area. A white car is visible ahead in the same lane, moving forward at a steady pace. On the right side of the street, a group of pedestrians is gathered near the sidewalk, some standing and others walking. A person is seen pushing a bicycle along the sidewalk. The buildings lining the street are a mix of residential and commercial structures, with storefronts and signage visible. One sign on the right side of the street reads \"COALITION TORONTO,\" and another sign indicates a speed limit of 30. A traffic light is visible further down the street, showing a green signal for the direction of travel. The overall atmosphere suggests a busy urban environment..."
+    },
+    {
+      "query": "people standing in the road near parked cars",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_064502_set04_video_chunk_0000_segment_005_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_064502_set04_video_chunk_0000.mp4",
+      "segment_number": 5,
+      "score": 0.2443,
+      "convincing": false,
+      "caption": "The scene is a multi-lane urban street with a clear blue sky and scattered clouds. The road surface is dry asphalt with visible lane markings. In the foreground, a silver sedan is stopped in the right lane, directly ahead of the camera vehicle. To the left, a black SUV and a white SUV are also stopped in adjacent lanes. Further down the street, additional vehicles are lined up, suggesting a traffic hold or congestion. On the right side of the road, a pedestrian wearing a red jacket is walking along the sidewalk, moving away from the camera. Another person is standing near a bicycle parked on the sidewalk, facing the street. The sidewalk is lined with trees and small potted plants, and a tall building with many windows rises on the right side of the frame. In the distance, several high-rise buildings are visible against the sky."
+    },
+    {
+      "query": "people standing in the road near parked cars",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_061034_set01_video_chunk_0012_segment_002_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_061034_set01_video_chunk_0012.mp4",
+      "segment_number": 2,
+      "score": 0.2439,
+      "convincing": false,
+      "caption": "The scene is captured from a vehicle’s dashboard camera, showing a view of a road with two lanes in each direction. The road surface is dry and marked with a double yellow line separating opposing traffic. A black SUV is directly ahead of the camera vehicle, with its brake lights illuminated, indicating it is stopped or slowing down. The SUV has a visible license plate and the word “VOLVO” on its rear. To the right of the SUV, a dark-colored sedan is parked along the curb. Further to the right, a dark-colored SUV is also parked. A person wearing an orange shirt and a white cap is seen walking on the right side of the road, moving away from the camera. This person appears to be carrying a bicycle and is walking alongside the parked vehicles. The sky is partly cloudy with bright sunlight, and overhead wires crisscross the scene, suggesting the presence of trolley or tram lines. There are no visible traffic lights or stop signs in the immediate view. The surrounding area includes trees and buildings, with one..."
+    }
+  ],
+  "stopped_in_lane": [
+    {
+      "query": "vehicle stopped in the travel lane with traffic passing around it",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_065008_set04_video_chunk_0012_segment_006_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_065008_set04_video_chunk_0012.mp4",
+      "segment_number": 6,
+      "score": 0.3253,
+      "convincing": false,
+      "caption": "The scene is a daytime view from a vehicle stopped in traffic on a multi-lane road. A red and white streetcar is visible on the left side of the frame, running on tracks that run parallel to the roadway. The sky is partly cloudy with bright sunlight. In the lane directly ahead, an orange and teal taxi is stopped, with a dark blue sedan and a red SUV also stopped behind it. A silver car is visible in the rightmost lane. Pedestrians can be seen walking along the sidewalk on the right side of the road. The road surface is dry and marked with lane lines. No traffic lights or specific traffic signs are clearly visible in the immediate foreground."
+    },
+    {
+      "query": "vehicle stopped in the travel lane with traffic passing around it",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_071807_set06_video_chunk_0018_segment_002_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_071807_set06_video_chunk_0018.mp4",
+      "segment_number": 2,
+      "score": 0.2063,
+      "convincing": false,
+      "caption": "The scene is a daytime view from a vehicle stopped at an intersection on a two-lane road. A black SUV is directly ahead, stopped at the intersection. To the left, a black Jeep Grand Cherokee is also stopped, and a white van is partially visible behind it. On the right side of the road, a stop sign is clearly visible, along with a street sign reading \"Jefferson Ave.\" Pedestrians are present on the sidewalk to the right, and a few more are visible further down the street. The road surface is dry, and there are no visible traffic lights controlling the intersection. No vehicles are blocking the lanes, and there are no apparent violations or immediate hazards in the scene."
+    },
+    {
+      "query": "car double parked blocking a lane",
+      "source": "s3://team-7-vss-chunks-segments/segments/reingest/f60a4abef5584570ae37fbb8868ba596/20261001_065754_set05_video_chunk_0000_segment_001_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_065754_set05_video_chunk_0000.mp4",
+      "segment_number": 1,
+      "score": 0.2062,
+      "convincing": false,
+      "caption": "The camera vehicle is stopped on a one-way road with a single lane in each direction. The camera vehicle is positioned behind a black SUV. The camera vehicle is stopped behind a black SUV. The camera vehicle is stopped behind a black SUV. The camera vehicle is stopped behind a black SUV."
+    },
+    {
+      "query": "vehicle stopped in the travel lane with traffic passing around it",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_065656_set04_video_chunk_0028_segment_006_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_065656_set04_video_chunk_0028.mp4",
+      "segment_number": 6,
+      "score": 0.1992,
+      "convincing": false,
+      "caption": "The scene is a daytime view from a vehicle stopped at an intersection on a two-lane road. A white sedan is directly ahead, and a dark-colored SUV is stopped to the left. Pedestrians are crossing the street in front of the vehicles. A stop sign is visible on the right side of the intersection. There are no traffic lights present. The sky is partly cloudy with blue patches. No trucks or buses are visible in the frame."
+    },
+    {
+      "query": "car double parked blocking a lane",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_061034_set01_video_chunk_0012_segment_002_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_061034_set01_video_chunk_0012.mp4",
+      "segment_number": 2,
+      "score": 0.1951,
+      "convincing": false,
+      "caption": "The scene is captured from a vehicle’s dashboard camera, showing a view of a road with two lanes in each direction. The road surface is dry and marked with a double yellow line separating opposing traffic. A black SUV is directly ahead of the camera vehicle, with its brake lights illuminated, indicating it is stopped or slowing down. The SUV has a visible license plate and the word “VOLVO” on its rear. To the right of the SUV, a dark-colored sedan is parked along the curb. Further to the right, a dark-colored SUV is also parked. A person wearing an orange shirt and a white cap is seen walking on the right side of the road, moving away from the camera. This person appears to be carrying a bicycle and is walking alongside the parked vehicles. The sky is partly cloudy with bright sunlight, and overhead wires crisscross the scene, suggesting the presence of trolley or tram lines. There are no visible traffic lights or stop signs in the immediate view. The surrounding area includes trees and buildings, with one..."
+    },
+    {
+      "query": "vehicle stopped in the travel lane with traffic passing around it",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_065033_set04_video_chunk_0013_segment_001_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_065033_set04_video_chunk_0013.mp4",
+      "segment_number": 1,
+      "score": 0.1939,
+      "convincing": false,
+      "caption": "The scene is a daytime view from a vehicle stopped on a multi-lane road. A red and white bus is visible on the left side of the frame, occupying the adjacent lane. In front of the camera vehicle, an orange and teal taxi is stopped, with a dark blue SUV directly ahead of it. To the right, a red SUV and a silver sedan are also stopped in the same lane. Pedestrians can be seen walking on the sidewalk to the right. Overhead, there are visible power lines and a partly cloudy sky. The traffic light ahead is red, indicating the reason for the stopped traffic. No specific signage or violations are clearly visible in the frame."
+    },
+    {
+      "query": "car double parked blocking a lane",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_071419_set06_video_chunk_0009_segment_003_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_071419_set06_video_chunk_0009.mp4",
+      "segment_number": 3,
+      "score": 0.1906,
+      "convincing": true,
+      "caption": "The scene is a narrow, two-lane city street with parked cars lining both sides. A dark blue SUV is stopped in the lane ahead of the camera vehicle, with its brake lights illuminated. A black sedan approaches from the opposite direction and passes the SUV on the left. A white delivery truck is visible further down the street, parked on the right side. A stop sign is clearly visible at the intersection ahead. Two pedestrians are standing on the sidewalk to the left, near the parked cars. The sky is partly cloudy, and the road surface appears dry."
+    },
+    {
+      "query": "vehicle stopped in the travel lane with traffic passing around it",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_064527_set04_video_chunk_0001_segment_004_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_064527_set04_video_chunk_0001.mp4",
+      "segment_number": 4,
+      "score": 0.1883,
+      "convincing": false,
+      "caption": "The scene is a daytime view from a vehicle stopped in traffic on a multi-lane urban road. The sky is partly cloudy with blue patches. The road has at least two lanes in the direction of travel, with vehicles queued ahead. In the lane directly in front of the camera, a silver sedan is visible, followed by a silver hatchback further ahead. To the left, a red SUV is stopped in the adjacent lane, and a dark-colored SUV is partially visible at the far left edge of the frame. No trucks or buses are clearly visible in the immediate foreground. Traffic appears to be stationary or moving very slowly, suggesting a red light or congestion ahead. There are no pedestrians or cyclists visible in the scene. Roadside signage includes a blue directional sign on the right side of the road, but the text is not legible. The surrounding environment features tall modern buildings on both sides of the street, with some trees and shrubbery along the right sidewalk. No traffic violations or specific hazards are evident in the..."
+    },
+    {
+      "query": "car double parked blocking a lane",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_071510_set06_video_chunk_0011_segment_002_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_071510_set06_video_chunk_0011.mp4",
+      "segment_number": 2,
+      "score": 0.188,
+      "convincing": true,
+      "caption": "The scene is a narrow, one-way urban street with a single lane in each direction. The ego vehicle is traveling behind a dark SUV that is stopped in the middle of the road. A blue sedan is parked on the left side of the street, partially blocking the lane. A pedestrian is walking along the left side of the road, moving away from the camera. Another person is standing near the parked blue sedan, appearing to be getting into or out of the vehicle. A truck is visible further down the street, stopped behind the ego vehicle. There are no traffic lights or stop signs visible in this segment. The road surface is dry and appears to be in good condition. The surrounding buildings are brick structures with large windows, typical of an older urban area."
+    },
+    {
+      "query": "car double parked blocking a lane",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_064400_set03_video_chunk_0029_segment_003_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_064400_set03_video_chunk_0029.mp4",
+      "segment_number": 3,
+      "score": 0.1869,
+      "convincing": false,
+      "caption": "The scene is a city street with two lanes in the same direction. A black pickup truck is stopped in the right lane, partially blocking traffic. A red delivery van is stopped in the left lane, also partially blocking traffic. A dark-colored sedan is visible ahead of the camera vehicle, moving forward. Pedestrians are walking on the sidewalks on both sides of the street. A fire hydrant is visible on the right sidewalk. The sky is clear and blue."
+    },
+    {
+      "query": "car double parked blocking a lane",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_071419_set06_video_chunk_0009_segment_001_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_071419_set06_video_chunk_0009.mp4",
+      "segment_number": 1,
+      "score": 0.183,
+      "convincing": false,
+      "caption": "The scene is a narrow, one-way urban street with parked cars lining both sides. The road surface is dry and marked with yellow lines. A dark blue SUV is directly ahead of the camera vehicle, its brake lights illuminated, indicating it is slowing or stopped. A black sedan approaches from the opposite direction, passing the camera vehicle and the SUV ahead. On the left side of the street, two pedestrians are walking along the sidewalk near a brick building with a purple sign. A stop sign is visible further down the street, near the intersection. Several other vehicles are parked along the right side of the street, including a white SUV and a silver sedan. There are no trucks or buses visible in the scene. The sky is partly cloudy, and the overall lighting suggests daytime."
+    },
+    {
+      "query": "car double parked blocking a lane",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_062422_set02_video_chunk_0014_segment_005_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_062422_set02_video_chunk_0014.mp4",
+      "segment_number": 5,
+      "score": 0.1805,
+      "convincing": false,
+      "caption": "The scene unfolds at an intersection on a partly cloudy day. The road surface is dry and features a double yellow centerline, indicating a two-way street. A black sedan is stopped at the intersection, positioned in the lane the camera vehicle is approaching. A pedestrian in a dark suit is crossing the street in front of the camera vehicle, moving from left to right. The camera vehicle yields to this pedestrian, who is walking across the road in front of it. The camera vehicle then proceeds forward and makes a right turn onto a street lined with parked cars on both sides. The street the camera vehicle enters has a single lane in each direction. A stop sign is visible on the left side of the intersection. No traffic lights are visible in the scene."
+    },
+    {
+      "query": "vehicle stopped in the travel lane with traffic passing around it",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_072155_set06_video_chunk_0027_segment_001_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_072155_set06_video_chunk_0027.mp4",
+      "segment_number": 1,
+      "score": 0.1328,
+      "convincing": true,
+      "caption": "The scene is a narrow urban street with a single lane of traffic. A white utility truck with a tall boom arm is parked on the right side of the road, partially blocking the lane. Orange traffic cones are placed around the truck to mark the work zone. A white minivan is driving slowly down the street, passing the utility truck. Several workers in high-visibility orange vests are visible on the sidewalk to the left, near utility poles and equipment. The sky is partly cloudy with patches of blue. No traffic lights or stop signs are clearly visible. The utility truck has the name \"Black & McDonald\" written on its side. The overall activity suggests routine utility work or maintenance on the street."
+    },
+    {
+      "query": "vehicle stopped in the travel lane with traffic passing around it",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_071742_set06_video_chunk_0017_segment_003_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_071742_set06_video_chunk_0017.mp4",
+      "segment_number": 3,
+      "score": 0.1313,
+      "convincing": true,
+      "caption": "The scene is a narrow, one-way street with a single lane in each direction. The sky is partly cloudy with patches of blue. A large white dump truck is parked on the left side of the road, partially blocking the lane. In front of the camera vehicle, a dark blue SUV is stopped with its brake lights illuminated. Behind the SUV, another white truck is visible, also stopped. On the right side of the street, several vehicles are parked along the curb, including a dark SUV and a white pickup truck. Pedestrians are walking on the sidewalk to the right, near the parked vehicles. The road surface appears to be paved with some visible cracks and markings. There are no visible traffic lights or road signs in the immediate area. The vehicles remain stationary throughout the clip, and there are no visible violations or immediate hazards."
+    },
+    {
+      "query": "vehicle stopped in the travel lane with traffic passing around it",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_071742_set06_video_chunk_0017_segment_002_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_071742_set06_video_chunk_0017.mp4",
+      "segment_number": 2,
+      "score": 0.1305,
+      "convincing": true,
+      "caption": "The scene is a narrow, single-lane, one-way street with a brick-paved sidewalk on the right. The sky is partly cloudy with patches of blue. A large white dump truck is parked on the left side of the road, partially blocking the lane. In front of the camera vehicle, a dark blue SUV is stopped with its brake lights illuminated. Behind the SUV, another white truck is visible, also stopped. On the right side of the street, several vehicles are parked along the curb, including a dark-colored SUV and a white pickup truck. A person is walking on the sidewalk to the right, moving away from the camera. There are no visible traffic lights or road signs in the immediate area. The vehicles ahead are stationary, and the overall traffic flow is minimal."
+    },
+    {
+      "query": "vehicle stopped in the travel lane with traffic passing around it",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_071742_set06_video_chunk_0017_segment_001_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_071742_set06_video_chunk_0017.mp4",
+      "segment_number": 1,
+      "score": 0.1299,
+      "convincing": true,
+      "caption": "The scene is a narrow, one-way street with a single lane in each direction. The ego vehicle is stopped behind a dark blue SUV, which is also stationary. A large white dump truck is parked on the left side of the road, partially blocking the lane. Pedestrians are visible on the right side of the street, walking along the sidewalk. The sky is partly cloudy, and there are buildings and trees lining the street. No traffic lights or road signs are clearly visible in the frame."
+    },
+    {
+      "query": "vehicle stopped in the travel lane with traffic passing around it",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_071717_set06_video_chunk_0016_segment_006_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_071717_set06_video_chunk_0016.mp4",
+      "segment_number": 6,
+      "score": 0.1299,
+      "convincing": true,
+      "caption": "The scene is a narrow, single-lane, one-way urban street with parked vehicles on both sides. The sky is partly cloudy and the lighting is natural daylight. A large gray dump truck is parked on the left side of the road, partially blocking the lane. In front of the camera vehicle, a dark blue SUV with a visible license plate is stopped, its brake lights illuminated. Behind the SUV, another large white truck is also stopped. Pedestrians are visible on the right sidewalk, walking away from the camera. There are no traffic lights or visible traffic signs in the immediate area. The vehicles are stationary, and no moving traffic or active maneuvers are occurring."
+    },
+    {
+      "query": "car double parked blocking a lane",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_071510_set06_video_chunk_0011_segment_005_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_071510_set06_video_chunk_0011.mp4",
+      "segment_number": 5,
+      "score": 0.1261,
+      "convincing": false,
+      "caption": "The scene is captured from a vehicle’s dashboard camera, showing a view of a road with a dark blue SUV directly ahead. The SUV has a visible license plate reading AZJY 712 and its brake lights are illuminated. To the left of the SUV, a white flatbed tow truck is partially visible, displaying the letters “CAA” on its side. The tow truck is positioned in the adjacent lane, moving slowly or stopped. On the right side of the road, there is an orange diamond-shaped construction sign featuring a black silhouette of a worker with a shovel, indicating road work ahead. Behind the SUV, a dark-colored sedan is visible, also with its brake lights on. Further down the road, another vehicle can be seen approaching from the opposite direction. The environment includes a large brick building with multiple windows on the right side of the road. Trees line the left side, and overhead power lines stretch across the sky. The sky is partly cloudy, and the overall lighting suggests daytime conditions. There are no pedestrians or..."
+    },
+    {
+      "query": "car double parked blocking a lane",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_070348_set05_video_chunk_0014_segment_004_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_070348_set05_video_chunk_0014.mp4",
+      "segment_number": 4,
+      "score": 0.1243,
+      "convincing": false,
+      "caption": "The scene is a residential street intersection on a partly cloudy day. The road surface is dry asphalt with a solid yellow line separating opposing directions of travel. A stop sign is mounted on a pole at the corner, accompanied by a street name sign and a directional arrow sign. A black Range Rover is stopped at the intersection, facing the camera, with its brake lights illuminated. Another black car is visible on the left side of the frame, moving through the intersection. There are no pedestrians, cyclists, or trucks present. The surrounding area includes trees, sidewalks, and houses. The vehicles are stationary or moving slowly, and there are no visible traffic violations or immediate hazards."
+    }
+  ],
+  "curb_pullover": [
+    {
+      "query": "car pulling over to the curb near pedestrians",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_061746_set01_video_chunk_0029_segment_001_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_061746_set01_video_chunk_0029.mp4",
+      "segment_number": 1,
+      "score": 0.3221,
+      "convincing": false,
+      "caption": "The scene is captured from a vehicle’s dashboard camera, showing a street with a single lane in each direction. The road surface is dry and appears to be asphalt. On the left side of the frame, a black sedan is parked along the curb, with orange traffic cones placed in front of it. Ahead of the camera vehicle, a silver SUV is stopped in the lane, facing forward. To the right, a sidewalk runs alongside the street, where two people are standing and conversing. Further down the sidewalk, a person is walking away from the camera. On the right side of the street, there are storefronts with awnings, including one with a red awning and another with a green awning. A bicycle is parked near the sidewalk. The sky is partly cloudy, and trees line the left side of the street. No traffic lights or stop signs are visible in the immediate foreground."
+    },
+    {
+      "query": "car pulling over to the curb near pedestrians",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_070001_set05_video_chunk_0005_segment_001_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_070001_set05_video_chunk_0005.mp4",
+      "segment_number": 1,
+      "score": 0.277,
+      "convincing": false,
+      "caption": "The scene is captured from a vehicle’s dashboard camera, showing a view of an intersection and a street ahead. The sky is partly cloudy with blue patches visible. The road surface is dry and marked with crosswalks and lane lines. A black car is stopped at the intersection on the left side of the frame, and another black car is seen driving away from the camera on the right side of the road. A silver SUV is also visible driving in the opposite direction on the left side of the road. Pedestrians are present on the sidewalks, with one person walking on the left sidewalk and another person standing near the crosswalk on the right sidewalk. The surrounding area includes modern buildings with glass facades and some older residential-style buildings with brick facades. Trees line the sidewalks, and there are streetlights and traffic signals at the intersection. No traffic violations or specific hazards are evident in the scene."
+    },
+    {
+      "query": "car pulling over to the curb near pedestrians",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_070117_set05_video_chunk_0008_segment_004_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_070117_set05_video_chunk_0008.mp4",
+      "segment_number": 4,
+      "score": 0.2638,
+      "convincing": false,
+      "caption": "The scene is a residential street with a single lane in each direction and no visible traffic lights. The ego vehicle is traveling straight along this road. On the right side, a silver car is stopped in the lane ahead of the ego vehicle, partially blocking the path. The ego vehicle must slow down and proceed cautiously around this stopped car. Pedestrians are visible on the sidewalk to the right, walking away from the camera. No trucks or buses are present in the scene."
+    },
+    {
+      "query": "car pulling over to the curb near pedestrians",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_070233_set05_video_chunk_0011_segment_005_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_070233_set05_video_chunk_0011.mp4",
+      "segment_number": 5,
+      "score": 0.2608,
+      "convincing": false,
+      "caption": "The scene is a residential street intersection with a single lane in each direction and no visible traffic lights. A black SUV is stopped at the intersection, facing the camera, and a silver sedan is also stopped at the intersection, facing away from the camera. A person is walking on the sidewalk to the right of the intersection. The road surface is dry and there are no visible traffic violations or hazards."
+    },
+    {
+      "query": "car pulling over to the curb near pedestrians",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_061943_set02_video_chunk_0003_segment_002_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_061943_set02_video_chunk_0003.mp4",
+      "segment_number": 2,
+      "score": 0.2533,
+      "convincing": false,
+      "caption": "The scene is a daytime view from a vehicle stopped at an intersection on a two-way street. The road surface is dry asphalt with visible lane markings. A stop sign is clearly visible on the right side of the intersection. Several pedestrians are crossing the street in front of the vehicle, including two people walking together on the left side of the crosswalk. A white car is stopped ahead in the same lane, and another vehicle is visible further down the street. On the right side of the street, there is a blue construction fence and a bicycle parked near the curb. Trees line the sidewalks, and buildings with storefronts are visible on both sides of the street. The sky is partly cloudy with blue patches."
+    },
+    {
+      "query": "car pulling over to the curb near pedestrians",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_071833_set06_video_chunk_0019_segment_005_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_071833_set06_video_chunk_0019.mp4",
+      "segment_number": 5,
+      "score": 0.2531,
+      "convincing": false,
+      "caption": "The scene is a city street intersection with a two-lane road. A silver sedan is stopped in the left lane, and a dark-colored SUV is stopped in the right lane. Pedestrians are walking on the sidewalk to the right, moving away from the camera. A construction site is visible on the left side of the street, with a tall brick smokestack and a crane in the background. There are no traffic lights or clearly readable signs in the immediate foreground. The sky is partly cloudy, and trees with autumn foliage line the right side of the street. No vehicles are blocking the lanes, and there are no visible violations or immediate hazards."
+    },
+    {
+      "query": "car pulling over to the curb near pedestrians",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_062835_set02_video_chunk_0024_segment_005_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_062835_set02_video_chunk_0024.mp4",
+      "segment_number": 5,
+      "score": 0.2528,
+      "convincing": false,
+      "caption": "The scene is captured from a vehicle stopped at a city intersection on a partly cloudy day. The road surface is dry and features a marked pedestrian crosswalk directly in front of the vehicle. Traffic lights are visible at the intersection, with signals facing the vehicle showing red. Pedestrians are actively crossing the street in front of the vehicle, including a man in a light blue patterned shirt and dark pants walking from left to right, and another person in a dark shirt and shorts crossing from right to left. Additional pedestrians are visible on the sidewalks and further down the street. A white car is parked along the curb on the right side of the intersection. The surrounding area includes tall buildings with glass facades and commercial signage, including a visible “RBC Royal Bank” sign on the right. No trucks, buses, or bicycles are clearly visible in the immediate foreground. The vehicle remains stationary, yielding to the pedestrians in the crosswalk."
+    },
+    {
+      "query": "car pulling over to the curb near pedestrians",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_063806_set03_video_chunk_0015_segment_001_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_063806_set03_video_chunk_0015.mp4",
+      "segment_number": 1,
+      "score": 0.2508,
+      "convincing": false,
+      "caption": "The scene is a city street with two lanes in the same direction. A silver SUV is stopped directly ahead of the camera vehicle, with its brake lights illuminated. To the left of the SUV, a dark-colored sedan is also stopped, its brake lights on. The road surface is dry and marked with white lane lines. Pedestrians are visible on the sidewalks on both sides of the street, walking along the pavement. No traffic lights, signs, or other vehicles are clearly visible in the frame. The vehicles remain stationary throughout the clip, and there are no apparent hazards or unusual activity."
+    },
+    {
+      "query": "car pulling over to the curb near pedestrians",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_071626_set06_video_chunk_0014_segment_005_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_071626_set06_video_chunk_0014.mp4",
+      "segment_number": 5,
+      "score": 0.2504,
+      "convincing": false,
+      "caption": "The scene is captured from a vehicle’s dashboard camera, showing a view of a city street intersection. The sky is partly cloudy, and the road surface is dry. In the foreground, a dark-colored SUV is stopped directly ahead of the camera vehicle, with its brake lights illuminated. The SUV’s license plate is visible, and it appears to be a Subaru model. To the right of the SUV, there is a pedestrian crossing the street, wearing dark clothing and a light-colored hat. Further along the sidewalk, another pedestrian is visible, walking away from the camera. On the right side of the street, there is a large brick building with a clock tower, and a green circular sign indicating a bus stop or transit-related facility. Traffic signs are present on the right side of the road, including a red octagonal stop sign and a white rectangular sign with a red triangle and text that reads “TO ONCOMING TRAFFIC.” Orange traffic cones are placed near the curb, suggesting some form of road work or lane closure. In the background..."
+    },
+    {
+      "query": "car pulling over to the curb near pedestrians",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_071510_set06_video_chunk_0011_segment_002_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_071510_set06_video_chunk_0011.mp4",
+      "segment_number": 2,
+      "score": 0.2481,
+      "convincing": false,
+      "caption": "The scene is a narrow, one-way urban street with a single lane in each direction. The ego vehicle is traveling behind a dark SUV that is stopped in the middle of the road. A blue sedan is parked on the left side of the street, partially blocking the lane. A pedestrian is walking along the left side of the road, moving away from the camera. Another person is standing near the parked blue sedan, appearing to be getting into or out of the vehicle. A truck is visible further down the street, stopped behind the ego vehicle. There are no traffic lights or stop signs visible in this segment. The road surface is dry and appears to be in good condition. The surrounding buildings are brick structures with large windows, typical of an older urban area."
+    },
+    {
+      "query": "vehicle pulling out from the curb into traffic",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_064400_set03_video_chunk_0029_segment_003_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_064400_set03_video_chunk_0029.mp4",
+      "segment_number": 3,
+      "score": 0.2401,
+      "convincing": false,
+      "caption": "The scene is a city street with two lanes in the same direction. A black pickup truck is stopped in the right lane, partially blocking traffic. A red delivery van is stopped in the left lane, also partially blocking traffic. A dark-colored sedan is visible ahead of the camera vehicle, moving forward. Pedestrians are walking on the sidewalks on both sides of the street. A fire hydrant is visible on the right sidewalk. The sky is clear and blue."
+    },
+    {
+      "query": "vehicle pulling out from the curb into traffic",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_064527_set04_video_chunk_0001_segment_002_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_064527_set04_video_chunk_0001.mp4",
+      "segment_number": 2,
+      "score": 0.2266,
+      "convincing": false,
+      "caption": "The scene is captured from a vehicle’s dashboard camera, showing a multi-lane urban road with moderate traffic. The road surface is dry asphalt with visible lane markings. In the right lane, a silver sedan is directly ahead of the camera vehicle, moving forward at a steady pace. To the left, a white SUV is traveling in the adjacent lane, followed by a dark-colored SUV and other vehicles further back. The traffic appears to be flowing normally without any congestion or sudden stops. On the right side of the road, there is a sidewalk lined with trees and small shrubs, and a parking meter is visible near the curb. Tall modern buildings with glass facades line both sides of the street, indicating a downtown or commercial area. The sky is clear and blue, suggesting daytime conditions with good visibility. No pedestrians, cyclists, trucks, or buses are visible in the frame. There are no traffic lights or prominent road signs that can be clearly read. The vehicles maintain their lanes, and there are no apparent..."
+    },
+    {
+      "query": "vehicle pulling out from the curb into traffic",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_064038_set03_video_chunk_0021_segment_004_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_064038_set03_video_chunk_0021.mp4",
+      "segment_number": 4,
+      "score": 0.2263,
+      "convincing": false,
+      "caption": "The scene is a daytime view from a vehicle driving along a city street with multiple lanes. The road surface is dry and marked with white lane lines and a green-painted bike lane on the right side. Traffic is moderate, with several vehicles visible ahead and to the sides. A white SUV is directly in front of the camera vehicle, followed by a dark-colored pickup truck in the adjacent lane. Other cars are visible further down the street, including a black SUV and a dark sedan. No buses are clearly visible in the immediate foreground. There are no pedestrians or cyclists in the frame, and no traffic lights or stop signs are visible. The surrounding buildings are tall and modern, with glass facades and brick exteriors. The sky is partly cloudy, and the lighting suggests it is midday. The camera vehicle is moving forward steadily, maintaining a safe distance from the vehicles ahead."
+    },
+    {
+      "query": "vehicle pulling out from the curb into traffic",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_064012_set03_video_chunk_0020_segment_001_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_064012_set03_video_chunk_0020.mp4",
+      "segment_number": 1,
+      "score": 0.2207,
+      "convincing": false,
+      "caption": "The scene is a city street with a two-lane road and a dedicated bike lane on the right. Traffic is stopped in both lanes, with vehicles facing forward. A silver sedan is in the left lane, and a beige SUV is in the right lane, directly ahead of the camera vehicle. The SUV has a visible license plate reading CFVW 183. Behind the SUV, a white car is also stopped. To the left, a white pickup truck is partially visible. Overhead, trolley wires run across the street. On the right side, a covered walkway or structure is visible, with a few pedestrians walking along the sidewalk. A cyclist rides past in the bike lane on the right. The buildings on both sides are tall and modern, with glass facades reflecting the sky. The sky is partly cloudy, and the lighting suggests it is daytime. No traffic lights or stop signs are clearly visible in the immediate foreground."
+    },
+    {
+      "query": "vehicle pulling out from the curb into traffic",
+      "source": "s3://team-7-vss-chunks-segments/segments/reingest/f60a4abef5584570ae37fbb8868ba596/20261001_065754_set05_video_chunk_0000_segment_002_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_065754_set05_video_chunk_0000.mp4",
+      "segment_number": 2,
+      "score": 0.2164,
+      "convincing": false,
+      "caption": "The camera vehicle makes a right turn onto a one-way street and continues straight. The road is lined with parked cars on the right side. Orange traffic cones are placed along the left side of the street. A green truck is visible ahead in the same lane."
+    },
+    {
+      "query": "vehicle pulling out from the curb into traffic",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_071742_set06_video_chunk_0017_segment_002_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_071742_set06_video_chunk_0017.mp4",
+      "segment_number": 2,
+      "score": 0.2161,
+      "convincing": false,
+      "caption": "The scene is a narrow, single-lane, one-way street with a brick-paved sidewalk on the right. The sky is partly cloudy with patches of blue. A large white dump truck is parked on the left side of the road, partially blocking the lane. In front of the camera vehicle, a dark blue SUV is stopped with its brake lights illuminated. Behind the SUV, another white truck is visible, also stopped. On the right side of the street, several vehicles are parked along the curb, including a dark-colored SUV and a white pickup truck. A person is walking on the sidewalk to the right, moving away from the camera. There are no visible traffic lights or road signs in the immediate area. The vehicles ahead are stationary, and the overall traffic flow is minimal."
+    },
+    {
+      "query": "vehicle pulling out from the curb into traffic",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_062900_set02_video_chunk_0025_segment_002_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_062900_set02_video_chunk_0025.mp4",
+      "segment_number": 2,
+      "score": 0.2156,
+      "convincing": false,
+      "caption": "The scene is a busy urban street with two lanes in each direction and a center turning lane. The ego vehicle travels along this road, passing parked cars on both sides. A white sedan is stopped in the right lane, partially blocking the ego vehicle’s path. The ego vehicle slows down and proceeds cautiously around the stopped car. Pedestrians are visible on the sidewalks, and a few cyclists are present near the right side of the street. There are no traffic lights or prominent traffic signs visible in the immediate area. The environment is lined with tall buildings, including a construction site with a crane visible in the background. No trucks or buses are clearly identifiable in the scene."
+    },
+    {
+      "query": "vehicle pulling out from the curb into traffic",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_071626_set06_video_chunk_0014_segment_004_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_071626_set06_video_chunk_0014.mp4",
+      "segment_number": 4,
+      "score": 0.2141,
+      "convincing": false,
+      "caption": "The scene is a daytime view from a vehicle stopped on a two-lane road. A dark blue SUV is directly ahead, with its brake lights illuminated, indicating it is stationary. To the left, a black sedan is also stopped, and further down the road, additional vehicles are visible. On the right side of the road, orange traffic cones and a “ROAD WORK AHEAD” sign are placed near the curb, blocking part of the sidewalk. Pedestrians are walking along the sidewalk on the right, some wearing bright orange jackets. A stop sign is visible on the right side of the road, and a green circular sign with a white “P” is mounted on a pole near the sidewalk. The road surface shows some wear, and the sky is partly cloudy."
+    },
+    {
+      "query": "vehicle pulling out from the curb into traffic",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_063831_set03_video_chunk_0016_segment_006_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_063831_set03_video_chunk_0016.mp4",
+      "segment_number": 6,
+      "score": 0.2105,
+      "convincing": false,
+      "caption": "The scene is a city street with two lanes of traffic moving forward. A silver sedan is in the left lane, and a beige SUV is directly ahead in the right lane. A white pickup truck with blue and black markings and the word “State” on its side is visible in the left lane further ahead. The road surface is dry and marked with white lane lines. No traffic lights or stop signs are visible in the immediate area. Pedestrians are walking on the sidewalk to the right, and a cyclist rides past on the right side of the frame. A potted plant with orange flowers is placed near the curb on the right. The surrounding buildings are tall and modern, with one on the left showing scaffolding. The sky is partly cloudy and bright."
+    },
+    {
+      "query": "vehicle pulling out from the curb into traffic",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_071742_set06_video_chunk_0017_segment_003_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_071742_set06_video_chunk_0017.mp4",
+      "segment_number": 3,
+      "score": 0.2101,
+      "convincing": false,
+      "caption": "The scene is a narrow, one-way street with a single lane in each direction. The sky is partly cloudy with patches of blue. A large white dump truck is parked on the left side of the road, partially blocking the lane. In front of the camera vehicle, a dark blue SUV is stopped with its brake lights illuminated. Behind the SUV, another white truck is visible, also stopped. On the right side of the street, several vehicles are parked along the curb, including a dark SUV and a white pickup truck. Pedestrians are walking on the sidewalk to the right, near the parked vehicles. The road surface appears to be paved with some visible cracks and markings. There are no visible traffic lights or road signs in the immediate area. The vehicles remain stationary throughout the clip, and there are no visible violations or immediate hazards."
+    }
+  ],
+  "turn_across_crosswalk": [
+    {
+      "query": "vehicle turning at an intersection while pedestrians are in the crosswalk",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_062538_set02_video_chunk_0017_segment_006_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_062538_set02_video_chunk_0017.mp4",
+      "segment_number": 6,
+      "score": 0.4096,
+      "convincing": false,
+      "caption": "The scene is a busy city intersection with a marked crosswalk and traffic lights. Pedestrians are crossing the street from right to left in front of the camera. A black car is stopped at the intersection, waiting for the pedestrians to clear. Another black car is visible in the background, moving through the intersection. A red truck is parked on the right side of the street. The traffic lights are visible and appear to be functioning normally. There are no visible violations or hazards in the scene."
+    },
+    {
+      "query": "vehicle turning at an intersection while pedestrians are in the crosswalk",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_062835_set02_video_chunk_0024_segment_005_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_062835_set02_video_chunk_0024.mp4",
+      "segment_number": 5,
+      "score": 0.3869,
+      "convincing": false,
+      "caption": "The scene is captured from a vehicle stopped at a city intersection on a partly cloudy day. The road surface is dry and features a marked pedestrian crosswalk directly in front of the vehicle. Traffic lights are visible at the intersection, with signals facing the vehicle showing red. Pedestrians are actively crossing the street in front of the vehicle, including a man in a light blue patterned shirt and dark pants walking from left to right, and another person in a dark shirt and shorts crossing from right to left. Additional pedestrians are visible on the sidewalks and further down the street. A white car is parked along the curb on the right side of the intersection. The surrounding area includes tall buildings with glass facades and commercial signage, including a visible “RBC Royal Bank” sign on the right. No trucks, buses, or bicycles are clearly visible in the immediate foreground. The vehicle remains stationary, yielding to the pedestrians in the crosswalk."
+    },
+    {
+      "query": "vehicle turning at an intersection while pedestrians are in the crosswalk",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_062900_set02_video_chunk_0025_segment_006_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_062900_set02_video_chunk_0025.mp4",
+      "segment_number": 6,
+      "score": 0.3862,
+      "convincing": false,
+      "caption": "The scene is captured from a vehicle stopped at a cross intersection on a partly cloudy day. The road surface is dry and features clearly marked pedestrian crosswalks. Traffic lights are visible at the intersection, with the signal facing the camera showing red. A white SUV is stopped in the adjacent lane, and a white van is visible further ahead in the same direction. A cyclist wearing a backpack rides through the intersection, crossing from left to right in front of the camera. Pedestrians are actively using the crosswalk, with some walking across the street and others waiting on the sidewalks. A person carrying a suitcase is also seen crossing the street. The surrounding area includes modern high-rise buildings with glass facades and a brick building on the right side of the intersection. No vehicles are blocking the lane, and there are no visible traffic violations or immediate hazards in the scene."
+    },
+    {
+      "query": "vehicle turning at an intersection while pedestrians are in the crosswalk",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_062925_set02_video_chunk_0026_segment_002_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_062925_set02_video_chunk_0026.mp4",
+      "segment_number": 2,
+      "score": 0.3681,
+      "convincing": false,
+      "caption": "The scene is a city intersection with a red traffic light visible ahead. The road surface shows a crosswalk and lane markings. A white SUV is stopped at the intersection, facing forward. A black SUV is also present, positioned to the left of the white SUV. A yellow taxi is visible further ahead in the intersection. A person on a bicycle is seen on the right side of the frame, near the crosswalk. Pedestrians are visible on the sidewalks, some walking and others standing. A truck is visible in the background, moving through the intersection. The traffic light is clearly red, indicating that vehicles should stop. There are no visible signs of traffic violations or hazards in the scene."
+    },
+    {
+      "query": "vehicle turning at an intersection while pedestrians are in the crosswalk",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_062925_set02_video_chunk_0026_segment_003_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_062925_set02_video_chunk_0026.mp4",
+      "segment_number": 3,
+      "score": 0.3608,
+      "convincing": false,
+      "caption": "The scene is a city intersection with a red traffic light visible ahead. The road surface is dry and marked with crosswalks. A white van is stopped at the intersection, and a yellow car is positioned to its left. Pedestrians are present on the sidewalks and crossing the street. A person in an orange top is walking on the right sidewalk. The traffic light is clearly red, indicating vehicles should stop. No vehicles are seen running the red light or committing any traffic violations. The environment appears orderly with no immediate hazards."
+    },
+    {
+      "query": "vehicle turning at an intersection while pedestrians are in the crosswalk",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_062925_set02_video_chunk_0026_segment_001_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_062925_set02_video_chunk_0026.mp4",
+      "segment_number": 1,
+      "score": 0.3589,
+      "convincing": false,
+      "caption": "The scene is captured from a vehicle stopped at a signalized intersection on a multi-lane road. The traffic light facing the camera is red, requiring the vehicle to remain stationary. The road surface is dry and marked with standard lane lines and crosswalks. Several pedestrians are crossing the street in front of the vehicle. One man in a white shirt and brown shorts carries a brown suitcase and walks across the crosswalk. Another man in a light blue shirt and gray pants also crosses the street. A cyclist wearing a backpack rides through the intersection, moving from left to right. Other pedestrians are visible on the sidewalks and crossing the street in the background. Vehicles are present in the intersection and along the road. A white SUV and a black SUV are stopped or moving slowly near the intersection. A white van is visible further down the road. A truck is also present in the scene, though its exact position and movement are not clearly detailed. Traffic signs are visible, including a parking sign..."
+    },
+    {
+      "query": "vehicle turning at an intersection while pedestrians are in the crosswalk",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_062809_set02_video_chunk_0023_segment_006_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_062809_set02_video_chunk_0023.mp4",
+      "segment_number": 6,
+      "score": 0.3581,
+      "convincing": false,
+      "caption": "The scene is captured from a vehicle stopped at an intersection in a city, with a wide-angle view of the road and surrounding buildings. The road surface is dry and marked with white pedestrian crosswalk lines. Traffic lights are visible at the intersection, and the signal facing the camera appears to be red, requiring the vehicle to remain stopped. Pedestrians are actively crossing the street in front of the vehicle, using the marked crosswalk. Several cars and a white van are visible in the intersection, moving through the crosswalk area. A person wearing a backpack is among the pedestrians crossing. The surrounding area includes tall buildings with glass facades and commercial signage, indicating an urban business district. No specific violations or hazards are evident in the scene."
+    },
+    {
+      "query": "vehicle turning at an intersection while pedestrians are in the crosswalk",
+      "source": "s3://team-7-vss-chunks-segments/segments/reingest/f60a4abef5584570ae37fbb8868ba596/20261001_065754_set05_video_chunk_0000_segment_005_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_065754_set05_video_chunk_0000.mp4",
+      "segment_number": 5,
+      "score": 0.3487,
+      "convincing": true,
+      "caption": "The camera vehicle is in the left lane of a two-lane road, approaching an intersection. It is moving forward slowly and preparing to turn left. The traffic light ahead is red. A pedestrian is crossing the street in front of the vehicle, using the crosswalk. The camera vehicle is stopped, waiting for the pedestrian to clear the crosswalk before proceeding. A red Jeep is visible ahead in the same lane, also stopped at the intersection. There are no other vehicles, cones, or construction visible in the immediate vicinity."
+    },
+    {
+      "query": "vehicle turning at an intersection while pedestrians are in the crosswalk",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_062447_set02_video_chunk_0015_segment_002_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_062447_set02_video_chunk_0015.mp4",
+      "segment_number": 2,
+      "score": 0.3471,
+      "convincing": false,
+      "caption": "The scene is captured from a vehicle stopped at an intersection in a city environment. The road surface is dry asphalt with clearly marked crosswalks and lane markings. No traffic lights or stop signs are visible in the immediate frame. In the foreground, two people are crossing the street from left to right on the marked crosswalk. Behind them, a few other pedestrians are visible on the sidewalk and near the intersection. A red and blue taxi with “PUERTO RICO” written on its side drives through the intersection from right to left. A dark-colored SUV follows behind the taxi, also moving from right to left. A motorcycle is visible further back in the intersection, near the center. No bicycles or trucks are clearly visible in the scene. The surrounding area features tall modern buildings with glass facades and some older brick structures. Trees line the sidewalks, and a few parked cars are visible along the street. The sky is partly cloudy, indicating daytime conditions."
+    },
+    {
+      "query": "vehicle turning at an intersection while pedestrians are in the crosswalk",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_072246_set06_video_chunk_0029_segment_004_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_072246_set06_video_chunk_0029.mp4",
+      "segment_number": 4,
+      "score": 0.3469,
+      "convincing": false,
+      "caption": "The scene is captured from a vehicle stopped at an intersection on a partly cloudy day. The road is a two-way street with a single lane in each direction, and the vehicle is positioned at the intersection, waiting for pedestrians to cross. There are no traffic lights or stop signs visible in the immediate view. Pedestrians are crossing the street in front of the vehicle, moving from right to left. Some are walking in pairs, while others are alone. They appear to be adults dressed in casual clothing, and one person is carrying what looks like a tray or plate. The pedestrians are crossing the road in front of the vehicle, and the vehicle remains stationary, yielding to them. On the left side of the intersection, a large white box truck is parked or stopped, with its rear doors open. The truck is positioned parallel to the curb, and there are no visible workers or activity around it. The truck is clearly visible and does not appear to be blocking the lane in which the vehicle is stopped. In the background..."
+    },
+    {
+      "query": "turning right with people crossing",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_065307_set04_video_chunk_0019_segment_004_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_065307_set04_video_chunk_0019.mp4",
+      "segment_number": 4,
+      "score": 0.3126,
+      "convincing": false,
+      "caption": "The scene unfolds on a two-lane road with tram tracks running down the center, under a partly cloudy sky. The road surface is dry and marked with white lane lines and a crosswalk. No traffic lights or stop signs are visible. Vehicles are parked along both sides of the street, and several cars are moving in both directions. A bicycle is parked on the right side of the road near a building. Pedestrians are crossing the street at the crosswalk, and a few people are standing on the sidewalk. A truck is visible in the distance on the right side of the road. The overall traffic flow appears moderate, with no obvious violations or hazards present."
+    },
+    {
+      "query": "turning right with people crossing",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_071949_set06_video_chunk_0022_segment_005_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_071949_set06_video_chunk_0022.mp4",
+      "segment_number": 5,
+      "score": 0.2138,
+      "convincing": false,
+      "caption": "The scene is a paved road with a single lane in each direction, separated by a central median. The road surface is marked with yellow crosswalk stripes. There are no traffic lights or stop signs visible. A few cars are parked along the left side of the road, and a truck is visible in the distance. On the right side, there is a sidewalk with several people walking and a few bicycles parked. A person is crossing the road in front of the camera, and another person is walking on the sidewalk near a store with a sign that reads \"BEER.\" The sky is partly cloudy, and the overall environment appears to be a commercial or urban area."
+    },
+    {
+      "query": "turning right with people crossing",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_061629_set01_video_chunk_0026_segment_001_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_061629_set01_video_chunk_0026.mp4",
+      "segment_number": 1,
+      "score": 0.2023,
+      "convincing": false,
+      "caption": "The scene unfolds on a two-lane road with a center yellow line, viewed from a vehicle that is turning left. The road surface is dry and marked with tram tracks running down the middle. There are no traffic lights or stop signs visible at the intersection. A bicycle is crossing the intersection from right to left, moving into the path of the turning vehicle. The vehicle yields to the cyclist, allowing it to pass safely before completing the left turn. After the turn, the road continues with parked cars along the right side and a fire hydrant on the left sidewalk. A person is walking on the sidewalk near the corner. In the distance, a truck is visible on the road ahead. The sky is partly cloudy, and the surrounding buildings include a brick structure with a storefront labeled \"SKYE SSUTU.\""
+    },
+    {
+      "query": "turning right with people crossing",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_061943_set02_video_chunk_0003_segment_001_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_061943_set02_video_chunk_0003.mp4",
+      "segment_number": 1,
+      "score": 0.191,
+      "convincing": false,
+      "caption": "The scene is a daytime view from a vehicle traveling along a city street. The road is a single-lane, two-way street with cars parked along the left side. The vehicle approaches an intersection controlled by a stop sign. Pedestrians are visible on the sidewalks and crossing the street. A fire hydrant is located on the left side of the street near the intersection. There are no airplanes, trains, or trucks visible in the scene."
+    },
+    {
+      "query": "turning right with people crossing",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_062149_set02_video_chunk_0008_segment_004_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_062149_set02_video_chunk_0008.mp4",
+      "segment_number": 4,
+      "score": 0.1843,
+      "convincing": false,
+      "caption": "The scene is captured from a vehicle traveling along a wide, multi-lane urban road under a partly cloudy sky. The road surface is dry and marked with clear lane lines. On the right side, a sidewalk runs alongside the street, where several people are walking. A group of individuals wearing matching red shirts is visible on the sidewalk, and a few bicycles are parked nearby. On the left side, there is a grassy area with trees and a low wall, beyond which more pedestrians can be seen. In the distance, a tall, modern glass skyscraper dominates the skyline, flanked by other high-rise buildings. The architecture includes both contemporary glass facades and older brick structures. Overhead, a network of wires or cables stretches across the street, likely for public transit or utility purposes. The traffic light ahead is green, allowing the vehicle to continue forward without stopping. Several vehicles are present on the road. A blue car is directly ahead in the same lane, moving at a steady pace. Further down the..."
+    },
+    {
+      "query": "turning right with people crossing",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_072014_set06_video_chunk_0023_segment_001_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_072014_set06_video_chunk_0023.mp4",
+      "segment_number": 1,
+      "score": 0.1838,
+      "convincing": false,
+      "caption": "The scene is captured from a vehicle moving along a paved road with a single lane in each direction, separated by a dashed yellow center line. The road surface includes a painted crosswalk and a speed bump marked with a yellow warning sign. On the right side, a sidewalk runs alongside a building with large windows, where several pedestrians are walking. Some pedestrians are carrying handbags. Along the sidewalk, there are multiple cardboard boxes filled with pumpkins, arranged in a row. On the left side of the road, there is a parking area with several cars parked in designated spaces. In the background, there are buildings, including one with a visible crane, suggesting ongoing construction. The sky is partly cloudy with patches of blue. No traffic lights or other traffic control devices are visible in the immediate area. The vehicle continues forward at a steady pace, passing the pedestrians and the pumpkin displays."
+    },
+    {
+      "query": "turning right with people crossing",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_061943_set02_video_chunk_0003_segment_002_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_061943_set02_video_chunk_0003.mp4",
+      "segment_number": 2,
+      "score": 0.1824,
+      "convincing": false,
+      "caption": "The scene is a daytime view from a vehicle stopped at an intersection on a two-way street. The road surface is dry asphalt with visible lane markings. A stop sign is clearly visible on the right side of the intersection. Several pedestrians are crossing the street in front of the vehicle, including two people walking together on the left side of the crosswalk. A white car is stopped ahead in the same lane, and another vehicle is visible further down the street. On the right side of the street, there is a blue construction fence and a bicycle parked near the curb. Trees line the sidewalks, and buildings with storefronts are visible on both sides of the street. The sky is partly cloudy with blue patches."
+    },
+    {
+      "query": "turning right with people crossing",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_062149_set02_video_chunk_0008_segment_002_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_062149_set02_video_chunk_0008.mp4",
+      "segment_number": 2,
+      "score": 0.1492,
+      "convincing": false,
+      "caption": "The scene is a wide-angle view from a vehicle stopped at an intersection on a city street. The road surface is paved with visible tram tracks embedded in the roadway. The vehicle is positioned at a crosswalk, waiting for pedestrians to cross. A traffic light is visible, showing a red signal for the vehicle’s direction of travel. Pedestrians are actively crossing the street in front of the vehicle, and a few cyclists are also present on the road. A red car is stopped at the intersection, and a white car is visible further down the street. The surrounding area includes a large, historic-looking brick building with arched windows and a modern glass skyscraper in the background. The sky is partly cloudy, and the overall environment suggests a busy urban setting with mixed architectural styles."
+    }
+  ],
+  "cyclist_nearby": [
+    {
+      "query": "cyclist riding in the lane ahead of the car",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_070258_set05_video_chunk_0012_segment_001_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_070258_set05_video_chunk_0012.mp4",
+      "segment_number": 1,
+      "score": 0.4192,
+      "convincing": true,
+      "caption": "The scene is captured from a vehicle traveling along a two-lane residential street with a yellow center line. The road is lined with trees and houses, and the weather is clear with daylight. A cyclist wearing a helmet and light-colored shorts is riding ahead in the same direction, positioned near the right curb. A pedestrian in light-colored pants and a dark shirt walks along the right sidewalk, carrying a white bag. A black car is parked on the left side of the street, and another vehicle is visible further ahead. A stop sign is visible at an upcoming intersection, and a traffic light hangs above the road. The cyclist continues riding forward, and the vehicle from which the footage is taken maintains a steady pace behind them."
+    },
+    {
+      "query": "cyclist riding in the lane ahead of the car",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_070258_set05_video_chunk_0012_segment_002_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_070258_set05_video_chunk_0012.mp4",
+      "segment_number": 2,
+      "score": 0.3274,
+      "convincing": true,
+      "caption": "The scene is captured from a vehicle’s dashboard camera, showing a residential street intersection under a clear sky. The road is paved with a single lane in each direction, separated by a dashed yellow centerline. A stop sign is visible on the right side of the road, and a traffic light hangs over the intersection, currently showing red. A cyclist wearing a helmet and light-colored shorts is riding ahead of the camera vehicle, moving slowly through the intersection. Pedestrians are visible on the sidewalks, with one person in orange crossing the street. Several parked cars line the sides of the road, and a fire hydrant is visible near the curb. The surroundings include houses with mature trees and utility poles with overhead wires. No trucks, buses, or lane-blocking vehicles are present. The cyclist’s movement and the red traffic light are the primary dynamic elements in the scene."
+    },
+    {
+      "query": "cyclist riding in the lane ahead of the car",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_063353_set03_video_chunk_0005_segment_001_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_063353_set03_video_chunk_0005.mp4",
+      "segment_number": 1,
+      "score": 0.3158,
+      "convincing": true,
+      "caption": "The scene is a daytime view from a vehicle stopped at an intersection. A black car is directly ahead, with a silver car to the left. A pedestrian wearing a backpack walks across the intersection in front of the silver car. A cyclist on a bicycle rides through the intersection from right to left. Traffic lights are visible at the intersection, and lane markings are present on the road surface."
+    },
+    {
+      "query": "cyclist riding in the lane ahead of the car",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_061917_set02_video_chunk_0002_segment_005_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_061917_set02_video_chunk_0002.mp4",
+      "segment_number": 5,
+      "score": 0.3148,
+      "convincing": true,
+      "caption": "The scene is captured from a vehicle traveling along a one-way street. The road is a single lane with cars parked on both sides. The vehicle approaches an intersection where a cyclist is riding in the opposite direction. The cyclist is wearing a helmet and a black top. The cyclist is riding toward the camera, moving into the path of the vehicle. The cyclist is riding in the middle of the road, not in a designated bike lane. The cyclist is riding in the opposite direction of the vehicle. The cyclist is riding in the middle of the road, not in a designated bike lane. The cyclist is riding in the opposite direction of the vehicle. The cyclist is riding in the middle of the road, not in a designated bike lane. The cyclist is riding in the opposite direction of the vehicle. The cyclist is riding in the middle of the road, not in a designated bike lane. The cyclist is riding in the opposite direction of the vehicle. The cyclist is riding in the middle of the road, not in a designated bike lane. The cyclist is..."
+    },
+    {
+      "query": "cyclist riding in the lane ahead of the car",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_063740_set03_video_chunk_0014_segment_001_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_063740_set03_video_chunk_0014.mp4",
+      "segment_number": 1,
+      "score": 0.2801,
+      "convincing": true,
+      "caption": "The scene is a narrow city street with two lanes of traffic moving in the same direction. The road surface is dry and marked with white lane lines. A bicycle lane is visible on the right side of the street, separated by a dashed white line. A cyclist wearing a bright green jacket and a helmet is riding in this designated bike lane, moving away from the camera. The cyclist is riding on the right side of the bike lane, following the direction of traffic. In the left lane, a black SUV is driving ahead of the camera vehicle. In the right lane, a silver minivan is directly in front of the camera vehicle. Behind the silver minivan, a black sedan is visible. On the far left side of the street, a large white box truck is partially visible, parked or moving slowly. The truck has a logo on its side, but the text is not clearly readable. The truck is positioned near the curb, not blocking the lane. On the right side of the street, a tall building with a modern facade features a red awning over a storefront. A banner..."
+    },
+    {
+      "query": "cyclist riding in the lane ahead of the car",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_063353_set03_video_chunk_0005_segment_006_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_063353_set03_video_chunk_0005.mp4",
+      "segment_number": 6,
+      "score": 0.2717,
+      "convincing": true,
+      "caption": "The scene is captured from a vehicle traveling along a two-lane road in a city environment. The road is dry and marked with white lane lines. On the right side, a dedicated bicycle lane is visible, separated by a painted bicycle symbol and white lane markings. A cyclist wearing a backpack rides in this bicycle lane, moving in the same direction as the camera vehicle. Traffic is light to moderate. Ahead of the camera vehicle, a black car travels in the same lane, followed by a silver car in the adjacent left lane. A yellow delivery van is parked or moving slowly on the right side of the road near a large brick building with multiple windows. A white delivery truck is also visible further down the street. A traffic light is present at an intersection ahead, showing green for the camera vehicle’s direction of travel. Pedestrians are visible on the sidewalks, including one person walking on the left sidewalk and others near the crosswalk area. A fire hydrant is located on the left side of the road near the..."
+    },
+    {
+      "query": "cyclist riding in the lane ahead of the car",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_062628_set02_video_chunk_0019_segment_005_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_062628_set02_video_chunk_0019.mp4",
+      "segment_number": 5,
+      "score": 0.2632,
+      "convincing": true,
+      "caption": "The scene is a two-lane road with a dedicated bike lane on the right. The ego vehicle is stopped behind a black car in the right lane, waiting at a red traffic light. A black car is stopped in the opposite lane, and a white car is approaching from the opposite direction. A white sedan is also visible in the opposite lane. A pedestrian is standing on the right sidewalk near the bike lane. The road markings include a bike symbol in the bike lane and directional arrows. The traffic light ahead is red, requiring the ego vehicle to remain stopped."
+    },
+    {
+      "query": "cyclist riding in the lane ahead of the car",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_063418_set03_video_chunk_0006_segment_001_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_063418_set03_video_chunk_0006.mp4",
+      "segment_number": 1,
+      "score": 0.2597,
+      "convincing": true,
+      "caption": "The scene is a city street with two lanes in the same direction, separated by a dashed white line. A green bike lane runs along the right side of the road. The road surface is dry and marked with standard lane lines. A cyclist wearing dark clothing rides in the bike lane on the right, moving away from the camera. A black SUV is directly ahead in the same lane as the camera vehicle, with its brake lights illuminated. To the left, a white box truck with orange and blue graphics is visible, also traveling in the same direction. In the distance, other vehicles are present, including a white car and a dark SUV. The surrounding buildings are multi-story brick structures with numerous windows. The sky is clear and blue, indicating daytime conditions. No traffic signals, stop signs, or other traffic control devices are visible in the immediate area."
+    },
+    {
+      "query": "cyclist riding in the lane ahead of the car",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_064942_set04_video_chunk_0011_segment_001_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_064942_set04_video_chunk_0011.mp4",
+      "segment_number": 1,
+      "score": 0.2581,
+      "convincing": true,
+      "caption": "The scene is a two-lane road with a bicycle lane on the right. The ego vehicle is traveling in the left lane, following a white van. A cyclist is riding in the bicycle lane to the right of the ego vehicle. The road is lined with trees and buildings, and there are parked cars along the right side. The sky is partly cloudy."
+    },
+    {
+      "query": "cyclist riding in the lane ahead of the car",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_064154_set03_video_chunk_0024_segment_004_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_064154_set03_video_chunk_0024.mp4",
+      "segment_number": 4,
+      "score": 0.2399,
+      "convincing": true,
+      "caption": "The scene is a city street with a two-lane road and a bike lane on the right. The camera vehicle is traveling straight in the right lane, following a silver car ahead. A cyclist in dark clothing rides in the bike lane to the right. A black pickup truck is stopped in the left lane, partially blocking traffic. On the left side of the street, a white utility truck with orange markings is parked near the curb, and workers in orange safety vests are standing nearby. Orange traffic cones are placed along the left side of the road, indicating a work zone. A white car is stopped in the left lane, and a yellow taxi is visible further ahead. A pedestrian is walking on the right sidewalk. The traffic light ahead is yellow. A speed limit sign reading 40 is visible on the right side of the street."
+    },
+    {
+      "query": "car passing a cyclist",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_070233_set05_video_chunk_0011_segment_006_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_070233_set05_video_chunk_0011.mp4",
+      "segment_number": 6,
+      "score": 0.2292,
+      "convincing": true,
+      "caption": "The scene is a residential street with a single lane in each direction, separated by a dashed yellow center line. The road surface is dry and the weather is clear with a blue sky and scattered clouds. Trees line both sides of the street, partially shading the roadway. A silver sedan is parked along the left side of the road, facing the direction of travel. Ahead of the camera vehicle, a white car is visible in the same lane, traveling in the same direction. A person is riding a bicycle on the right side of the road, moving away from the camera. The cyclist is wearing dark clothing and appears to be riding at a steady pace. On the right side of the street, near the curb, there is a white rectangular sign with black text that reads \"MAXIMUM 40\" and a smaller symbol below it. The sign is mounted on a metal pole. No traffic lights or stop signs are visible in the immediate area. There are no trucks, buses, or other large vehicles present in the scene. No pedestrians are visible on the sidewalks or crossing the..."
+    }
+  ],
+  "poor_conditions": [
+    {
+      "query": "construction zone or blocked lane ahead",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_071651_set06_video_chunk_0015_segment_004_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_071651_set06_video_chunk_0015.mp4",
+      "segment_number": 4,
+      "score": 0.373,
+      "convincing": true,
+      "caption": "The scene is captured from a vehicle’s dashboard camera, showing a road intersection under a partly cloudy sky. The road surface is dry and marked with white lane lines. A person wearing a bright yellow-green high-visibility jacket stands in the middle of the intersection, directing traffic. This individual is positioned near an orange diamond-shaped road sign with a black arrow pointing straight ahead, indicating a lane shift or closure. Orange and black striped traffic cones and barriers line the right side of the road, partially blocking the lane and suggesting ongoing construction or maintenance work. Behind the barriers, a yellow construction vehicle, possibly a loader or excavator, is visible. A white car is stopped ahead of the person in the high-visibility jacket, waiting for direction. In the background, a large red-brick building with multiple windows stands on the right, while trees and other urban structures are visible further back. Power lines run overhead across the intersection. The overall..."
+    },
+    {
+      "query": "construction zone or blocked lane ahead",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_071742_set06_video_chunk_0017_segment_006_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_071742_set06_video_chunk_0017.mp4",
+      "segment_number": 6,
+      "score": 0.3604,
+      "convincing": true,
+      "caption": "The scene unfolds on a narrow, single-lane urban street with a sidewalk on the right. The road is lined with orange traffic cones that narrow the driving lane and guide traffic around a large white truck parked on the left side of the street. This truck has a cylindrical tank and is marked with the word \"HYD\" and a logo on its side. A person wearing a high-visibility vest and a white hard hat stands near the cones, directing traffic. A yellow \"SLOW\" sign is visible near the cones, indicating a reduced speed zone. Pedestrians are walking along the sidewalk on the right, and a few cars are visible ahead in the same lane, moving slowly. The sky is partly cloudy, and trees line both sides of the street."
+    },
+    {
+      "query": "construction zone or blocked lane ahead",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_071742_set06_video_chunk_0017_segment_005_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_071742_set06_video_chunk_0017.mp4",
+      "segment_number": 5,
+      "score": 0.3456,
+      "convincing": true,
+      "caption": "The scene is captured from a vehicle’s dashboard camera, showing a street with a lane closure. A large white box truck is stopped on the left side of the road, partially blocking the lane. In front of the camera vehicle, a dark SUV is moving forward slowly. To the right, a person wearing a high-visibility orange jacket and a yellow hard hat stands near a “SLOW” sign, indicating a work zone. Orange traffic cones line the road ahead, guiding traffic around the closure. Pedestrians are visible on the sidewalk to the right, walking along the street. The sky is partly cloudy, and buildings and trees line the street. The camera vehicle follows the SUV, navigating through the narrowed lane created by the truck and cones."
+    },
+    {
+      "query": "construction zone or blocked lane ahead",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_065820_set05_video_chunk_0001_segment_004_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_065820_set05_video_chunk_0001.mp4",
+      "segment_number": 4,
+      "score": 0.336,
+      "convincing": true,
+      "caption": "The video shows a vehicle traveling along a city street with a single lane in each direction. The road surface is dry and appears to be asphalt. On the right side of the street, there is a construction zone marked by orange and black traffic cones and concrete barriers. A banner on the construction fence reads \"OPEN FOR BUSINESS\" and includes the logo for Second Cup Coffee Co. A no left turn sign is visible near the construction area. Pedestrians are walking on the sidewalks on both sides of the street. A fire hydrant is visible on the left side of the road. The sky is partly cloudy with bright sunlight. No vehicles are seen in the immediate vicinity of the camera, and there are no visible traffic violations or unusual hazards."
+    },
+    {
+      "query": "construction zone or blocked lane ahead",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_072155_set06_video_chunk_0027_segment_003_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_072155_set06_video_chunk_0027.mp4",
+      "segment_number": 3,
+      "score": 0.334,
+      "convincing": true,
+      "caption": "The scene is a narrow, single-lane road with a construction zone. A utility truck with an orange articulated boom is parked on the left side of the road, blocking the lane and surrounded by orange traffic cones. A dark-colored sedan is stopped in front of the utility truck, facing the camera. A person wearing a high-visibility orange vest and light-colored pants is walking across the road from left to right, moving toward the right side of the frame. The sky is partly cloudy with blue patches visible. There are no traffic lights or clearly readable signs in the immediate foreground. The road surface appears uneven and partially obstructed by the construction activity."
+    },
+    {
+      "query": "construction zone or blocked lane ahead",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_072221_set06_video_chunk_0028_segment_004_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_072221_set06_video_chunk_0028.mp4",
+      "segment_number": 4,
+      "score": 0.3301,
+      "convincing": true,
+      "caption": "The video shows a vehicle driving along a narrow, single-lane road that is partially blocked by construction activity. On the right side, a long, continuous concrete barrier runs along the edge of the road, with scaffolding and construction fencing behind it. The left side features a building under construction, with scaffolding and signage visible, including a banner that reads \"860 Atlantic\" and a sign for \"Eastern Construction.\" A person is walking on the sidewalk to the left, and a fire hydrant is visible near the curb. In the distance, a bus is seen approaching from the opposite direction, and a car is parked on the right side of the road. The sky is partly cloudy, and trees with autumn foliage are visible in the background. There are no traffic lights or stop signs visible in the immediate area."
+    },
+    {
+      "query": "construction zone or blocked lane ahead",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_071651_set06_video_chunk_0015_segment_003_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_071651_set06_video_chunk_0015.mp4",
+      "segment_number": 3,
+      "score": 0.3134,
+      "convincing": true,
+      "caption": "The scene is captured from a vehicle stopped at an intersection on a partly cloudy day. The road surface is dry asphalt with visible lane markings. A construction zone is present on the right side of the intersection, marked by orange and black traffic cones and a large orange diamond-shaped warning sign with a black arrow pointing to the right. A person wearing a bright yellow-green high-visibility jacket stands near the cones, facing the intersection. A silver SUV is positioned in the left lane, moving slowly forward and then turning left out of the frame. Behind it, a black sedan follows the same path. On the far left, a white van is partially visible, also moving forward. In the background, a large red-brick building with many windows dominates the right side of the frame, while modern high-rise buildings are visible in the distance. Overhead, numerous utility wires crisscross the sky. No traffic lights are visible at this intersection."
+    },
+    {
+      "query": "construction zone or blocked lane ahead",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_062653_set02_video_chunk_0020_segment_002_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_062653_set02_video_chunk_0020.mp4",
+      "segment_number": 2,
+      "score": 0.2254,
+      "convincing": true,
+      "caption": "The scene is captured from a vehicle traveling along a two-lane road with a yellow center line, moving toward an intersection. The road surface is dry and marked with standard lane lines. On the right side, a construction site is visible, enclosed by a white fence and supported by scaffolding, with a tall crane extending above the site. Pedestrians are present on the sidewalks on both sides of the street, walking along the curbs. A few bicycles are parked on the right sidewalk near the construction area. Traffic flows in both directions, with vehicles traveling in the same direction as the camera and others approaching from the opposite direction. A silver sedan is seen approaching from the opposite direction, while a dark-colored SUV is ahead in the same lane. No traffic lights or stop signs are clearly visible at the intersection. The surrounding area includes a mix of older brick buildings and modern high-rise towers in the background, under a partly cloudy sky."
+    },
+    {
+      "query": "construction zone or blocked lane ahead",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_064154_set03_video_chunk_0024_segment_005_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_064154_set03_video_chunk_0024.mp4",
+      "segment_number": 5,
+      "score": 0.2252,
+      "convincing": true,
+      "caption": "The clip shows a vehicle driving along a straight, multi-lane urban road lined with tall buildings. The road surface is dry and marked with standard lane lines. On the right side, orange construction signs are visible, including one indicating road work ahead and another showing a lane closure. Orange traffic cones are placed along the right edge of the road near the sidewalk. A white utility truck is parked on the left side of the street, partially blocking the lane. Pedestrians can be seen walking on the sidewalks on both sides of the road. The sky is clear with some scattered clouds, and the overall scene suggests a typical city street during daytime with moderate activity."
+    },
+    {
+      "query": "construction zone or blocked lane ahead",
+      "source": "s3://team-7-vss-chunks-segments/segments/20261001_064219_set03_video_chunk_0025_segment_006_of_006.mp4",
+      "original_video": "s3://team-7-vss-chunks/team-7/20261001_064219_set03_video_chunk_0025.mp4",
+      "segment_number": 6,
+      "score": 0.2066,
+      "convincing": true,
+      "caption": "The scene unfolds on a two-lane road with a bicycle lane on the right, viewed from a vehicle traveling straight. The road surface is dry and marked with standard lane lines. On the right side, there is an active construction site with scaffolding, barriers, and orange-and-black traffic cones. A large crane is visible above the construction area. On the left, there are older brick buildings and trees lining the sidewalk, where several pedestrians are walking. Ahead of the camera vehicle, a dark-colored SUV is driving in the same direction, maintaining a steady pace. No traffic lights or stop signs are clearly visible in the immediate foreground. The overall environment suggests a city street with ongoing development and moderate pedestrian activity."
+    }
+  ]
+}

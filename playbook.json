@@ -68,7 +68,7 @@
     },
     {
       "id": "curb_pullover",
-      "enabled": true,
+      "enabled": false,
       "title": "Pulling over and pulling out",
       "search_queries": [
         "car pulling over to the curb near pedestrians",
@@ -86,7 +86,7 @@
     },
     {
       "id": "following_distance",
-      "enabled": true,
+      "enabled": false,
       "title": "Following distance",
       "search_queries": [
         "driving very close behind the vehicle ahead",
@@ -104,7 +104,7 @@
     },
     {
       "id": "turn_across_crosswalk",
-      "enabled": true,
+      "enabled": false,
       "title": "Turning across a crosswalk",
       "search_queries": [
         "vehicle turning at an intersection while pedestrians are in the crosswalk",
