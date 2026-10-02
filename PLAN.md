@@ -59,6 +59,37 @@ Only edit files you own. Need a change in someone else's file? Ask them.
 - **`playbook.json`**: `id`, `title`, `lesson`, `enabled` are read by the app. Person 1
   only flips `enabled` and may tune `look_for` / `*_when` text.
 
+## Facts already checked (VM 2, 8:45 PM)
+
+- VSS login, `/videos/explore` and `/tools/segments` work through `app/clients.py`.
+  Explore has 414 chunks in total; **180 are `pie_cam-3`** (Toronto, `capture_type`
+  `streets`, `location` `toronto`), named like `20261001_071147_set06_video_chunk_0003.mp4`.
+- **Each dashcam chunk is about 30 s: 6 segments of 5 s.** The brief assumes about
+  5 min per trip. Person 1 decides: one chunk per trip, or a few consecutive chunks of
+  the same `setNN` combined into one trip (`original_video` then becomes a list).
+  Tell VM 2 which, since the trip shape in `moments.json` depends on it.
+- Real segment fields (all values are **strings**): `source` (clip URI),
+  `reasoning_content` (caption), `segment_start_sec`, `segment_end_sec`,
+  `segment_number`, `total_segments`, `object_classes` (comma list), `object_counts`
+  (JSON string, e.g. `{"car": 13, "person": 1}`), `original_video`, `camera_id`.
+- YOLO is noisy on this footage (reports cows, kites, sheep, airplanes) and person
+  counts are low. Lean on captions; use counts only as supporting evidence.
+- Captions already say "the ego vehicle is traveling in the rightmost lane", so the
+  model does describe the camera vehicle sometimes. Check whether they say slows,
+  stops or yields before deciding on re-ingest.
+- W&B models: 29 available. `meta-llama/Llama-3.3-70B-Instruct`,
+  `deepseek-ai/DeepSeek-V4-Flash` and `Qwen/Qwen3-30B-A3B-Instruct-2507` all returned
+  clean JSON with `response_format: json_object` in under 1 s. Default in
+  `clients.py` is Llama 3.3 70B; set `DASHI_MODEL` to override.
+- The VM has no `pip`. Set up Python like this, inside `dashi/`:
+  ```sh
+  python3 -m venv --without-pip .venv
+  curl -fsSL https://bootstrap.pypa.io/get-pip.py | .venv/bin/python
+  .venv/bin/python -m pip install fastapi uvicorn requests openai weave
+  ```
+- `kubectl` is not preinstalled; VM 2 installed it in `~/.local/bin`. Kubeconfig is
+  `/config/team-7-k8s.yaml`.
+
 ## Names (do not improvise)
 
 | Thing | Value |
