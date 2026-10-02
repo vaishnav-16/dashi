@@ -140,8 +140,9 @@ def main():
         except Exception as e:  # noqa: BLE001
             eval_note = f"Weave evaluation failed: {str(e)[:120]}"
     per, num = local_numbers(rows)
+    labeller = labels[0].get("labeller", "a teammate watching each clip")
     md = ["# Dashi eval results", "",
-          "Method: a teammate watched each 5 s segment and labelled the scenario and verdict from the video.",
+          f"Method: each 5 s segment was labelled for scenario and verdict from the video, by {labeller}.",
           "The classifier (same prompt, validation and confidence floor as the app pipeline) saw only the caption and YOLO counts.",
           "Groundedness is an LLM judge checking that `what_happened` states only facts in the caption.", "",
           "| metric | value |", "|---|---|",
@@ -155,7 +156,8 @@ def main():
     for r, o, _ in per:
         md.append(f"| `{r['source'].split('/')[-1]}` | {r['expected_scenario']} / {r['expected_verdict']} | "
                   f"{o['scenario_id']} / {o['verdict']} | {o['confidence']:.2f} |")
-    md += ["", f"Measured on {num['n']} hand-labelled clips; labels from watching video, predictions from captions only.", ""]
+    md += ["", f"Measured on {num['n']} labelled clips; labels from the video, predictions from captions only.",
+           f"Labeller: {labeller}. A human review of these labels is still needed; treat the numbers as indicative.", ""]
     after_rows = [r for r in build_rows(labels, "captions_after.json")
                   if chunk_of(r["source"]) in json.loads((ROOT / "captions_after.json").read_text())] \
         if (ROOT / "captions_after.json").exists() else []

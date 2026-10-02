@@ -1241,5 +1241,126 @@
    "evidence_quote": "The camera vehicle is stopped at an intersection with a green traffic light. A pedestrian wearing a backpack is crossing the street in front of the vehicle. The vehicle then begins to move forward and turns left",
    "what_happened": "You were stopped at a green light while a pedestrian was crossing in front of you, but you began moving forward and turned left while the pedestrian was still in your path."
   }
+ ],
+ "cfcc65cef03c836b0557b009e00744da3a30f83610bae3d99663cae30c00c71a": [
+  {
+   "segment": 1,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0.0,
+   "evidence_quote": "",
+   "what_happened": ""
+  }
+ ],
+ "135bd239e9da679ffc4451979acf5b52016053481c5b4854365b22306d9707f7": [
+  {
+   "segment": 3,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0.0,
+   "evidence_quote": "",
+   "what_happened": ""
+  }
+ ],
+ "dc7eb678b361093c7fcae7992b3f46f6d64b75273dd67108ba3e77e70636e91c": [
+  {
+   "segment": 5,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.95,
+   "evidence_quote": "The camera vehicle is stopped, waiting for the pedestrian to clear the crosswalk before proceeding.",
+   "what_happened": "You were approaching an intersection with a red light and a pedestrian crossing in the crosswalk. You stopped and waited for the pedestrian to finish crossing before proceeding."
+  }
+ ],
+ "f6f223f9e0db444c1620b83cbe43ae6b623de591573e9948a13e9727ada9b870": [
+  {
+   "segment": 2,
+   "scenario_id": "poor_conditions",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.85,
+   "evidence_quote": "A person in a high-visibility yellow jacket stands in the middle of the road, directing traffic. Orange and black striped traffic cones block part of the roadway",
+   "what_happened": "You drove through an intersection with construction and a flagger directing traffic. You followed the flagger's direction and navigated the blocked lane safely."
+  }
+ ],
+ "f0207fd106e0bef80b847cab1a5af29509c52dc56cb85a4779b6ba78c6ae73a4": [
+  {
+   "segment": 1,
+   "scenario_id": "poor_conditions",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.85,
+   "evidence_quote": "The camera vehicle remains stationary, waiting for the traffic signal or the person in the high-visibility jacket to indicate it is safe",
+   "what_happened": "You are stopped at an intersection with a construction zone and a person directing traffic. You wait for the signal or the worker's direction before proceeding."
+  }
+ ],
+ "924a215e8854e843359577ee743fa9824e90856241de1ff1cd37ac5daacdf4c4": [
+  {
+   "segment": 2,
+   "scenario_id": "stopped_in_lane",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0.0,
+   "evidence_quote": "",
+   "what_happened": ""
+  }
+ ],
+ "c59dad7d417799f93bd4b4b8e0cd6795662ca9ba28ed480b14160e9ffc777059": [
+  {
+   "segment": 1,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.9,
+   "evidence_quote": "A dark blue SUV is directly ahead of the camera vehicle, with its brake lights illuminated, indicating it is stopped or moving very slowly. To the left, a dark-colored sedan is also stopped, partially blocking the lane. Pedestrians are crossing the street in front of the camera vehicle",
+   "what_happened": "You were behind a stopped SUV while pedestrians crossed in front of you, and you stopped or slowed to let them finish crossing."
+  }
+ ],
+ "068c8b8e6c6c415acdb7b730e10e1db937bc358c77341c8ce20821f2e8afc503": [
+  {
+   "segment": 4,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0,
+   "evidence_quote": "",
+   "what_happened": ""
+  }
+ ],
+ "1a4cf00d7025369f122db3e2a43b7f1f6e5b771c4c8838143928f44fd828e531": [
+  {
+   "segment": 6,
+   "scenario_id": "none",
+   "verdict": "none",
+   "severity": 0,
+   "confidence": 0.0,
+   "evidence_quote": "",
+   "what_happened": ""
+  }
+ ],
+ "cc7c5eadf3c0ef29c125cb78ea68c772a1ca27c584d73a5c9052a40839e5e4e7": [
+  {
+   "segment": 4,
+   "scenario_id": "poor_conditions",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.85,
+   "evidence_quote": "A person wearing a bright yellow-green high-visibility jacket stands in the middle of the intersection, directing traffic. This individual is positioned near an orange diamond-shaped road sign with a black arrow pointing straight ahead, indicating a lane shift or closure. Orange and black striped traffic cones and barriers line the right side of the road, partially blocking the lane and suggesting ongoing construction or maintenance work.",
+   "what_happened": "You approached an intersection with construction and a flagger directing traffic. You stopped and waited for direction, as indicated by the white car ahead of you being stopped."
+  }
+ ],
+ "48399bba294cb0a45e72c68051dec46f1fe73e4b64b497b3cf54fdd2179f374c": [
+  {
+   "segment": 5,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "handled_well",
+   "severity": 2,
+   "confidence": 0.9,
+   "evidence_quote": "The scene is captured from a vehicle stopped at an intersection on a partly cloudy day. A traffic officer in a high-visibility yellow jacket and dark cap stands on the right side of the road, directing traffic with hand signals. The officer is positioned near a construction zone marked by orange and black striped bollards and a metal fence. An orange diamond-shaped sign with a black arrow pointing left is visible on the right side of the frame. The road is a two-way urban street with a single lane in each direction. In the background, a dark-colored SUV is stopped at the intersection, waiting for the officer’s signal. Pedestrians are crossing the street from right to left in front of the vehicle.",
+   "what_happened": "You were stopped at an intersection while a traffic officer directed traffic. Pedestrians crossed the street in front of you, and you remained stopped, allowing them to cross safely."
+  }
  ]
 }

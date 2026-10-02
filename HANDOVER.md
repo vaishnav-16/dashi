@@ -91,7 +91,8 @@ cd .. && KUBECONFIG=/config/team-7-k8s.yaml deploy/deploy.sh code
 
 ## Evaluation
 
-TBD from `eval/results.md` (n, scenario accuracy, verdict accuracy, false-alarm rate, groundedness).
+n = 12: scenario accuracy 83%, verdict accuracy 100%, false alarms 0 of 5, groundedness 43% (3 of 7).
+Labels by the Cursor agent from 4 video frames per clip, not a human; see `eval/results.md`.
 Weave: https://wandb.ai/vastdata/team-7/weave
 
 ## Discovery numbers

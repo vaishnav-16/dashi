@@ -158,7 +158,22 @@ Method (`eval/run_eval.py`):
 4. Scorers: scenario match, verdict match, false-alarm rate (flagged when the human said none), and an
    LLM-judge groundedness check (does `what_happened` state only facts present in the caption).
 
-Results: see eval/results.md (being filled from hand labels at submission time).
+Results on 12 labelled segments (6 the pipeline flagged, 6 it did not), full table in
+`eval/results.md`:
+
+| metric | value |
+|---|---|
+| scenario accuracy | 83% (10/12) |
+| verdict accuracy | 100% (12/12) |
+| false-alarm rate | 0% (0 of 5 labelled none) |
+| groundedness of `what_happened` (LLM judge) | 43% (3 of 7 flagged) |
+
+Caveats, stated plainly: the labels were made by the Cursor agent looking at 4 frames per clip, not
+by a human, and n is small, so treat these as indicative. Both scenario misses are clips where a
+construction worker crosses or directs traffic (pedestrian vs. conditions is ambiguous). The low
+groundedness score means the one-line `what_happened` summaries often add small details beyond the
+caption (for example "waited for them to clear"); the evidence quote shown under every card is
+checked to be an exact substring of the caption.
 
 Weave project: https://wandb.ai/vastdata/team-7/weave
 

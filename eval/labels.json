@@ -1,0 +1,86 @@
+[
+  {
+    "source": "s3://team-7-vss-chunks-segments/segments/20261001_071651_set06_video_chunk_0015_segment_001_of_006.mp4",
+    "expected_scenario": "poor_conditions",
+    "expected_verdict": "handled_well",
+    "note": "construction zone with a flag worker; camera car waits",
+    "labeller": "Cursor agent from 4 video frames per clip (not a human)"
+  },
+  {
+    "source": "s3://team-7-vss-chunks-segments/segments/20261001_071651_set06_video_chunk_0015_segment_004_of_006.mp4",
+    "expected_scenario": "pedestrian_yield",
+    "expected_verdict": "handled_well",
+    "note": "hi-vis worker walks across the road ahead while the camera car waits (also a construction zone; ambiguous)",
+    "labeller": "Cursor agent from 4 video frames per clip (not a human)"
+  },
+  {
+    "source": "s3://team-7-vss-chunks-segments/segments/20261001_071651_set06_video_chunk_0015_segment_005_of_006.mp4",
+    "expected_scenario": "poor_conditions",
+    "expected_verdict": "handled_well",
+    "note": "camera car stopped while a worker directs traffic; a pedestrian crosses far ahead (ambiguous)",
+    "labeller": "Cursor agent from 4 video frames per clip (not a human)"
+  },
+  {
+    "source": "s3://team-7-vss-chunks-segments/segments/reingest/f60a4abef5584570ae37fbb8868ba596/20261001_065754_set05_video_chunk_0000_segment_005_of_006.mp4",
+    "expected_scenario": "pedestrian_yield",
+    "expected_verdict": "handled_well",
+    "note": "pedestrian crosses the crosswalk ahead; camera car holds before the turn",
+    "labeller": "Cursor agent from 4 video frames per clip (not a human)"
+  },
+  {
+    "source": "s3://team-7-vss-chunks-segments/segments/reingest/f60a4abef5584570ae37fbb8868ba596/20261001_065754_set05_video_chunk_0000_segment_006_of_006.mp4",
+    "expected_scenario": "pedestrian_yield",
+    "expected_verdict": "coachable",
+    "note": "camera car turns left while a pedestrian is still at the crosswalk",
+    "labeller": "Cursor agent from 4 video frames per clip (not a human)"
+  },
+  {
+    "source": "s3://team-7-vss-chunks-segments/segments/20261001_071510_set06_video_chunk_0011_segment_001_of_006.mp4",
+    "expected_scenario": "pedestrian_yield",
+    "expected_verdict": "handled_well",
+    "note": "people walking in the roadway by parked cars; camera car follows slowly behind (ambiguous)",
+    "labeller": "Cursor agent from 4 video frames per clip (not a human)"
+  },
+  {
+    "source": "s3://team-7-vss-chunks-segments/segments/20261001_071651_set06_video_chunk_0015_segment_002_of_006.mp4",
+    "expected_scenario": "poor_conditions",
+    "expected_verdict": "handled_well",
+    "note": "same construction zone and flag worker; camera car waits",
+    "labeller": "Cursor agent from 4 video frames per clip (not a human)"
+  },
+  {
+    "source": "s3://team-7-vss-chunks-segments/segments/reingest/f60a4abef5584570ae37fbb8868ba596/20261001_065754_set05_video_chunk_0000_segment_001_of_006.mp4",
+    "expected_scenario": "none",
+    "expected_verdict": "none",
+    "note": "stopped behind an SUV in traffic",
+    "labeller": "Cursor agent from 4 video frames per clip (not a human)"
+  },
+  {
+    "source": "s3://team-7-vss-chunks-segments/segments/reingest/f60a4abef5584570ae37fbb8868ba596/20261001_065754_set05_video_chunk_0000_segment_003_of_006.mp4",
+    "expected_scenario": "none",
+    "expected_verdict": "none",
+    "note": "driving a city street; pedestrians only on the sidewalk",
+    "labeller": "Cursor agent from 4 video frames per clip (not a human)"
+  },
+  {
+    "source": "s3://team-7-vss-chunks-segments/segments/20261001_071510_set06_video_chunk_0011_segment_002_of_006.mp4",
+    "expected_scenario": "none",
+    "expected_verdict": "none",
+    "note": "narrow street behind an SUV; nothing notable",
+    "labeller": "Cursor agent from 4 video frames per clip (not a human)"
+  },
+  {
+    "source": "s3://team-7-vss-chunks-segments/segments/20261001_071510_set06_video_chunk_0011_segment_004_of_006.mp4",
+    "expected_scenario": "none",
+    "expected_verdict": "none",
+    "note": "two-way street, oncoming truck; nothing notable",
+    "labeller": "Cursor agent from 4 video frames per clip (not a human)"
+  },
+  {
+    "source": "s3://team-7-vss-chunks-segments/segments/20261001_071510_set06_video_chunk_0011_segment_006_of_006.mp4",
+    "expected_scenario": "none",
+    "expected_verdict": "none",
+    "note": "behind an SUV with brake lights; nothing notable",
+    "labeller": "Cursor agent from 4 video frames per clip (not a human)"
+  }
+]
