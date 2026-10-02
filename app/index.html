@@ -5,122 +5,168 @@
 <base href="/app/">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dashi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap">
 <style>
   :root {
-    --bg: #eef1f4; --card: #ffffff; --ink: #14181f; --muted: #5d6673; --line: #e2e6eb;
-    --brand: #0f5c63; --brand-soft: #e3f0f0;
-    --good: #1f8f62; --good-soft: #e5f4ec; --coach: #b9770e; --coach-soft: #fbf0dc;
-    --radius: 16px;
+    --ink: #111111; --body: #333333; --muted: #666666; --faint: #999999;
+    --surface: #ffffff; --fill: #f1f1f1; --panel: #f6f6f6; --border: #ececec; --divider: #ededed;
+    --good: #2e9c5a; --good-bg: #e2f5e8; --good-ink: #1e7440;
+    --coach: #c98a12; --coach-bg: #fbf0dc; --coach-ink: #8a5a00;
+    --ai: #7a4fd6; --ai-bg: #f2eefb; --ai-tint: #f7f4fd; --ai-bubble: #e8dffa;
+    --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
   }
   * { box-sizing: border-box; }
-  html, body { margin: 0; background: var(--bg); color: var(--ink);
-    font: 17px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-  .phone { max-width: 480px; margin: 0 auto; min-height: 100vh; background: var(--bg);
-    display: flex; flex-direction: column; box-shadow: 0 0 0 1px var(--line); }
-  header { position: sticky; top: 0; z-index: 5; background: var(--brand); color: #fff;
-    padding: 14px 20px 12px; display: flex; align-items: center; justify-content: space-between; }
-  .logo { font-weight: 800; font-size: 24px; letter-spacing: .5px; }
-  .logo small { font-weight: 500; font-size: 13px; opacity: .8; margin-left: 8px; letter-spacing: 0; }
-  .who { font-size: 14px; opacity: .9; }
-  main { flex: 1; padding: 16px 16px 96px; }
-  nav { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 480px;
-    background: #fff; border-top: 1px solid var(--line); display: flex; z-index: 6; }
-  nav a { flex: 1; text-align: center; padding: 12px 0 14px; color: var(--muted); text-decoration: none;
-    font-weight: 600; font-size: 15px; }
-  nav a.on { color: var(--brand); box-shadow: inset 0 3px 0 var(--brand); }
-  h1 { font-size: 26px; margin: 6px 0 14px; }
-  h2 { font-size: 19px; margin: 22px 0 10px; }
-  .card { background: var(--card); border-radius: var(--radius); padding: 16px; margin-bottom: 12px;
-    box-shadow: 0 1px 2px rgba(20,24,31,.06); }
+  html, body { margin: 0; background: #f7f7f8; color: var(--body);
+    font: 16px/1.5 Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  .phone { max-width: 480px; margin: 0 auto; min-height: 100vh; background: var(--surface);
+    display: flex; flex-direction: column; box-shadow: 0 0 0 1px var(--divider); }
+  header { position: sticky; top: 0; z-index: 5; background: var(--surface); border-bottom: 1px solid var(--divider); }
+  .bar { height: 64px; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; }
+  .logo { font-size: 24px; font-weight: 800; letter-spacing: -0.03em; color: var(--ink); }
+  .who { display: flex; align-items: center; gap: 10px; font-size: 14px; white-space: nowrap; }
+  .avatar { width: 32px; height: 32px; border-radius: 50%; background: var(--ink); color: #fff;
+    display: inline-flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; }
+  .who .nm { font-weight: 600; color: var(--ink); }
+  .pill { height: 28px; padding: 0 12px; display: inline-flex; align-items: center; border-radius: 999px;
+    background: var(--fill); font-weight: 700; font-size: 13px; color: var(--ink); }
+  nav { display: flex; gap: 4px; padding: 4px; margin: 0 20px 12px; background: var(--fill); border-radius: 999px; }
+  nav a { flex: 1; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 999px;
+    color: #555; font-size: 15px; font-weight: 600; text-decoration: none; }
+  nav a.on { background: var(--ink); color: #fff; }
+  main { flex: 1; padding: 20px 20px 24px; }
+  h1 { font-size: 32px; font-weight: 800; letter-spacing: -0.03em; color: var(--ink); margin: 2px 0 16px; line-height: 1.15; }
+  h2 { font-size: 20px; font-weight: 800; letter-spacing: -0.02em; color: var(--ink); margin: 28px 0 12px; }
+  .kicker { color: var(--ai); font-size: 14px; font-weight: 600; margin-bottom: 2px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 24px; padding: 20px;
+    margin-bottom: 14px; box-shadow: 0 2px 16px rgba(0,0,0,.04); }
   .muted { color: var(--muted); }
   .small { font-size: 14px; }
   .tiny { font-size: 12px; }
   .row { display: flex; gap: 12px; }
   .row > * { flex: 1; }
-  .stat .num { font-size: 34px; font-weight: 800; line-height: 1.1; }
-  .stat .lbl { font-size: 14px; color: var(--muted); }
-  .sim { display: inline-block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .4px;
-    color: var(--muted); background: #eef0f3; border-radius: 6px; padding: 1px 6px; vertical-align: middle; }
-  .chip { display: inline-block; border: 1px solid var(--line); background: #fff; border-radius: 999px;
-    padding: 8px 14px; margin: 0 8px 8px 0; font: inherit; font-size: 15px; cursor: pointer; color: var(--ink); }
-  .chip:hover { border-color: var(--brand); color: var(--brand); }
-  .ask { display: flex; gap: 8px; margin-top: 4px; }
-  .ask input { flex: 1; font: inherit; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); }
-  button.primary, a.primary { background: var(--brand); color: #fff; border: 0; border-radius: 12px;
-    padding: 12px 16px; font: inherit; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; }
-  button.ghost { background: var(--brand-soft); color: var(--brand); border: 0; border-radius: 10px;
-    padding: 9px 12px; font: inherit; font-size: 15px; font-weight: 600; cursor: pointer; margin: 6px 6px 0 0; }
-  button:disabled { opacity: .5; cursor: default; }
-  .proactive { border-left: 5px solid var(--good); display: flex; gap: 12px; align-items: center; }
-  .proactive.coachable { border-left-color: var(--coach); }
-  .proactive p { margin: 0; flex: 1; }
-  .badge { display: inline-block; font-size: 12px; font-weight: 700; border-radius: 6px; padding: 2px 8px; }
-  .badge.good { background: var(--good-soft); color: var(--good); }
-  .badge.coach { background: var(--coach-soft); color: var(--coach); }
-  .badge.tag { background: #eef0f3; color: var(--muted); }
-  .badge.mismatch { background: var(--brand-soft); color: var(--brand); }
-  .answer { border: 1px solid var(--brand-soft); }
-  .answer p { margin: 0 0 10px; }
-  .stars { color: #c9a227; letter-spacing: 1px; }
+  .stat { background: var(--panel); border: 0; box-shadow: none; }
+  .stat .num { font-size: 36px; font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; color: var(--ink); }
+  .stat .lbl { font-size: 13px; color: var(--muted); margin-top: 2px; }
+  .sim { display: inline-block; font: 600 10px/1.6 var(--mono); text-transform: uppercase; letter-spacing: .3px;
+    color: #777; background: var(--fill); border-radius: 6px; padding: 0 6px; vertical-align: middle; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { height: 40px; padding: 0 16px; border: 1px solid #e2e2e2; background: #fff; border-radius: 999px;
+    font: inherit; font-size: 14px; font-weight: 600; color: var(--ink); cursor: pointer; }
+  .chip:hover { background: var(--fill); }
+  .ask { display: flex; align-items: center; gap: 8px; margin-top: 12px; height: 60px; padding: 0 8px 0 20px;
+    border: 1px solid #e2e2e2; border-radius: 999px; background: #fff; }
+  .ask input { flex: 1; font: inherit; font-size: 16px; border: 0; outline: 0; background: transparent; }
+  .send { width: 44px; height: 44px; border-radius: 50%; border: 0; background: var(--ink); color: #fff;
+    font-size: 20px; font-weight: 700; cursor: pointer; }
+  button.primary { background: var(--ink); color: #fff; border: 0; border-radius: 999px; height: 52px; padding: 0 24px;
+    font: inherit; font-weight: 600; font-size: 16px; cursor: pointer; }
+  button.primary:hover { background: #000; }
+  button.primary.block { width: 100%; }
+  button.ghost { background: var(--fill); color: var(--ink); border: 0; border-radius: 999px; height: 40px; padding: 0 16px;
+    font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; margin: 8px 8px 0 0; }
+  button.ghost:hover { background: #e6e6e6; }
+  button:disabled { opacity: .4; cursor: default; }
+  .badge { display: inline-flex; align-items: center; height: 28px; padding: 0 12px; border-radius: 999px;
+    font-size: 13px; font-weight: 600; white-space: nowrap; }
+  .badge.good { background: var(--good-bg); color: var(--good-ink); }
+  .badge.coach { background: var(--coach-bg); color: var(--coach-ink); }
+  .badge.tag { background: var(--fill); color: #444; }
+  .badge.mismatch { background: var(--ai-bg); color: var(--ai); }
+  .badge.mono { font-family: var(--mono); font-size: 12px; }
+  .proactive { display: flex; flex-direction: column; gap: 12px; }
+  .proactive p { margin: 0; font-size: 17px; color: var(--ink); font-weight: 500; }
+  .stars { color: var(--ink); letter-spacing: 3px; }
+  .stars .off { color: #dddddd; }
   .trip { cursor: pointer; }
-  .trip .top { display: flex; justify-content: space-between; align-items: baseline; }
-  .route { font-weight: 700; }
-  .score { font-weight: 800; font-size: 22px; color: var(--brand); }
-  .timeline { position: relative; height: 26px; background: #e8ecf0; border-radius: 13px; margin: 14px 0 6px; }
-  .timeline .mk { position: absolute; top: 3px; height: 20px; min-width: 20px; border-radius: 10px; cursor: pointer; }
+  .trip .top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .route { font-size: 19px; font-weight: 700; color: var(--ink); }
+  .score { font-weight: 800; font-size: 24px; color: var(--ink); letter-spacing: -0.02em; }
+  .score small { font-size: 12px; font-weight: 600; color: var(--faint); display: block; text-align: right; letter-spacing: 0; }
+  .timeline { position: relative; height: 24px; background: var(--fill); border-radius: 12px; margin: 16px 0 6px; }
+  .timeline .mk { position: absolute; top: 4px; height: 16px; min-width: 16px; border-radius: 8px; cursor: pointer; }
   .timeline .mk.handled_well { background: var(--good); }
   .timeline .mk.coachable { background: var(--coach); }
-  .tl-scale { display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); }
-  .moment { scroll-margin-top: 70px; }
-  .moment.flash { outline: 3px solid var(--brand); }
-  .vid { position: relative; background: #0d1116; border-radius: 12px; overflow: hidden; aspect-ratio: 16 / 9; }
-  .vid video { width: 100%; height: 100%; display: block; background: #0d1116; }
-  .vid .fallback { position: absolute; inset: 0; padding: 14px; color: #dfe5ea; font-size: 14px; overflow: auto;
-    background: #1a2028; display: none; }
+  .tl-scale { display: flex; justify-content: space-between; align-items: center; font: 500 12px var(--mono); color: var(--faint); }
+  .moment { scroll-margin-top: 130px; }
+  .moment.flash { outline: 3px solid var(--ai); }
+  .vid { position: relative; border-radius: 20px; overflow: hidden; aspect-ratio: 16 / 9;
+    background: repeating-linear-gradient(135deg, #2a2a2a 0 14px, #232323 14px 28px); }
+  .vid::after { content: ""; position: absolute; inset: 0; border-radius: 20px; pointer-events: none; }
+  .vid.handled_well::after { box-shadow: inset 0 0 0 3px var(--good); }
+  .vid.coachable::after { box-shadow: inset 0 0 0 3px var(--coach); }
+  .vid video { width: 100%; height: 100%; display: block; background: transparent; object-fit: cover; }
+  .vid .fallback { position: absolute; inset: 0; padding: 16px; color: #e6e6e6; font-size: 14px; overflow: auto;
+    background: #1d1d1d; display: none; }
   .vid.failed .fallback { display: block; }
-  .vid .seq { position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,.55); color: #fff;
-    font-size: 12px; padding: 2px 8px; border-radius: 6px; }
-  .meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 10px 0 8px; }
-  .cols { display: flex; gap: 10px; margin-top: 6px; }
-  .cols > div { flex: 1; background: #f6f8fa; border-radius: 12px; padding: 10px 12px; }
-  .cols h4 { margin: 0 0 4px; font-size: 13px; text-transform: uppercase; letter-spacing: .4px; color: var(--muted); }
-  .cols .right h4 { color: var(--good); }
-  .cols .safer h4 { color: var(--coach); }
-  .cols p { margin: 0; font-size: 15px; }
-  blockquote { margin: 10px 0 6px; padding: 8px 12px; border-left: 3px solid var(--line); color: var(--muted);
-    font-size: 14px; font-style: italic; }
-  .disclaimer { font-size: 12px; color: var(--muted); margin-top: 6px; }
-  details { margin-top: 8px; font-size: 14px; color: var(--muted); }
-  details code { font-size: 12px; background: #f1f3f5; padding: 6px 8px; border-radius: 6px; display: block; margin-top: 6px; white-space: pre-wrap; }
-  .back { color: var(--brand); text-decoration: none; font-weight: 600; display: inline-block; margin-bottom: 8px; }
-  .lesson.done { opacity: .7; }
-  .lesson h3 { margin: 0 0 6px; font-size: 19px; }
-  .empty { text-align: center; padding: 26px 10px; color: var(--muted); }
-  .spinner { color: var(--muted); padding: 16px 4px; }
-  .modal { position: fixed; inset: 0; background: rgba(15,20,26,.5); display: flex; align-items: flex-end;
+  .vid .seq { position: absolute; top: 10px; left: 12px; font: 600 11px var(--mono); color: rgba(255,255,255,.85);
+    text-transform: uppercase; letter-spacing: .4px; pointer-events: none; }
+  .vid .tspill { position: absolute; left: 12px; bottom: 12px; height: 26px; padding: 0 10px; border-radius: 999px;
+    display: flex; align-items: center; font: 600 13px var(--mono); color: #fff; pointer-events: none; }
+  .vid.handled_well .tspill { background: var(--good); }
+  .vid.coachable .tspill { background: var(--coach); }
+  .vid.ex { aspect-ratio: 16 / 8; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 14px 0 4px; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 12px; }
+  .cols > div { background: var(--panel); border-radius: 18px; padding: 12px 14px; }
+  .cols h4 { margin: 0 0 4px; font-size: 13px; font-weight: 700; color: var(--muted); }
+  .cols .right h4, .cols .safer h4 { color: var(--good-ink); }
+  .cols .safer { background: var(--good-bg); }
+  .cols p { margin: 0; font-size: 15px; color: var(--ink); }
+  blockquote { margin: 12px 0 6px; padding: 10px 14px; border-left: 3px solid var(--border); color: var(--muted);
+    font-size: 14px; }
+  .disclaimer { font-size: 12px; color: var(--faint); margin-top: 6px; }
+  details { margin: 4px 0 0; font-size: 14px; color: var(--muted); }
+  details summary { cursor: pointer; font-weight: 600; }
+  details code { font: 500 12px/1.5 var(--mono); background: var(--panel); padding: 10px 12px; border-radius: 12px;
+    display: block; margin: 8px 0 6px; white-space: pre-wrap; color: var(--body); }
+  .back { color: #555; text-decoration: none; font-weight: 600; font-size: 15px; display: inline-block; margin-bottom: 8px; }
+  .lesson.done { opacity: .6; }
+  .lesson h3 { margin: 10px 0 8px; font-size: 22px; font-weight: 800; letter-spacing: -0.02em; color: var(--ink); }
+  .takeaways { background: var(--ai-tint); border-radius: 20px; padding: 14px 16px; margin: 0 0 12px; }
+  .takeaways .hd { color: var(--ai); font-weight: 700; font-size: 14px; margin-bottom: 4px; }
+  .takeaways p { margin: 0 0 6px; color: var(--ink); }
+  .empty { text-align: center; padding: 28px 12px; color: var(--muted); }
+  .spinner { color: var(--muted); padding: 10px 2px; font-size: 15px; }
+  .bubble { margin: 18px 0 12px auto; max-width: 85%; width: fit-content; background: var(--ai-bubble); color: var(--ink);
+    border-radius: 22px 22px 6px 22px; padding: 12px 16px; font-weight: 500; }
+  .ai { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 14px; }
+  .ai .av { flex: none; width: 36px; height: 36px; border-radius: 50%; background: var(--ai-bg); color: var(--ai);
+    display: flex; align-items: center; justify-content: center; font-weight: 700; }
+  .ai .body { flex: 1; font-size: 17px; color: var(--ink); }
+  .ai .body p { margin: 4px 0 6px; }
+  .status { color: var(--muted); font-size: 15px; padding-top: 6px; }
+  .status b { color: var(--ai); font-weight: 600; }
+  .fade { animation: up .2s ease-out; }
+  @keyframes up { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  .modal { position: fixed; inset: 0; background: rgba(10,10,15,.5); display: flex; align-items: flex-end;
     justify-content: center; z-index: 10; }
-  .sheet { background: #fff; width: 100%; max-width: 480px; border-radius: 20px 20px 0 0; padding: 20px;
-    max-height: 85vh; overflow: auto; }
-  .sheet pre { white-space: pre-wrap; font: 14px/1.5 inherit; background: #f6f8fa; padding: 12px; border-radius: 12px; }
-  .sent { background: var(--good-soft); color: var(--good); padding: 10px 12px; border-radius: 12px; font-weight: 600; }
-  footer { text-align: center; font-size: 12px; color: var(--muted); padding: 8px 16px 90px; }
-  .samplebar { background: #fff4d6; color: #7a5a00; font-size: 13px; text-align: center; padding: 6px 10px; }
+  .sheet { background: #fff; width: 100%; max-width: 480px; border-radius: 28px 28px 0 0; padding: 28px 24px;
+    max-height: 88vh; overflow: auto; box-shadow: 0 24px 80px rgba(0,0,0,.25); }
+  .sheet h2 { font-size: 26px; margin-top: 0; }
+  .sheet pre { white-space: pre-wrap; font: 15px/1.55 Inter, sans-serif; color: var(--ink); background: var(--panel);
+    padding: 16px; border-radius: 16px; border: 1.5px solid var(--ink); }
+  .sent { background: var(--good-bg); color: var(--good-ink); padding: 12px 16px; border-radius: 16px; font-weight: 600; }
+  footer { text-align: center; font-size: 12px; color: var(--faint); padding: 8px 20px 28px; }
+  .samplebar { background: var(--coach-bg); color: var(--coach-ink); font-size: 13px; text-align: center; padding: 6px 10px; }
 </style>
 </head>
 <body>
 <div class="phone">
   <header>
-    <div class="logo">Dashi<small>your dashcam coach</small></div>
-    <div class="who" id="who"></div>
+    <div class="bar">
+      <div class="logo">Dashi</div>
+      <div class="who" id="who"></div>
+    </div>
+    <nav>
+      <a href="#coach" data-tab="coach">Coach</a>
+      <a href="#trips" data-tab="trips">Trips</a>
+      <a href="#learn" data-tab="learn">Learn</a>
+    </nav>
   </header>
   <div id="samplebar"></div>
   <main id="view"><div class="spinner">Loading…</div></main>
   <footer>Simulated demo data: rider ratings, comments, routes and the driver are synthetic. The video is a public Toronto dashcam research set standing in for a driver's trips.</footer>
-  <nav>
-    <a href="#coach" data-tab="coach">Coach</a>
-    <a href="#trips" data-tab="trips">Trips</a>
-    <a href="#learn" data-tab="learn">Learn</a>
-  </nav>
 </div>
 <div id="modal"></div>
 
@@ -128,9 +174,9 @@
 const $ = (s, el = document) => el.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const ts = s => { s = Math.round(s || 0); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`; };
-const stars = n => "★".repeat(n) + "☆".repeat(5 - n);
-const VERDICT = { handled_well: ["good", "Handled well"], coachable: ["coach", "Coachable"] };
-const state = { home: null, trips: null, moments: {}, lessonsDone: new Set() };
+const stars = n => `<span class="stars">${"★".repeat(n)}<span class="off">${"★".repeat(5 - n)}</span></span>`;
+const VERDICT = { handled_well: ["good", "● Handled well"], coachable: ["coach", "● Coachable"] };
+const state = { home: null, moments: {} };
 
 async function api(path, opts) {
   const r = await fetch(path, opts);
@@ -146,25 +192,26 @@ async function clipUrl(source) {
 }
 
 // Plays a list of segment clips back to back; on failure shows the caption instead.
-function mountPlayer(el, sources, caption) {
+function mountPlayer(el, sources, caption, startSec) {
   el.innerHTML = `<video controls muted playsinline preload="metadata"></video>
-    <div class="seq"></div>
+    <div class="seq"></div><div class="tspill"></div>
     <div class="fallback"><b>Clip unavailable.</b> What the camera described:<br><br>${esc(caption)}</div>`;
-  const video = $("video", el), seq = $(".seq", el);
-  let i = 0;
-  const load = async (list, idx, autoplay) => {
-    sources = list; i = idx;
-    seq.textContent = list.length > 1 ? `clip ${i + 1} of ${list.length}` : "";
+  const video = $("video", el), seq = $(".seq", el), pill = $(".tspill", el);
+  let i = 0, label = "";
+  const load = async (list, idx, autoplay, tag) => {
+    sources = list; i = idx; label = tag ?? label;
+    seq.textContent = [label, list.length > 1 ? `clip ${i + 1}/${list.length}` : ""].filter(Boolean).join(" · ");
     try {
       video.src = await clipUrl(list[i]);
       el.classList.remove("failed");
       if (autoplay) video.play().catch(() => {});
     } catch { el.classList.add("failed"); }
   };
+  pill.textContent = ts(startSec);
   video.addEventListener("ended", () => { if (i + 1 < sources.length) load(sources, i + 1, true); });
   video.addEventListener("error", () => el.classList.add("failed"));
-  load(sources, 0, false);
-  return { play: (list) => load(list, 0, true) };
+  load(sources, 0, false, "");
+  return { play: (list, tag) => load(list, 0, true, tag) };
 }
 
 function verdictBadge(m) {
@@ -175,27 +222,27 @@ function verdictBadge(m) {
 function momentCard(m, opts = {}) {
   const right = m.verdict === "handled_well";
   return `<div class="card moment" id="m-${esc(m.moment_id)}">
-    <div class="vid" data-player="${esc(m.moment_id)}"></div>
+    <div class="vid ${esc(m.verdict)}" data-player="${esc(m.moment_id)}"></div>
     <div class="meta">
-      <span class="badge tag">${ts(m.start_sec)}–${ts(m.end_sec)}</span>
-      <span class="badge tag">${esc(m.scenario_title)}</span>
       ${verdictBadge(m)}
+      <span class="badge tag">${esc(m.scenario_title)}</span>
+      <span class="badge tag mono">${ts(m.start_sec)}–${ts(m.end_sec)}</span>
     </div>
     ${opts.compact ? "" : `<div>
       <button class="ghost" data-ctx="before" data-m="${esc(m.moment_id)}" ${m.context_before ? "" : "disabled"}>◀ 5 s before</button>
-      <button class="ghost" data-ctx="moment" data-m="${esc(m.moment_id)}">Replay moment</button>
+      <button class="ghost" data-ctx="moment" data-m="${esc(m.moment_id)}">Replay</button>
       <button class="ghost" data-ctx="after" data-m="${esc(m.moment_id)}" ${m.context_after ? "" : "disabled"}>After ▶</button>
     </div>`}
     <div class="cols">
       <div><h4>What happened</h4><p>${esc(m.what_happened)}</p></div>
       ${right
         ? `<div class="right"><h4>What you did right</h4><p>${esc(m.what_you_did_right)}</p></div>`
-        : `<div class="safer"><h4>How it could be safer</h4><p>${esc(m.safer_next_time)}</p></div>`}
+        : `<div class="safer"><h4>A better way</h4><p>${esc(m.safer_next_time)}</p></div>`}
     </div>
-    ${opts.compact ? `<button class="ghost" data-open-trip="${esc(m.trip_id)}" data-focus="${esc(m.moment_id)}">Open in trip</button>` : `
-      ${m.why_it_matters ? `<p class="small muted" style="margin:10px 0 0"><b>Why it matters:</b> ${esc(m.why_it_matters)}</p>` : ""}
+    ${opts.compact ? `<button class="ghost" data-open-trip="${esc(m.trip_id)}" data-focus="${esc(m.moment_id)}">Open in trip →</button>` : `
+      ${m.why_it_matters ? `<p class="small muted" style="margin:12px 0 0"><b>Why it matters:</b> ${esc(m.why_it_matters)}</p>` : ""}
       <blockquote>Camera description: “${esc(m.evidence_quote)}”</blockquote>
-      <div class="disclaimer">Confidence ${Math.round((m.confidence || 0) * 100)}%. AI-reviewed. Watch the clip and decide for yourself.</div>`}
+      <div class="disclaimer">✦ AI-reviewed, confidence ${Math.round((m.confidence || 0) * 100)}%. Watch the clip and decide for yourself.</div>`}
   </div>`;
 }
 
@@ -204,7 +251,7 @@ function mountMoments(list) {
   list.forEach(m => {
     state.moments[m.moment_id] = m;
     const el = document.querySelector(`[data-player="${CSS.escape(m.moment_id)}"]`);
-    if (el) players[m.moment_id] = mountPlayer(el, m.sources, m.caption);
+    if (el) players[m.moment_id] = mountPlayer(el, m.sources, m.caption, m.start_sec);
   });
 }
 
@@ -213,8 +260,9 @@ document.addEventListener("click", async e => {
   if (!b) return;
   if (b.dataset.ctx) {
     const m = state.moments[b.dataset.m], p = players[b.dataset.m];
-    const list = b.dataset.ctx === "before" ? [m.context_before] : b.dataset.ctx === "after" ? [m.context_after] : m.sources;
-    p && p.play(list.filter(Boolean));
+    const [list, tag] = b.dataset.ctx === "before" ? [[m.context_before], "before"]
+      : b.dataset.ctx === "after" ? [[m.context_after], "after"] : [m.sources, ""];
+    p && p.play(list.filter(Boolean), tag);
   } else if (b.dataset.openTrip) {
     location.hash = `#trip/${b.dataset.openTrip}` + (b.dataset.focus ? `/${b.dataset.focus}` : "");
   } else if (b.dataset.goto) {
@@ -231,7 +279,7 @@ document.addEventListener("click", async e => {
     openEvidence(b.dataset.evidence);
   } else if (b.dataset.done) {
     await post(`ds/lessons/${encodeURIComponent(b.dataset.done)}/done`);
-    state.lessonsDone.add(b.dataset.done);
+    state.home = null;
     renderLearn();
   }
 });
@@ -246,59 +294,67 @@ async function renderCoach() {
   const h = state.home = await api("ds/home");
   const latest = h.latest_trip;
   $("#view").innerHTML = `
-    <h1>Hi ${esc(h.driver.display_name)}</h1>
+    <div class="kicker">✦ Picked by Dashi</div>
+    <h1>Hi ${esc(h.driver.display_name)}, here's your latest review</h1>
     <div class="row">
-      <div class="card stat"><div class="num">${h.driver.rider_rating_avg.toFixed(2)}</div>
+      <div class="card stat"><div class="num">${h.driver.rider_rating_avg.toFixed(2)} <span style="font-size:22px">★</span></div>
         <div class="lbl">Rider rating <span class="sim">Simulated</span></div></div>
-      <div class="card stat"><div class="num" style="color:var(--brand)">${latest ? latest.safety_score : "–"}</div>
-        <div class="lbl">Dashi safety score<br><span class="tiny">last trip</span></div></div>
+      <div class="card stat"><div class="num">${latest ? latest.safety_score : "–"}</div>
+        <div class="lbl">Dashi safety score · last trip</div></div>
     </div>
     ${scoreHelp()}
     <h2>New for you</h2>
-    ${h.cards.length ? h.cards.map(c => `<div class="card proactive ${c.verdict}">
+    ${h.cards.length ? h.cards.map(c => `<div class="card proactive">
+        <div>${verdictBadge(c)}</div>
         <p>${esc(c.text)}</p>
-        <button class="ghost" data-open-trip="${esc(c.trip_id)}" data-focus="${esc(c.moment_id)}">Watch</button></div>`).join("")
+        <button class="primary block" data-open-trip="${esc(c.trip_id)}" data-focus="${esc(c.moment_id)}">Watch the moment</button></div>`).join("")
       : `<div class="card empty">No new reviews yet.</div>`}
-    <h2>Ask Dashi</h2>
-    <div>${h.chips.map(c => `<button class="chip" data-ask="${esc(c)}">${esc(c)}</button>`).join("")}</div>
-    <form class="ask" id="askform"><input id="askin" placeholder="Ask about your trips…" autocomplete="off">
-      <button class="primary">Ask</button></form>
-    <div id="answer" style="margin-top:14px"></div>`;
-  $("#askform").onsubmit = e => { e.preventDefault(); const v = $("#askin").value.trim(); if (v) runAsk(v); };
+    <h2>✦ Ask Dashi</h2>
+    <div class="chips">${h.chips.map(c => `<button class="chip" data-ask="${esc(c)}">${esc(c)}</button>`).join("")}</div>
+    <form class="ask" id="askform"><input id="askin" placeholder="Ask Dashi about your trips…" autocomplete="off">
+      <button class="send" aria-label="Send">↑</button></form>
+    <div id="answer"></div>`;
+  $("#askform").onsubmit = e => { e.preventDefault(); const v = $("#askin").value.trim(); if (v) { $("#askin").value = ""; runAsk(v); } };
 }
 
 async function runAsk(message) {
   if (!$("#answer")) { history.replaceState(null, "", "#coach"); await route(); }
   const out = $("#answer");
-  out.innerHTML = `<div class="card answer"><div class="muted small">You asked: ${esc(message)}</div><div class="spinner">Looking at your trips…</div></div>`;
+  out.innerHTML = `<div class="bubble">${esc(message)}</div>
+    <div class="ai"><div class="av">✦</div><div class="status"><b>✦</b> Reviewing your trips and rider reviews…</div></div>`;
+  out.scrollIntoView({ behavior: "smooth", block: "start" });
   let a;
   try { a = await post("ds/ask", { message }); }
   catch { a = { answer: "I couldn't reach your trip reviews just now. Try again in a moment.", moment_ids: [], next_steps: [] }; }
   const ms = await Promise.all(a.moment_ids.map(id => state.moments[id] || api(`ds/moments/${encodeURIComponent(id)}`)));
-  out.innerHTML = `<div class="card answer">
-      <div class="muted small">You asked: ${esc(message)}</div>
-      <p style="margin-top:6px">${esc(a.answer)}</p>
-      <div>${a.next_steps.map(s => `<button class="ghost" data-step='${esc(JSON.stringify(s))}'>${esc(s.label)}</button>`).join("")}</div>
-    </div>
-    ${ms.map(m => momentCard(m, { compact: true })).join("")}`;
+  out.innerHTML = `<div class="bubble">${esc(message)}</div>
+    <div class="ai fade"><div class="av">✦</div><div class="body">
+      <p>${esc(a.answer)}</p>
+      <div>${a.next_steps.map((s, i) => `<button class="${i === 0 ? "primary" : "ghost"}" style="${i === 0 ? "height:44px;margin:8px 8px 0 0" : ""}" data-step='${esc(JSON.stringify(s))}'>${esc(s.label)}</button>`).join("")}</div>
+    </div></div>
+    <div class="fade">${ms.map(m => momentCard(m, { compact: true })).join("")}</div>`;
   mountMoments(ms);
-  out.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 function mismatchBadge(t) {
-  if (t.rating_mismatch === "underrated") return `<span class="badge mismatch">Rating doesn't match the video</span>`;
-  if (t.rating_mismatch === "missed_risk") return `<span class="badge coach">Rider missed this</span>`;
+  if (t.rating_mismatch === "underrated") return `<span class="badge mismatch">✦ Rating doesn't match the video</span>`;
+  if (t.rating_mismatch === "missed_risk") return `<span class="badge coach">✦ Rider missed this</span>`;
   return "";
 }
 
 async function renderTrips() {
   const { trips } = await api("ds/trips");
-  $("#view").innerHTML = `<h1>Your trips</h1>` + trips.map(t => `
+  $("#view").innerHTML = `<div class="kicker">✦ Reviewed by Dashi</div><h1>Your trips</h1>` + trips.map(t => `
     <div class="card trip" data-open-trip="${esc(t.trip_id)}">
-      <div class="top"><div class="route">${esc(t.pickup)} → ${esc(t.dropoff)}</div><div class="score">${t.safety_score}</div></div>
-      <div class="small muted">${esc(t.date)} · ${esc(t.start_time)} · ${t.handled_well} handled well · ${t.coachable} to work on</div>
-      <div class="small"><span class="stars">${stars(t.rider_rating)}</span> <span class="sim">Simulated</span></div>
-      <div style="margin-top:6px">${mismatchBadge(t)}</div>
+      <div class="top"><div class="route">${esc(t.pickup)} → ${esc(t.dropoff)}</div>
+        <div class="score">${t.safety_score}<small>safety</small></div></div>
+      <div class="small muted">${esc(t.date)} · ${esc(t.start_time)}</div>
+      <div class="small" style="margin-top:6px">${stars(t.rider_rating)} <span class="sim">Simulated</span></div>
+      <div class="meta">
+        ${t.handled_well ? `<span class="badge good">● ${t.handled_well} handled well</span>` : ""}
+        ${t.coachable ? `<span class="badge coach">● ${t.coachable} to work on</span>` : ""}
+        ${mismatchBadge(t)}
+      </div>
     </div>`).join("");
 }
 
@@ -306,23 +362,25 @@ async function renderTrip(tripId, focus) {
   const { trip: t, moments } = await api(`ds/trips/${encodeURIComponent(tripId)}`);
   const dur = t.duration_sec || Math.max(30, ...moments.map(m => m.end_sec));
   $("#view").innerHTML = `
-    <a class="back" href="#trips">← All trips</a>
+    <a class="back" href="#trips">← Trips</a>
     <h1 style="margin-bottom:4px">${esc(t.pickup)} → ${esc(t.dropoff)}</h1>
-    <div class="muted small">${esc(t.date)} · ${esc(t.start_time)} · trip ${esc(t.trip_id)}</div>
-    <div class="row" style="margin-top:12px">
-      <div class="card stat"><div class="num"><span class="stars" style="font-size:22px">${stars(t.rider_rating)}</span></div>
+    <div class="muted small" style="margin-bottom:14px">${esc(t.date)} · ${esc(t.start_time)} · trip ${esc(t.trip_id)}</div>
+    <div class="row">
+      <div class="card stat"><div class="num" style="font-size:24px;padding:6px 0">${stars(t.rider_rating)}</div>
         <div class="lbl">Rider rating <span class="sim">Simulated</span></div></div>
-      <div class="card stat"><div class="num" style="color:var(--brand)">${t.safety_score}</div><div class="lbl">Dashi safety score</div></div>
+      <div class="card stat"><div class="num">${t.safety_score}</div><div class="lbl">Dashi safety score</div></div>
     </div>
-    <div class="card small"><b>Rider said</b> <span class="sim">Simulated</span><br>“${esc(t.rider_comment)}”
-      <div style="margin-top:8px">${mismatchBadge(t)}</div>
-      ${t.rating_mismatch === "underrated" ? `<button class="primary" style="margin-top:10px" data-evidence="${esc(t.trip_id)}">Send evidence for rating review</button>` : ""}
+    <div class="card">
+      <div class="small muted" style="margin-bottom:4px"><b>Rider said</b> <span class="sim">Simulated</span></div>
+      <div style="color:var(--ink);font-size:17px">“${esc(t.rider_comment)}”</div>
+      ${t.rating_mismatch ? `<div class="meta">${mismatchBadge(t)}</div>` : ""}
+      ${t.rating_mismatch === "underrated" ? `<button class="primary block" style="margin-top:8px" data-evidence="${esc(t.trip_id)}">Send evidence for rating review</button>` : ""}
     </div>
     ${t.summary ? `<p class="small">${esc(t.summary)}</p>` : ""}
     <div class="timeline">${moments.map(m => `<div class="mk ${m.verdict}" title="${esc(m.scenario_title)} at ${ts(m.start_sec)}"
       data-goto="#trip/${esc(t.trip_id)}/${esc(m.moment_id)}"
       style="left:${(m.start_sec / dur) * 100}%;width:${Math.max(4, ((m.end_sec - m.start_sec) / dur) * 100)}%"></div>`).join("")}</div>
-    <div class="tl-scale"><span>0:00</span><span><span class="badge good">Handled well</span> <span class="badge coach">Coachable</span></span><span>${ts(dur)}</span></div>
+    <div class="tl-scale"><span>0:00</span><span><span class="badge good" style="height:22px">● well</span> <span class="badge coach" style="height:22px">● coach</span></span><span>${ts(dur)}</span></div>
     ${scoreHelp()}
     <h2>Moments</h2>
     ${moments.length ? moments.map(m => momentCard(m)).join("") : `<div class="card empty">Clean trip. Nothing to flag.</div>`}`;
@@ -336,14 +394,16 @@ async function renderTrip(tripId, focus) {
 async function openEvidence(tripId) {
   const p = await post(`ds/trips/${encodeURIComponent(tripId)}/evidence`, {});
   const show = p => {
-    $("#modal").innerHTML = `<div class="modal" id="modalbg"><div class="sheet">
-      <h2 style="margin-top:0">${esc(p.subject)}</h2>
+    $("#modal").innerHTML = `<div class="modal" id="modalbg"><div class="sheet fade">
+      <div class="kicker">✦ Prepared by Dashi</div>
+      <h2>${esc(p.subject)}</h2>
       <pre>${esc(p.text)}</pre>
-      <div class="small muted">${p.moments.length} clip(s) attached. Nothing is really sent: this is a simulated rating review.</div>
-      <div style="margin-top:12px">${p.sent
-        ? `<div class="sent">Sent (simulated). Reference ${esc(p.reference)}</div>`
-        : `<button class="primary" id="sendev">Send (simulated)</button>`}
-        <button class="ghost" id="closeev">Close</button></div>
+      <div class="small muted">${p.moments.length} clip(s) attached. Simulated: nothing is really sent.</div>
+      <div style="margin-top:16px;display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap">${p.sent
+        ? `<div class="sent" style="flex:1">Sent (simulated). Reference ${esc(p.reference)}</div>`
+        : ""}
+        <button class="ghost" id="closeev" style="margin:0;height:52px;padding:0 24px">${p.sent ? "Close" : "Cancel"}</button>
+        ${p.sent ? "" : `<button class="primary" id="sendev">Send (simulated)</button>`}</div>
     </div></div>`;
     $("#closeev").onclick = () => ($("#modal").innerHTML = "");
     $("#modalbg").onclick = e => { if (e.target.id === "modalbg") $("#modal").innerHTML = ""; };
@@ -352,11 +412,13 @@ async function openEvidence(tripId) {
   };
   show(p);
 }
+document.addEventListener("keydown", e => { if (e.key === "Escape") $("#modal").innerHTML = ""; });
 
 async function renderLearn(focus) {
   const { lessons, done, total } = await api("ds/lessons");
   const kudos = (state.home || await api("ds/home")).totals.kudos;
   $("#view").innerHTML = `
+    <div class="kicker">✦ Built from your own clips</div>
     <h1>Learn</h1>
     <div class="row">
       <div class="card stat"><div class="num">${done}/${total}</div><div class="lbl">Lessons done</div></div>
@@ -365,12 +427,12 @@ async function renderLearn(focus) {
     ${lessons.length ? lessons.map(l => `
       <div class="card lesson ${l.done ? "done" : ""}" id="l-${esc(l.scenario_id)}">
         <span class="badge tag">${esc(l.title)}</span>
-        <h3 style="margin-top:8px">${esc(l.headline)}</h3>
-        <p style="margin:0 0 6px">${esc(l.tip)}</p>
-        <p class="small muted" style="margin:0 0 10px"><b>Why:</b> ${esc(l.why)}</p>
-        <div class="small muted" style="margin-bottom:6px">Your own example, ${esc(l.example_moment.trip_id)} at ${ts(l.example_moment.start_sec)} ${verdictBadge(l.example_moment)}</div>
-        <div class="vid" data-player="${esc(l.example_moment.moment_id)}"></div>
-        <div style="margin-top:10px">${l.done ? `<span class="badge good">Done ✓</span>` : `<button class="primary" data-done="${esc(l.scenario_id)}">Got it</button>`}</div>
+        <h3>${esc(l.headline)}</h3>
+        <div class="takeaways"><div class="hd">✦ Takeaways</div>
+          <p>${esc(l.tip)}</p><p class="small muted" style="margin:0">${esc(l.why)}</p></div>
+        <div class="small muted" style="margin-bottom:8px">Your own example: trip ${esc(l.example_moment.trip_id)} at ${ts(l.example_moment.start_sec)} ${verdictBadge(l.example_moment)}</div>
+        <div class="vid ex ${esc(l.example_moment.verdict)}" data-player="${esc(l.example_moment.moment_id)}"></div>
+        <div style="margin-top:14px">${l.done ? `<span class="badge good">✓ Learned</span>` : `<button class="primary block" data-done="${esc(l.scenario_id)}">Mark as learned</button>`}</div>
       </div>`).join("") : `<div class="card empty">No lessons yet. They appear after your trips are reviewed.</div>`}`;
   mountMoments(lessons.map(l => l.example_moment));
   if (focus) { const el = document.getElementById(`l-${focus}`); el && el.scrollIntoView({ behavior: "smooth" }); }
@@ -386,7 +448,7 @@ async function route() {
     else if (tab === "learn") await renderLearn(a);
     else await renderCoach();
   } catch (err) {
-    $("#view").innerHTML = `<div class="card empty">Something went wrong loading this page. <br><button class="ghost" onclick="route()">Try again</button></div>`;
+    $("#view").innerHTML = `<div class="card empty">Something went wrong loading this page.<br><button class="ghost" onclick="route()">Try again</button></div>`;
     console.error(err);
   }
   if (tab !== "trip") window.scrollTo(0, 0);
@@ -395,7 +457,8 @@ async function route() {
 (async () => {
   try {
     const h = state.home = await api("ds/home");
-    $("#who").textContent = `${h.driver.display_name} · ${h.driver.city || "Toronto"}`;
+    const s = h.latest_trip ? h.latest_trip.safety_score : "–";
+    $("#who").innerHTML = `<span class="avatar">${esc(h.driver.display_name[0])}</span><span class="nm">${esc(h.driver.display_name)}</span><span class="pill">Safety ${esc(s)}</span>`;
     if (h.sample) $("#samplebar").innerHTML = `<div class="samplebar">Sample data for UI development. Real reviews are not loaded yet.</div>`;
   } catch {}
   window.addEventListener("hashchange", route);
