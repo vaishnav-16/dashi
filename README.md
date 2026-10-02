@@ -1,5 +1,7 @@
 # Dashi
 
+**Demo video (86 s):** [docs/dashi-demo.mp4](docs/dashi-demo.mp4) · **Live app:** http://video-lab-team-7.cosmos.vastdata.com/app/ (event network)
+
 ## What it does
 
 Dashi is a video agent on the rideshare driver's side. It reviews each trip's dashcam footage, finds
