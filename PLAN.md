@@ -8,16 +8,23 @@ Dashi was called "DriverSide" in early drafts. Same project.
 
 ## Time (UTC)
 
-- Deadline about **11:20 PM**. **Code freeze 10:35 PM.** After freeze: clean redeploy,
-  rehearse the demo twice, record a backup video, write `SUBMISSION.md`. No new features.
+- Submission deadline about **11:20 PM**. **Code freeze 11:05 PM** (15 min before).
+  Last 15 min: clean redeploy, one demo run-through, `SUBMISSION.md`. No new features.
+- Updated 9:25 PM. Done so far: the app is live at `/app` on sample data, restyled with
+  the wireframe design. **Not started: discovery and the review pipeline** (the real
+  `moments.json`). That is now the critical path.
 
-| Time | VM 1: Person 1 (+ Person 3) | VM 2: Person 2 |
-|------|-----------------------------|----------------|
-| 8:30-8:45 | Clone this repo inside `~/vast-builders-challenge/`, health check | `kubectl` + kubeconfig, `app/clients.py`, `moments.sample.json` |
-| 8:45-9:20 | Phase 0 discovery (brief section 3), `captions_before.json`, pick 4 trips, re-ingest yes/no | `main.py` + `index.html` against the sample data |
-| 9:20-10:05 | `core.py` + `analyze.py`: one trip, Person 3 checks clips, then all trips, story roles | **First deploy to `/app` by 9:45**, then UI polish |
-| 10:05-10:35 | Push real `moments.json` + `trips.json`; eval (10-12 clips) | Pull real data, evidence packet, redeploy |
-| 10:35-11:20 | Freeze. Rehearse, backup recording, submission | Same |
+| Time | Vaishnav (VM 2, with Cursor) | Teammate 1 (was wireframes) | Teammate 2 (was finding videos) |
+|------|------------------------------|-----------------------------|---------------------------------|
+| 9:25-10:00 | Discovery (brief section 3): scenario searches, pick 4 trips, re-ingest yes/no | 3-minute demo script against the live app (runbook script as the base) | In the VSS UI, filter `camera_id` = `pie_cam-3`, search each playbook scenario, send chunk filenames with clear examples to Vaishnav |
+| 10:00-10:40 | `core.py` + `analyze.py`, real `moments.json`, redeploy | Watch each moment the pipeline finds: agree or disagree | Label 10-12 clips for the eval (`eval/labels.json`) |
+| 10:40-11:05 | Eval run, rider "let your rider know" loop if time, fixes | README (brief section 12) | Record a backup screen capture of the demo |
+| 11:05-11:20 | Freeze: clean redeploy, demo run-through | `SUBMISSION.md` | Demo |
+
+**Not doing:** post-training a model (no training path on the shared endpoints, internet
+video is against event rules, and no judging criterion rewards it; mention it as a next
+step in the pitch). The wireframe's "Harsh braking" / "Speeding" flags (no telemetry;
+the brief forbids those claims) and its SF / Marcus content (footage is Toronto).
 
 ## Scope
 
@@ -29,7 +36,7 @@ Learn from the cache; the 4 chips with the 8 s templated fallback; evidence pack
 verification (`verified_by_vlm` stays `null`), voice, before/after comparison view.
 Free text in the Ask box falls back to "here is what I can help with" plus the chips.
 
-**Re-ingest:** at most one chunk, only Person 1, only if discovery shows captions don't
+**Re-ingest:** at most one chunk, only Vaishnav (VM 2), only if discovery shows captions don't
 say what the camera vehicle does. Save `captions_before.json` first.
 
 ## Who owns which file
@@ -38,9 +45,9 @@ Only edit files you own. Need a change in someone else's file? Ask them.
 
 | Owner | Files |
 |-------|-------|
-| VM 1 (Person 1) | `discovery.md`, `captions_before.json`, `playbook.json` and `app/playbook.json` (keep identical), `app/trips.json`, `app/core.py`, `app/analyze.py`, `app/moments.json`, `eval/make_sheet.py`, `eval/run_eval.py`, `eval/results.md` |
-| VM 1 (Person 3) | `eval/labels.json`, `README.md`, `SUBMISSION.md` |
-| VM 2 (Person 2) | `app/main.py`, `app/index.html`, `app/requirements.txt`, `app/clients.py`, `app/ask.py`, `app/moments.sample.json`, `deploy/` |
+| Vaishnav (VM 2) | Everything under `app/` and `deploy/`, plus `discovery.md`, `captions_before.json`, `playbook.json`, `eval/*.py`, `eval/results.md` |
+| Teammate 1 | `README.md`, `SUBMISSION.md`, `DEMO.md` (demo script) |
+| Teammate 2 | `eval/labels.json` |
 | Agreed together | `PLAN.md`, `BUILD_BRIEF.md`, the `moments.json` schema |
 
 ## Contracts between the VMs
@@ -56,7 +63,7 @@ Only edit files you own. Need a change in someone else's file? Ask them.
     `DASHI_MODEL`.
   - On the VM, `VSS_URL`, `VSS_USERNAME`, `VSS_PASSWORD` default to `INGRESS_URL`,
     `USERNAME`, `PASSWORD`, so the same code runs on the VM and in the pod.
-- **`playbook.json`**: `id`, `title`, `lesson`, `enabled` are read by the app. Person 1
+- **`playbook.json`**: `id`, `title`, `lesson`, `enabled` are read by the app. Discovery
   only flips `enabled` and may tune `look_for` / `*_when` text.
 
 ## Facts already checked (VM 2, 8:45 PM)
@@ -65,7 +72,7 @@ Only edit files you own. Need a change in someone else's file? Ask them.
   Explore has 414 chunks in total; **180 are `pie_cam-3`** (Toronto, `capture_type`
   `streets`, `location` `toronto`), named like `20261001_071147_set06_video_chunk_0003.mp4`.
 - **Each dashcam chunk is about 30 s: 6 segments of 5 s.** The brief assumes about
-  5 min per trip. Person 1 decides: one chunk per trip, or a few consecutive chunks of
+  5 min per trip. Discovery decides: one chunk per trip, or a few consecutive chunks of
   the same `setNN` combined into one trip (`original_video` then becomes a list).
   Tell VM 2 which, since the trip shape in `moments.json` depends on it.
 - Real segment fields (all values are **strings**): `source` (clip URI),
@@ -103,7 +110,7 @@ Only edit files you own. Need a change in someone else's file? Ask them.
 - Ask model: `deepseek-ai/DeepSeek-V4-Flash` (best wording of the three tried, about 1 s).
   Llama 3.3 70B invented rider ratings; `ask.py` now rejects any answer whose star
   rating is not in the data, and falls back to the template.
-- **Handoff:** when Person 1 pushes `app/moments.json` (plus `app/trips.json` and
+- **Handoff:** when the pipeline writes `app/moments.json` (plus `app/trips.json` and
   `app/playbook.json`), the app switches from the sample to it automatically. VM 2 then
   pulls and runs `deploy/deploy.sh code`. Keep the brief's schema and `trip_id`,
   `moment_id` formats; `story_role` on trips is optional.
@@ -126,7 +133,7 @@ Only edit files you own. Need a change in someone else's file? Ask them.
 - `git pull --rebase` before you start a task and before every push.
 - Small commits, push often. Never commit `/config` contents, tokens, passwords or
   `.env` files. List env var names only: `env | cut -d= -f1 | sort`.
-- Deployment happens from VM 2 only. Re-ingest happens from VM 1 only.
+- Deployment and re-ingest happen from VM 2 only.
 
 ## Getting the code on the other VM
 
@@ -138,9 +145,10 @@ curl -fsSL https://downloads.cursor.com/origin/install.sh | sh
 cd ~/vast-builders-challenge
 ~/.local/bin/origin repo clone vaishnav-ajai/dashi dashi
 echo 'dashi/' >> .git/info/exclude
+mkdir -p .cursor/rules && cp dashi/cursor-rules/dashi.mdc .cursor/rules/ && echo '.cursor/rules/dashi.mdc' >> .git/info/exclude
 cd dashi && git config user.name "team-7" && git config user.email "team-7@dashi.local"
 ```
 
 Then start Cursor in `~/vast-builders-challenge` (so the VAST skills load) and give it:
-"Read dashi/PLAN.md and dashi/BUILD_BRIEF.md in full. I am VM 1, Person 1. Only touch
+"Read dashi/PLAN.md and dashi/BUILD_BRIEF.md in full. I am <Teammate 1 or 2>. Only touch
 the files PLAN.md says I own."

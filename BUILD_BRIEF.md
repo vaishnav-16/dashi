@@ -32,6 +32,28 @@ Design principles (taken from the Uber Driver Assistant talk):
 - Tools are designed around tasks, not raw APIs. The model never reconciles raw endpoints.
 - Quality is measured with an eval, not assumed.
 
+## How this will be judged
+
+The challenge, as stated at kickoff: "Build agents that unlock the value of video. Ship a
+real-time video agent that understands footage and acts on it: search hours of video in
+plain language, ask what happened, spot events, or trigger an action when something
+matters. Use 3+ sponsor tools. One idea. Working. Shipped by end of day."
+
+The five judging criteria, in the organisers' words, and what in this build answers each.
+When choosing between two ways to do something, pick the one that scores better here.
+
+| Criterion (organisers' wording) | What answers it | Brief section |
+|---|---|---|
+| **Idea.** "Does the solution demonstrate a compelling application of video search and summary stack provided?" | Search, captions and detections are the product: every coaching card is a searched, captioned clip. The Ask path runs live video search. | 5, 7 |
+| **Technical Implementation.** "Is the software development high quality and easy to follow, reproduce, and evaluate? Is there clear documentation of inputs, outputs, and evaluation steps?" | Small readable modules, a re-runnable `analyze.py`, a README with inputs, outputs and reproduce steps, and a measured eval. | 5, 9, 12 |
+| **Design.** "Is the project design and user experience well thought out and intuitive?" | One driver-app column, three tabs, evidence on every card, calm coaching tone, clear empty and error states. | 8 |
+| **Impact.** "Did the solution effectively use at least 3 sponsor tools?" | VAST, NVIDIA (Cosmos Reason, Cosmos Embed, YOLO), CoreWeave / Weights & Biases (inference and Weave), Cursor. Each must do real work that the README names. | 4, 12 |
+| **Presentation (Demo).** "Demonstration of the solution in 3 minutes." | The demo path must work from a clean rollout with no live fixing: Ask chip, underrated trip, coachable trip, lesson card. | 11, `RUNBOOK.md` |
+
+"Acts on it" and "trigger an action" are covered by the proactive lesson card posted
+after a trip is reviewed and by the evidence packet for a rating review. "Real-time" is
+covered by the live review of a trip (tier 2).
+
 ## 2. Hard constraints
 
 - Use the skills in `.cursor/skills/` before writing raw REST calls. Never print, log or

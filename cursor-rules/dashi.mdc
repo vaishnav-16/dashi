@@ -1,0 +1,54 @@
+---
+description: Dashi, this team's Builders Challenge project. Applies to every session in this repo.
+alwaysApply: true
+---
+
+# Dashi (our project)
+
+This team is building **Dashi**: a video agent on the rideshare driver's side. It
+reviews a driver's dashcam footage after each trip, shows what happened with the clip as
+evidence, coaches on how it could have been safer, and gives credit (with evidence to
+contest a low rider rating) when the video shows the driver handled a hazard well.
+
+**Before doing any Dashi work, read `dashi/BUILD_BRIEF.md` and `dashi/PLAN.md` in full.** `PLAN.md` decides scope, timing and who owns which file. It is the
+specification: discovery, review pipeline, app routes, UI, evaluation, deployment, build
+order. `dashi/RUNBOOK.md` is the team's order of work. `dashi/playbook.json`
+defines the scenarios and coaching text.
+
+This rule adds to `build-day.mdc`. It does not replace it. All of its rules still apply.
+
+## Always true for this project
+
+- All project code lives under `dashi/`. The app folder `dashi/app/` is flat
+  (no subfolders) because it becomes a ConfigMap.
+- Use the skills in `.cursor/skills/` for every VSS call, re-ingest and deployment. Where
+  the brief and a skill disagree about how an API or the cluster works, the skill wins;
+  tell the team about the difference.
+- The deliverable is the app on Kubernetes at `/app` on the team host, deployed with
+  `deployment/deploy-app-no-registry`. A local run on the VM is only a quick check before
+  deploying.
+- Do Phase 0 (discovery) of the brief before writing app code. The scenario list comes
+  from what the footage contains.
+- Before any re-ingest, save the current captions to `dashi/captions_before.json`.
+  Re-ingest one chunk first. Only one teammate re-ingests.
+- There is no telemetry and no real rider-rating data. Never claim speed or braking
+  force. Rider ratings, comments and routes are synthetic and must be labelled
+  "simulated" in the UI and README.
+- Coaching text comes from `playbook.json`. Do not invent driving advice.
+- The pod's `requirements.txt` is `fastapi`, `uvicorn`, `requests`, `openai` only. Weave
+  runs on the VM (`analyze.py`, `eval/`), never in the pod.
+- App JSON routes live under `/ds/`. `/api/v1/` on the team host is the VSS backend.
+- Never print, log or commit secrets or anything from `/config`.
+
+## How the project is judged
+
+Idea (compelling use of the video search and summary stack), Technical Implementation
+(high quality, reproducible, documented inputs, outputs and evaluation steps), Design
+(intuitive user experience), Impact (effective use of at least 3 sponsor tools),
+Presentation (a 3-minute demo). The full wording and what answers each criterion are in
+the "How this will be judged" section of the brief. Weigh design choices against them.
+
+## When the team asks "what next?"
+
+Check which tier of section 11 of the brief is complete and propose the next unfinished
+item. Do not start tier 2 or 3 work while a tier 1 check is failing.
