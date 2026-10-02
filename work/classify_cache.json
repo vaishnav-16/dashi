@@ -1230,5 +1230,16 @@
    "evidence_quote": "",
    "what_happened": ""
   }
+ ],
+ "7ce9034302224f05f2e2365544ebbcb57cf01a96f89a08822da8677be1f80454": [
+  {
+   "segment": 6,
+   "scenario_id": "pedestrian_yield",
+   "verdict": "coachable",
+   "severity": 2,
+   "confidence": 0.9,
+   "evidence_quote": "The camera vehicle is stopped at an intersection with a green traffic light. A pedestrian wearing a backpack is crossing the street in front of the vehicle. The vehicle then begins to move forward and turns left",
+   "what_happened": "You were stopped at a green light while a pedestrian was crossing in front of you, but you began moving forward and turned left while the pedestrian was still in your path."
+  }
  ]
 }
