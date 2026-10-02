@@ -55,7 +55,7 @@ class Tools:
         if not self.vss:
             return []
         mine = {t["original_video"] for t in self.get_trips()}
-        res = self.vss.post("search", {"query": query, "top_k": 30, "llm_top_n": 0,
+        res = self.vss.post("search", {"query": query, "top_k": 30, "llm_top_n": 1,
                                        "min_similarity": 0.3,
                                        "metadata_filters": {"camera_id": CAMERA_ID}})
         hits = [r for r in res.get("results", []) if r.get("original_video") in mine]

@@ -89,7 +89,23 @@ Captions describe the scene well but rarely say what the camera vehicle does.
 11. `20261001_071651_set06_video_chunk_0015.mp4`: poor_conditions
 12. `20261001_065358_set04_video_chunk_0021.mp4`: curb_crowd
 
-Teammate 2 chunks folded in: 5.
+Teammate 2 chunks folded in: 5 (+3 ranking bonus each). Teammate 2 was re-ingesting these at the
+time; the pipeline classified the captions present at 10:15 PM, saved in `captions_before.json`.
+
+Caveat: most `stopped_in_lane` "convincing" hits describe *another* vehicle stopped ahead, not the
+camera vehicle. The classifier only flags the scenario when the caption says the camera vehicle stopped.
+
+## Trips chosen (after `analyze.py --assign`)
+
+22 chunks were scanned (12 candidates + 10 more from the hits). Only one had a coachable moment.
+
+| trip | role | chunk | handled well | coachable |
+|---|---|---|---|---|
+| T-1041 | unfair_low_rating | `20261001_071651_set06_video_chunk_0015.mp4` | 3 | 0 |
+| T-1042 | missed_risk | `20261001_065754_set05_video_chunk_0000.mp4` | 1 | 1 (severity 2) |
+| T-1043 | clean | `20261001_071510_set06_video_chunk_0011.mp4` | 1 | 0 |
+| T-1044 | mixed (closest chunk, real verdicts: no coachable moment found) | `20261001_071742_set06_video_chunk_0017.mp4` | 2 | 0 |
+| T-1045 | live_demo (not in moments.json) | `20261001_064154_set03_video_chunk_0024.mp4` | 2 | 0 |
 
 ## Re-ingest
 
