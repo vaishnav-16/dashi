@@ -48,8 +48,8 @@ Rideshare drivers: contesting unfair ratings, and learning from their own clips.
 - **VAST:** DataEngine pipeline; VastDB hybrid search via `/search` (discovery: 16 queries over 180
   chunks); `/tools/segments` for captions and counts; S3 clips streamed via `/videos/stream`; one
   re-ingest via `/dashboard/reingest`.
-- **NVIDIA:** Cosmos Reason writes every caption the classifier reads; our custom prompt was used on 1
-  chunk. Cosmos Embed powers search. YOLO `object_counts` feeds `people_detected`.
+- **NVIDIA:** Cosmos Reason writes every caption the classifier reads; our custom prompt was used on
+  set03 chunk 26 (VM 2) and on Teammate 2's re-ingested chunks, including T-1042. Cosmos Embed powers search. YOLO `object_counts` feeds `people_detected`.
 - **CoreWeave / W&B:** `deepseek-ai/DeepSeek-V4-Flash` on W&B Inference for classify, coach, ideal-replay
   prompt and Ask; Weave traces every pipeline op and the eval (project `vastdata/team-7`).
 - **Cursor:** built with Cursor agents.
@@ -109,6 +109,11 @@ Weave: https://wandb.ai/vastdata/team-7/weave
 - Segment 1 after: "The camera vehicle drives straight along a city street, following a black car ahead at a
   moderate distance. It proceeds through an intersection..."
 - More pairs in `discovery.md`.
+- **The only coachable moment in 22 scanned chunks (T-1042, `set05_chunk_0000`) came from a chunk
+  Teammate 2 had re-ingested with the custom prompt.** Its caption says "The vehicle then begins to
+  move forward and turns left" while a pedestrian crosses, the kind of camera-car behaviour the
+  default captions leave out. (Its pre-re-ingest captions were not saved, so there is no before/after
+  pair for that chunk.)
 
 ## Validation stats (grounded pipeline)
 
