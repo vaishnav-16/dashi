@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<base href="/app/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashi</title>
+<style>
+  :root {
+    --bg: #eef1f4; --card: #ffffff; --ink: #14181f; --muted: #5d6673; --line: #e2e6eb;
+    --brand: #0f5c63; --brand-soft: #e3f0f0;
+    --good: #1f8f62; --good-soft: #e5f4ec; --coach: #b9770e; --coach-soft: #fbf0dc;
+    --radius: 16px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  .phone { max-width: 480px; margin: 0 auto; min-height: 100vh; background: var(--bg);
+    display: flex; flex-direction: column; box-shadow: 0 0 0 1px var(--line); }
+  header { position: sticky; top: 0; z-index: 5; background: var(--brand); color: #fff;
+    padding: 14px 20px 12px; display: flex; align-items: center; justify-content: space-between; }
+  .logo { font-weight: 800; font-size: 24px; letter-spacing: .5px; }
+  .logo small { font-weight: 500; font-size: 13px; opacity: .8; margin-left: 8px; letter-spacing: 0; }
+  .who { font-size: 14px; opacity: .9; }
+  main { flex: 1; padding: 16px 16px 96px; }
+  nav { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 480px;
+    background: #fff; border-top: 1px solid var(--line); display: flex; z-index: 6; }
+  nav a { flex: 1; text-align: center; padding: 12px 0 14px; color: var(--muted); text-decoration: none;
+    font-weight: 600; font-size: 15px; }
+  nav a.on { color: var(--brand); box-shadow: inset 0 3px 0 var(--brand); }
+  h1 { font-size: 26px; margin: 6px 0 14px; }
+  h2 { font-size: 19px; margin: 22px 0 10px; }
+  .card { background: var(--card); border-radius: var(--radius); padding: 16px; margin-bottom: 12px;
+    box-shadow: 0 1px 2px rgba(20,24,31,.06); }
+  .muted { color: var(--muted); }
+  .small { font-size: 14px; }
+  .tiny { font-size: 12px; }
+  .row { display: flex; gap: 12px; }
+  .row > * { flex: 1; }
+  .stat .num { font-size: 34px; font-weight: 800; line-height: 1.1; }
+  .stat .lbl { font-size: 14px; color: var(--muted); }
+  .sim { display: inline-block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .4px;
+    color: var(--muted); background: #eef0f3; border-radius: 6px; padding: 1px 6px; vertical-align: middle; }
+  .chip { display: inline-block; border: 1px solid var(--line); background: #fff; border-radius: 999px;
+    padding: 8px 14px; margin: 0 8px 8px 0; font: inherit; font-size: 15px; cursor: pointer; color: var(--ink); }
+  .chip:hover { border-color: var(--brand); color: var(--brand); }
+  .ask { display: flex; gap: 8px; margin-top: 4px; }
+  .ask input { flex: 1; font: inherit; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); }
+  button.primary, a.primary { background: var(--brand); color: #fff; border: 0; border-radius: 12px;
+    padding: 12px 16px; font: inherit; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; }
+  button.ghost { background: var(--brand-soft); color: var(--brand); border: 0; border-radius: 10px;
+    padding: 9px 12px; font: inherit; font-size: 15px; font-weight: 600; cursor: pointer; margin: 6px 6px 0 0; }
+  button:disabled { opacity: .5; cursor: default; }
+  .proactive { border-left: 5px solid var(--good); display: flex; gap: 12px; align-items: center; }
+  .proactive.coachable { border-left-color: var(--coach); }
+  .proactive p { margin: 0; flex: 1; }
+  .badge { display: inline-block; font-size: 12px; font-weight: 700; border-radius: 6px; padding: 2px 8px; }
+  .badge.good { background: var(--good-soft); color: var(--good); }
+  .badge.coach { background: var(--coach-soft); color: var(--coach); }
+  .badge.tag { background: #eef0f3; color: var(--muted); }
+  .badge.mismatch { background: var(--brand-soft); color: var(--brand); }
+  .answer { border: 1px solid var(--brand-soft); }
+  .answer p { margin: 0 0 10px; }
+  .stars { color: #c9a227; letter-spacing: 1px; }
+  .trip { cursor: pointer; }
+  .trip .top { display: flex; justify-content: space-between; align-items: baseline; }
+  .route { font-weight: 700; }
+  .score { font-weight: 800; font-size: 22px; color: var(--brand); }
+  .timeline { position: relative; height: 26px; background: #e8ecf0; border-radius: 13px; margin: 14px 0 6px; }
+  .timeline .mk { position: absolute; top: 3px; height: 20px; min-width: 20px; border-radius: 10px; cursor: pointer; }
+  .timeline .mk.handled_well { background: var(--good); }
+  .timeline .mk.coachable { background: var(--coach); }
+  .tl-scale { display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); }
+  .moment { scroll-margin-top: 70px; }
+  .moment.flash { outline: 3px solid var(--brand); }
+  .vid { position: relative; background: #0d1116; border-radius: 12px; overflow: hidden; aspect-ratio: 16 / 9; }
+  .vid video { width: 100%; height: 100%; display: block; background: #0d1116; }
+  .vid .fallback { position: absolute; inset: 0; padding: 14px; color: #dfe5ea; font-size: 14px; overflow: auto;
+    background: #1a2028; display: none; }
+  .vid.failed .fallback { display: block; }
+  .vid .seq { position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,.55); color: #fff;
+    font-size: 12px; padding: 2px 8px; border-radius: 6px; }
+  .meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 10px 0 8px; }
+  .cols { display: flex; gap: 10px; margin-top: 6px; }
+  .cols > div { flex: 1; background: #f6f8fa; border-radius: 12px; padding: 10px 12px; }
+  .cols h4 { margin: 0 0 4px; font-size: 13px; text-transform: uppercase; letter-spacing: .4px; color: var(--muted); }
+  .cols .right h4 { color: var(--good); }
+  .cols .safer h4 { color: var(--coach); }
+  .cols p { margin: 0; font-size: 15px; }
+  blockquote { margin: 10px 0 6px; padding: 8px 12px; border-left: 3px solid var(--line); color: var(--muted);
+    font-size: 14px; font-style: italic; }
+  .disclaimer { font-size: 12px; color: var(--muted); margin-top: 6px; }
+  details { margin-top: 8px; font-size: 14px; color: var(--muted); }
+  details code { font-size: 12px; background: #f1f3f5; padding: 6px 8px; border-radius: 6px; display: block; margin-top: 6px; white-space: pre-wrap; }
+  .back { color: var(--brand); text-decoration: none; font-weight: 600; display: inline-block; margin-bottom: 8px; }
+  .lesson.done { opacity: .7; }
+  .lesson h3 { margin: 0 0 6px; font-size: 19px; }
+  .empty { text-align: center; padding: 26px 10px; color: var(--muted); }
+  .spinner { color: var(--muted); padding: 16px 4px; }
+  .modal { position: fixed; inset: 0; background: rgba(15,20,26,.5); display: flex; align-items: flex-end;
+    justify-content: center; z-index: 10; }
+  .sheet { background: #fff; width: 100%; max-width: 480px; border-radius: 20px 20px 0 0; padding: 20px;
+    max-height: 85vh; overflow: auto; }
+  .sheet pre { white-space: pre-wrap; font: 14px/1.5 inherit; background: #f6f8fa; padding: 12px; border-radius: 12px; }
+  .sent { background: var(--good-soft); color: var(--good); padding: 10px 12px; border-radius: 12px; font-weight: 600; }
+  footer { text-align: center; font-size: 12px; color: var(--muted); padding: 8px 16px 90px; }
+  .samplebar { background: #fff4d6; color: #7a5a00; font-size: 13px; text-align: center; padding: 6px 10px; }
+</style>
+</head>
+<body>
+<div class="phone">
+  <header>
+    <div class="logo">Dashi<small>your dashcam coach</small></div>
+    <div class="who" id="who"></div>
+  </header>
+  <div id="samplebar"></div>
+  <main id="view"><div class="spinner">Loading…</div></main>
+  <footer>Simulated demo data: rider ratings, comments, routes and the driver are synthetic. The video is a public Toronto dashcam research set standing in for a driver's trips.</footer>
+  <nav>
+    <a href="#coach" data-tab="coach">Coach</a>
+    <a href="#trips" data-tab="trips">Trips</a>
+    <a href="#learn" data-tab="learn">Learn</a>
+  </nav>
+</div>
+<div id="modal"></div>
+
+<script>
+const $ = (s, el = document) => el.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const ts = s => { s = Math.round(s || 0); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`; };
+const stars = n => "★".repeat(n) + "☆".repeat(5 - n);
+const VERDICT = { handled_well: ["good", "Handled well"], coachable: ["coach", "Coachable"] };
+const state = { home: null, trips: null, moments: {}, lessonsDone: new Set() };
+
+async function api(path, opts) {
+  const r = await fetch(path, opts);
+  if (!r.ok) throw new Error(`${path}: ${r.status}`);
+  return r.json();
+}
+const post = (path, body) => api(path, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body || {}) });
+
+const clipCache = {};
+async function clipUrl(source) {
+  if (!clipCache[source]) clipCache[source] = api(`ds/clip?source=${encodeURIComponent(source)}`).then(j => j.url);
+  return clipCache[source];
+}
+
+// Plays a list of segment clips back to back; on failure shows the caption instead.
+function mountPlayer(el, sources, caption) {
+  el.innerHTML = `<video controls muted playsinline preload="metadata"></video>
+    <div class="seq"></div>
+    <div class="fallback"><b>Clip unavailable.</b> What the camera described:<br><br>${esc(caption)}</div>`;
+  const video = $("video", el), seq = $(".seq", el);
+  let i = 0;
+  const load = async (list, idx, autoplay) => {
+    sources = list; i = idx;
+    seq.textContent = list.length > 1 ? `clip ${i + 1} of ${list.length}` : "";
+    try {
+      video.src = await clipUrl(list[i]);
+      el.classList.remove("failed");
+      if (autoplay) video.play().catch(() => {});
+    } catch { el.classList.add("failed"); }
+  };
+  video.addEventListener("ended", () => { if (i + 1 < sources.length) load(sources, i + 1, true); });
+  video.addEventListener("error", () => el.classList.add("failed"));
+  load(sources, 0, false);
+  return { play: (list) => load(list, 0, true) };
+}
+
+function verdictBadge(m) {
+  const [cls, label] = VERDICT[m.verdict] || ["tag", m.verdict];
+  return `<span class="badge ${cls}">${label}</span>`;
+}
+
+function momentCard(m, opts = {}) {
+  const right = m.verdict === "handled_well";
+  return `<div class="card moment" id="m-${esc(m.moment_id)}">
+    <div class="vid" data-player="${esc(m.moment_id)}"></div>
+    <div class="meta">
+      <span class="badge tag">${ts(m.start_sec)}–${ts(m.end_sec)}</span>
+      <span class="badge tag">${esc(m.scenario_title)}</span>
+      ${verdictBadge(m)}
+    </div>
+    ${opts.compact ? "" : `<div>
+      <button class="ghost" data-ctx="before" data-m="${esc(m.moment_id)}" ${m.context_before ? "" : "disabled"}>◀ 5 s before</button>
+      <button class="ghost" data-ctx="moment" data-m="${esc(m.moment_id)}">Replay moment</button>
+      <button class="ghost" data-ctx="after" data-m="${esc(m.moment_id)}" ${m.context_after ? "" : "disabled"}>After ▶</button>
+    </div>`}
+    <div class="cols">
+      <div><h4>What happened</h4><p>${esc(m.what_happened)}</p></div>
+      ${right
+        ? `<div class="right"><h4>What you did right</h4><p>${esc(m.what_you_did_right)}</p></div>`
+        : `<div class="safer"><h4>How it could be safer</h4><p>${esc(m.safer_next_time)}</p></div>`}
+    </div>
+    ${opts.compact ? `<button class="ghost" data-open-trip="${esc(m.trip_id)}" data-focus="${esc(m.moment_id)}">Open in trip</button>` : `
+      ${m.why_it_matters ? `<p class="small muted" style="margin:10px 0 0"><b>Why it matters:</b> ${esc(m.why_it_matters)}</p>` : ""}
+      <blockquote>Camera description: “${esc(m.evidence_quote)}”</blockquote>
+      <div class="disclaimer">Confidence ${Math.round((m.confidence || 0) * 100)}%. AI-reviewed. Watch the clip and decide for yourself.</div>`}
+  </div>`;
+}
+
+const players = {};
+function mountMoments(list) {
+  list.forEach(m => {
+    state.moments[m.moment_id] = m;
+    const el = document.querySelector(`[data-player="${CSS.escape(m.moment_id)}"]`);
+    if (el) players[m.moment_id] = mountPlayer(el, m.sources, m.caption);
+  });
+}
+
+document.addEventListener("click", async e => {
+  const b = e.target.closest("button, [data-open-trip], [data-goto]");
+  if (!b) return;
+  if (b.dataset.ctx) {
+    const m = state.moments[b.dataset.m], p = players[b.dataset.m];
+    const list = b.dataset.ctx === "before" ? [m.context_before] : b.dataset.ctx === "after" ? [m.context_after] : m.sources;
+    p && p.play(list.filter(Boolean));
+  } else if (b.dataset.openTrip) {
+    location.hash = `#trip/${b.dataset.openTrip}` + (b.dataset.focus ? `/${b.dataset.focus}` : "");
+  } else if (b.dataset.goto) {
+    location.hash = b.dataset.goto;
+  } else if (b.dataset.ask) {
+    runAsk(b.dataset.ask);
+  } else if (b.dataset.step) {
+    const { action, target } = JSON.parse(b.dataset.step);
+    if (action === "send_evidence") openEvidence(target);
+    else if (action === "open_trip") location.hash = `#trip/${target}`;
+    else if (action === "open_lesson") location.hash = `#learn/${target}`;
+    else if (action === "ask") runAsk(target);
+  } else if (b.dataset.evidence) {
+    openEvidence(b.dataset.evidence);
+  } else if (b.dataset.done) {
+    await post(`ds/lessons/${encodeURIComponent(b.dataset.done)}/done`);
+    state.lessonsDone.add(b.dataset.done);
+    renderLearn();
+  }
+});
+
+function scoreHelp() {
+  return `<details><summary>How is this calculated?</summary>
+    <code>safety_score = clamp(100 − 10 × (sum of severity of coachable moments) + 3 × (handled-well moments), 0, 100)</code>
+    Severity is 1 (minor), 2 (moderate) or 3 (serious). Judged only from what the camera shows: there is no speed or braking data.</details>`;
+}
+
+async function renderCoach() {
+  const h = state.home = await api("ds/home");
+  const latest = h.latest_trip;
+  $("#view").innerHTML = `
+    <h1>Hi ${esc(h.driver.display_name)}</h1>
+    <div class="row">
+      <div class="card stat"><div class="num">${h.driver.rider_rating_avg.toFixed(2)}</div>
+        <div class="lbl">Rider rating <span class="sim">Simulated</span></div></div>
+      <div class="card stat"><div class="num" style="color:var(--brand)">${latest ? latest.safety_score : "–"}</div>
+        <div class="lbl">Dashi safety score<br><span class="tiny">last trip</span></div></div>
+    </div>
+    ${scoreHelp()}
+    <h2>New for you</h2>
+    ${h.cards.length ? h.cards.map(c => `<div class="card proactive ${c.verdict}">
+        <p>${esc(c.text)}</p>
+        <button class="ghost" data-open-trip="${esc(c.trip_id)}" data-focus="${esc(c.moment_id)}">Watch</button></div>`).join("")
+      : `<div class="card empty">No new reviews yet.</div>`}
+    <h2>Ask Dashi</h2>
+    <div>${h.chips.map(c => `<button class="chip" data-ask="${esc(c)}">${esc(c)}</button>`).join("")}</div>
+    <form class="ask" id="askform"><input id="askin" placeholder="Ask about your trips…" autocomplete="off">
+      <button class="primary">Ask</button></form>
+    <div id="answer" style="margin-top:14px"></div>`;
+  $("#askform").onsubmit = e => { e.preventDefault(); const v = $("#askin").value.trim(); if (v) runAsk(v); };
+}
+
+async function runAsk(message) {
+  if (!$("#answer")) { history.replaceState(null, "", "#coach"); await route(); }
+  const out = $("#answer");
+  out.innerHTML = `<div class="card answer"><div class="muted small">You asked: ${esc(message)}</div><div class="spinner">Looking at your trips…</div></div>`;
+  let a;
+  try { a = await post("ds/ask", { message }); }
+  catch { a = { answer: "I couldn't reach your trip reviews just now. Try again in a moment.", moment_ids: [], next_steps: [] }; }
+  const ms = await Promise.all(a.moment_ids.map(id => state.moments[id] || api(`ds/moments/${encodeURIComponent(id)}`)));
+  out.innerHTML = `<div class="card answer">
+      <div class="muted small">You asked: ${esc(message)}</div>
+      <p style="margin-top:6px">${esc(a.answer)}</p>
+      <div>${a.next_steps.map(s => `<button class="ghost" data-step='${esc(JSON.stringify(s))}'>${esc(s.label)}</button>`).join("")}</div>
+    </div>
+    ${ms.map(m => momentCard(m, { compact: true })).join("")}`;
+  mountMoments(ms);
+  out.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function mismatchBadge(t) {
+  if (t.rating_mismatch === "underrated") return `<span class="badge mismatch">Rating doesn't match the video</span>`;
+  if (t.rating_mismatch === "missed_risk") return `<span class="badge coach">Rider missed this</span>`;
+  return "";
+}
+
+async function renderTrips() {
+  const { trips } = await api("ds/trips");
+  $("#view").innerHTML = `<h1>Your trips</h1>` + trips.map(t => `
+    <div class="card trip" data-open-trip="${esc(t.trip_id)}">
+      <div class="top"><div class="route">${esc(t.pickup)} → ${esc(t.dropoff)}</div><div class="score">${t.safety_score}</div></div>
+      <div class="small muted">${esc(t.date)} · ${esc(t.start_time)} · ${t.handled_well} handled well · ${t.coachable} to work on</div>
+      <div class="small"><span class="stars">${stars(t.rider_rating)}</span> <span class="sim">Simulated</span></div>
+      <div style="margin-top:6px">${mismatchBadge(t)}</div>
+    </div>`).join("");
+}
+
+async function renderTrip(tripId, focus) {
+  const { trip: t, moments } = await api(`ds/trips/${encodeURIComponent(tripId)}`);
+  const dur = t.duration_sec || Math.max(30, ...moments.map(m => m.end_sec));
+  $("#view").innerHTML = `
+    <a class="back" href="#trips">← All trips</a>
+    <h1 style="margin-bottom:4px">${esc(t.pickup)} → ${esc(t.dropoff)}</h1>
+    <div class="muted small">${esc(t.date)} · ${esc(t.start_time)} · trip ${esc(t.trip_id)}</div>
+    <div class="row" style="margin-top:12px">
+      <div class="card stat"><div class="num"><span class="stars" style="font-size:22px">${stars(t.rider_rating)}</span></div>
+        <div class="lbl">Rider rating <span class="sim">Simulated</span></div></div>
+      <div class="card stat"><div class="num" style="color:var(--brand)">${t.safety_score}</div><div class="lbl">Dashi safety score</div></div>
+    </div>
+    <div class="card small"><b>Rider said</b> <span class="sim">Simulated</span><br>“${esc(t.rider_comment)}”
+      <div style="margin-top:8px">${mismatchBadge(t)}</div>
+      ${t.rating_mismatch === "underrated" ? `<button class="primary" style="margin-top:10px" data-evidence="${esc(t.trip_id)}">Send evidence for rating review</button>` : ""}
+    </div>
+    ${t.summary ? `<p class="small">${esc(t.summary)}</p>` : ""}
+    <div class="timeline">${moments.map(m => `<div class="mk ${m.verdict}" title="${esc(m.scenario_title)} at ${ts(m.start_sec)}"
+      data-goto="#trip/${esc(t.trip_id)}/${esc(m.moment_id)}"
+      style="left:${(m.start_sec / dur) * 100}%;width:${Math.max(4, ((m.end_sec - m.start_sec) / dur) * 100)}%"></div>`).join("")}</div>
+    <div class="tl-scale"><span>0:00</span><span><span class="badge good">Handled well</span> <span class="badge coach">Coachable</span></span><span>${ts(dur)}</span></div>
+    ${scoreHelp()}
+    <h2>Moments</h2>
+    ${moments.length ? moments.map(m => momentCard(m)).join("") : `<div class="card empty">Clean trip. Nothing to flag.</div>`}`;
+  mountMoments(moments);
+  if (focus) {
+    const el = document.getElementById(`m-${focus}`);
+    if (el) { el.scrollIntoView({ behavior: "smooth" }); el.classList.add("flash"); setTimeout(() => el.classList.remove("flash"), 1800); }
+  }
+}
+
+async function openEvidence(tripId) {
+  const p = await post(`ds/trips/${encodeURIComponent(tripId)}/evidence`, {});
+  const show = p => {
+    $("#modal").innerHTML = `<div class="modal" id="modalbg"><div class="sheet">
+      <h2 style="margin-top:0">${esc(p.subject)}</h2>
+      <pre>${esc(p.text)}</pre>
+      <div class="small muted">${p.moments.length} clip(s) attached. Nothing is really sent: this is a simulated rating review.</div>
+      <div style="margin-top:12px">${p.sent
+        ? `<div class="sent">Sent (simulated). Reference ${esc(p.reference)}</div>`
+        : `<button class="primary" id="sendev">Send (simulated)</button>`}
+        <button class="ghost" id="closeev">Close</button></div>
+    </div></div>`;
+    $("#closeev").onclick = () => ($("#modal").innerHTML = "");
+    $("#modalbg").onclick = e => { if (e.target.id === "modalbg") $("#modal").innerHTML = ""; };
+    const s = $("#sendev");
+    if (s) s.onclick = async () => show(await post(`ds/trips/${encodeURIComponent(tripId)}/evidence`, { send: true }));
+  };
+  show(p);
+}
+
+async function renderLearn(focus) {
+  const { lessons, done, total } = await api("ds/lessons");
+  const kudos = (state.home || await api("ds/home")).totals.kudos;
+  $("#view").innerHTML = `
+    <h1>Learn</h1>
+    <div class="row">
+      <div class="card stat"><div class="num">${done}/${total}</div><div class="lbl">Lessons done</div></div>
+      <div class="card stat"><div class="num" style="color:var(--good)">${kudos}</div><div class="lbl">Kudos: moments handled well</div></div>
+    </div>
+    ${lessons.length ? lessons.map(l => `
+      <div class="card lesson ${l.done ? "done" : ""}" id="l-${esc(l.scenario_id)}">
+        <span class="badge tag">${esc(l.title)}</span>
+        <h3 style="margin-top:8px">${esc(l.headline)}</h3>
+        <p style="margin:0 0 6px">${esc(l.tip)}</p>
+        <p class="small muted" style="margin:0 0 10px"><b>Why:</b> ${esc(l.why)}</p>
+        <div class="small muted" style="margin-bottom:6px">Your own example, ${esc(l.example_moment.trip_id)} at ${ts(l.example_moment.start_sec)} ${verdictBadge(l.example_moment)}</div>
+        <div class="vid" data-player="${esc(l.example_moment.moment_id)}"></div>
+        <div style="margin-top:10px">${l.done ? `<span class="badge good">Done ✓</span>` : `<button class="primary" data-done="${esc(l.scenario_id)}">Got it</button>`}</div>
+      </div>`).join("") : `<div class="card empty">No lessons yet. They appear after your trips are reviewed.</div>`}`;
+  mountMoments(lessons.map(l => l.example_moment));
+  if (focus) { const el = document.getElementById(`l-${focus}`); el && el.scrollIntoView({ behavior: "smooth" }); }
+}
+
+async function route() {
+  const [tab, a, b] = (location.hash.slice(1) || "coach").split("/");
+  const navTab = tab === "trip" ? "trips" : tab;
+  document.querySelectorAll("nav a").forEach(n => n.classList.toggle("on", n.dataset.tab === navTab));
+  try {
+    if (tab === "trips") await renderTrips();
+    else if (tab === "trip") await renderTrip(a, b);
+    else if (tab === "learn") await renderLearn(a);
+    else await renderCoach();
+  } catch (err) {
+    $("#view").innerHTML = `<div class="card empty">Something went wrong loading this page. <br><button class="ghost" onclick="route()">Try again</button></div>`;
+    console.error(err);
+  }
+  if (tab !== "trip") window.scrollTo(0, 0);
+}
+
+(async () => {
+  try {
+    const h = state.home = await api("ds/home");
+    $("#who").textContent = `${h.driver.display_name} · ${h.driver.city || "Toronto"}`;
+    if (h.sample) $("#samplebar").innerHTML = `<div class="samplebar">Sample data for UI development. Real reviews are not loaded yet.</div>`;
+  } catch {}
+  window.addEventListener("hashchange", route);
+  route();
+})();
+</script>
+</body>
+</html>

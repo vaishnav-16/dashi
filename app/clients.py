@@ -13,7 +13,7 @@ import urllib.parse
 import requests
 
 WANDB_BASE_URL = "https://api.inference.wandb.ai/v1"
-DEFAULT_MODEL = "meta-llama/Llama-3.3-70B-Instruct"
+DEFAULT_MODEL = "deepseek-ai/DeepSeek-V4-Flash"
 MODEL = os.environ.get("DASHI_MODEL") or DEFAULT_MODEL
 
 

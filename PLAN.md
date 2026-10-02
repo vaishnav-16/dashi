@@ -90,6 +90,25 @@ Only edit files you own. Need a change in someone else's file? Ask them.
 - `kubectl` is not preinstalled; VM 2 installed it in `~/.local/bin`. Kubeconfig is
   `/config/team-7-k8s.yaml`.
 
+## Deployed (VM 2, 9:10 PM)
+
+- **Live at http://video-lab-team-7.cosmos.vastdata.com/app/** with the sample data.
+  Health, Coach, Trips, Learn, the 4 chips (LLM from inside the pod), evidence packet and
+  clip playback are all verified on the public URL.
+- `deploy/deploy.sh` does the full apply; `deploy/deploy.sh code` only refreshes the
+  ConfigMap and restarts. The first ~15 s after a restart return errors while pip runs.
+- The pod cannot resolve the public host, so its `VSS_URL` is the in-cluster
+  `http://video-backend-service.team-7.svc.cluster.local:8000`. Browsers still play clips
+  via the public `/api/v1/videos/stream`.
+- Ask model: `deepseek-ai/DeepSeek-V4-Flash` (best wording of the three tried, about 1 s).
+  Llama 3.3 70B invented rider ratings; `ask.py` now rejects any answer whose star
+  rating is not in the data, and falls back to the template.
+- **Handoff:** when Person 1 pushes `app/moments.json` (plus `app/trips.json` and
+  `app/playbook.json`), the app switches from the sample to it automatically. VM 2 then
+  pulls and runs `deploy/deploy.sh code`. Keep the brief's schema and `trip_id`,
+  `moment_id` formats; `story_role` on trips is optional.
+- Run locally on a VM: `cd app && DASHI_LOCAL=1 PORT=8090 ../.venv/bin/python main.py`.
+
 ## Names (do not improvise)
 
 | Thing | Value |
