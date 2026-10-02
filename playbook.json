@@ -1,0 +1,160 @@
+{
+  "version": 1,
+  "about": "Dashi scenario playbook. One source of truth for: (a) search queries used in discovery, (b) the labels the classifier may assign, (c) the coaching text shown to the driver. Keep only scenarios that discovery confirms exist in the footage (set \"enabled\": false on the rest).",
+  "verdicts": {
+    "handled_well": "A hazard came from other road users or conditions and the driver responded safely (slowed, yielded, kept distance, waited).",
+    "coachable": "The driver's own choice created or increased risk, and a safer option was available.",
+    "none": "Nothing relevant to a scenario is visible, or the caption is too vague to tell."
+  },
+  "severity": {
+    "1": "minor: low risk, worth a tip",
+    "2": "moderate: clear risk to someone outside or inside the car",
+    "3": "serious: close call or a vulnerable road user put at risk"
+  },
+  "scenarios": [
+    {
+      "id": "pedestrian_yield",
+      "enabled": true,
+      "title": "Pedestrians crossing ahead",
+      "search_queries": [
+        "pedestrian crossing the road in front of the vehicle",
+        "person stepping off the curb into the roadway ahead of the car"
+      ],
+      "look_for": "A person in or entering the roadway or crosswalk in the camera vehicle's path.",
+      "handled_well_when": "The camera vehicle slows or stops and lets the person finish crossing.",
+      "coachable_when": "The camera vehicle keeps moving toward or past a person who is in or entering its path.",
+      "verify_question": "Is a pedestrian in or entering the roadway ahead? Does the camera vehicle slow down or stop for them? Answer yes or no to each, then one sentence of what you see.",
+      "lesson": {
+        "headline": "Give people the whole crossing",
+        "tip": "When someone steps toward the road, ease off early and stop well back from the crosswalk. Wait until they are fully across before you roll.",
+        "why": "Riders notice a smooth early stop as careful driving. A late brake feels like a mistake even when you did the right thing."
+      }
+    },
+    {
+      "id": "curb_crowd",
+      "enabled": true,
+      "title": "Crowded curb",
+      "search_queries": [
+        "group of pedestrians crowding the curb or sidewalk edge next to traffic",
+        "people standing in the road near parked cars"
+      ],
+      "look_for": "Several people at the curb edge, between parked cars, or spilling into the lane. Use the YOLO person count as evidence when it is 4 or more.",
+      "handled_well_when": "The camera vehicle slows, leaves space from the curb, and passes or stops without anyone having to step back.",
+      "coachable_when": "The camera vehicle passes close to the crowd at speed, or pulls in where people are standing.",
+      "verify_question": "Are several people standing at the curb edge or in the road near the camera vehicle? Does the camera vehicle slow down or leave space? Answer yes or no to each, then one sentence of what you see.",
+      "lesson": {
+        "headline": "Crowded curb? Pick a calmer spot",
+        "tip": "Slow down, keep a door's width from the curb, and stop a few car lengths past the crowd so your rider can get in or out without people squeezing by.",
+        "why": "Busy pickups are where door strikes and stepping-into-traffic incidents happen. A short walk for the rider beats a risky stop."
+      }
+    },
+    {
+      "id": "stopped_in_lane",
+      "enabled": true,
+      "title": "Stopping in the middle of the road",
+      "search_queries": [
+        "vehicle stopped in the travel lane with traffic passing around it",
+        "car double parked blocking a lane"
+      ],
+      "look_for": "The camera vehicle stops in a live travel lane when it is not waiting at a signal, a stop sign or in a traffic queue.",
+      "handled_well_when": "The camera vehicle pulls fully out of the lane before stopping, or the stop is clearly for a signal, sign, queue or a person crossing.",
+      "coachable_when": "The camera vehicle stops in the lane with no signal, queue or hazard ahead, so other traffic has to go around.",
+      "verify_question": "Is the camera vehicle stopped? Is it in a travel lane rather than at the curb? Is there a traffic light, stop sign, queue or pedestrian ahead that explains the stop? Answer yes or no to each, then one sentence of what you see.",
+      "lesson": {
+        "headline": "Never drop off in a live lane",
+        "tip": "Pull fully to the curb before you stop, even if it means going a little past the pin. If there is no space, continue to the next safe gap and tell the rider why.",
+        "why": "A rider opening a door into moving traffic is one of the most common rideshare injuries, and it is the stop riders remember."
+      }
+    },
+    {
+      "id": "curb_pullover",
+      "enabled": true,
+      "title": "Pulling over and pulling out",
+      "search_queries": [
+        "car pulling over to the curb near pedestrians",
+        "vehicle pulling out from the curb into traffic"
+      ],
+      "look_for": "The camera vehicle moving to or from the curb, especially near a crosswalk, bike lane, bus stop or driveway.",
+      "handled_well_when": "The move is gradual, clear of crosswalks and bike lanes, and no one has to brake or swerve.",
+      "coachable_when": "The camera vehicle stops on a crosswalk or bike lane, cuts across a cyclist, or pulls out into close traffic.",
+      "verify_question": "Does the camera vehicle move to or from the curb? Is it blocking a crosswalk or bike lane, or forcing another road user to brake? Answer yes or no to each, then one sentence of what you see.",
+      "lesson": {
+        "headline": "Clear of the crosswalk, clear of the bike lane",
+        "tip": "Choose a spot past the crosswalk and outside the bike lane, signal early, and check your mirror and shoulder for cyclists before you move either way.",
+        "why": "Riders step out without looking. Where you stop decides whether they step into safety or into a cyclist."
+      }
+    },
+    {
+      "id": "following_distance",
+      "enabled": true,
+      "title": "Following distance",
+      "search_queries": [
+        "driving very close behind the vehicle ahead",
+        "vehicle ahead braking with little gap"
+      ],
+      "look_for": "The gap to the vehicle directly ahead while both are moving.",
+      "handled_well_when": "A clear gap is kept and the camera vehicle slows smoothly when the vehicle ahead brakes.",
+      "coachable_when": "The camera vehicle follows closely at speed, or closes up fast on a braking vehicle.",
+      "verify_question": "Is there a vehicle directly ahead in the same lane? Is the camera vehicle following it very closely while moving? Answer yes or no to each, then one sentence of what you see.",
+      "lesson": {
+        "headline": "Three seconds of space",
+        "tip": "Pick a fixed point the car ahead passes and count three seconds before you reach it. Add more in rain or at night.",
+        "why": "Space is what turns a hard brake into a gentle one. Riders feel the difference in every stop."
+      }
+    },
+    {
+      "id": "turn_across_crosswalk",
+      "enabled": true,
+      "title": "Turning across a crosswalk",
+      "search_queries": [
+        "vehicle turning at an intersection while pedestrians are in the crosswalk",
+        "turning right with people crossing"
+      ],
+      "look_for": "The camera vehicle turning at an intersection while people or cyclists are in or near the crosswalk it will cross.",
+      "handled_well_when": "The camera vehicle waits before the crosswalk until it is clear, then completes the turn.",
+      "coachable_when": "The camera vehicle rolls into or through the crosswalk while people are still in it.",
+      "verify_question": "Is the camera vehicle turning? Are people in the crosswalk it is turning across? Does it wait for them? Answer yes or no to each, then one sentence of what you see.",
+      "lesson": {
+        "headline": "Wait behind the line on turns",
+        "tip": "Stop before the crosswalk, look both ways along it, and only start the turn when the whole crossing is empty.",
+        "why": "Turns are where drivers and pedestrians both think they have the right of way. Waiting costs a few seconds and removes the conflict."
+      }
+    },
+    {
+      "id": "cyclist_nearby",
+      "enabled": true,
+      "title": "Sharing the road with cyclists",
+      "search_queries": [
+        "cyclist riding in the lane ahead of the car",
+        "car passing a cyclist"
+      ],
+      "look_for": "A cyclist ahead of or beside the camera vehicle.",
+      "handled_well_when": "The camera vehicle stays behind until there is room, then passes wide.",
+      "coachable_when": "The camera vehicle passes close to the cyclist or follows right behind them.",
+      "verify_question": "Is a cyclist ahead of or beside the camera vehicle? Does the camera vehicle pass close to them? Answer yes or no to each, then one sentence of what you see.",
+      "lesson": {
+        "headline": "Pass wide or wait",
+        "tip": "Stay back until the next lane is clear, then give at least a full car door of space as you pass.",
+        "why": "A close pass frightens the cyclist and your rider, and it leaves no room if the cyclist swerves around a pothole."
+      }
+    },
+    {
+      "id": "poor_conditions",
+      "enabled": true,
+      "title": "Driving for the conditions",
+      "search_queries": [
+        "driving at night in rain with poor visibility",
+        "construction zone or blocked lane ahead"
+      ],
+      "look_for": "Night, rain, glare, construction or a blocked lane, and how the camera vehicle drives through it.",
+      "handled_well_when": "The camera vehicle slows and leaves extra space while conditions are poor.",
+      "coachable_when": "The camera vehicle drives as if conditions were normal, close to others or late to react.",
+      "verify_question": "Are conditions poor (night, rain, glare, construction, blocked lane)? Does the camera vehicle slow down or leave extra space? Answer yes or no to each, then one sentence of what you see.",
+      "lesson": {
+        "headline": "Bad conditions, bigger margins",
+        "tip": "In rain, dark or roadworks, drop your speed and double your gap before you need to.",
+        "why": "Riders are most nervous when they cannot see well. Calm, slower driving here is what earns the five stars."
+      }
+    }
+  ]
+}

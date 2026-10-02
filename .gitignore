@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.env.*
+*.config
+*kubeconfig*
+*-k8s.yaml
+*secret*.yaml
+*.pem
+*.key
+wandb/
+.weave/
+*.mp4
