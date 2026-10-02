@@ -1,6 +1,6 @@
 # Dashi
 
-**Demo video (86 s):** [docs/dashi-demo.mp4](docs/dashi-demo.mp4) · **Live app:** http://video-lab-team-7.cosmos.vastdata.com/app/ (event network)
+**Demo video (3:26, narrated):** [docs/dashi-demo.mp4](docs/dashi-demo.mp4) · **Live app:** http://video-lab-team-7.cosmos.vastdata.com/app/ (event network)
 
 ## What it does
 
