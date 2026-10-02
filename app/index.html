@@ -335,8 +335,17 @@ async function runAsk(message) {
       <p>${esc(a.answer)}</p>
       <div>${a.next_steps.map((s, i) => `<button class="${i === 0 ? "primary" : "ghost"}" style="${i === 0 ? "height:44px;margin:8px 8px 0 0" : ""}" data-step='${esc(JSON.stringify(s))}'>${esc(s.label)}</button>`).join("")}</div>
     </div></div>
-    <div class="fade">${ms.map(m => momentCard(m, { compact: true })).join("")}</div>`;
+    <div class="fade">${ms.map(m => momentCard(m, { compact: true })).join("")}</div>
+    <div class="fade">${(a.clips || []).map((c, i) => `<div class="card">
+      <div class="vid" data-search-clip="${i}"></div>
+      <div class="meta"><span class="badge tag">✦ Video search</span><span class="badge tag mono">${esc(c.label)}</span></div>
+      <p class="small muted" style="margin:8px 0 0">${esc(c.caption.slice(0, 220))}${c.caption.length > 220 ? "…" : ""}</p>
+      ${c.trip_id ? `<button class="ghost" data-open-trip="${esc(c.trip_id)}">Open trip →</button>` : ""}</div>`).join("")}</div>`;
   mountMoments(ms);
+  (a.clips || []).forEach((c, i) => {
+    const el = document.querySelector(`[data-search-clip="${i}"]`);
+    if (el) mountPlayer(el, [c.source], c.caption, c.start_sec);
+  });
 }
 
 function mismatchBadge(t) {

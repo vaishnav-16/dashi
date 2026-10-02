@@ -50,18 +50,22 @@ class Tools:
         s = self.playbook.get(scenario_id)
         return s and {"scenario_id": scenario_id, "title": s["title"], **s["lesson"]}
 
-    def find_in_my_footage(self, query, top_k=6):
-        """Live hybrid search, restricted to the dashcam and this driver's trips."""
+    def find_in_my_footage(self, query, top_k=3):
+        """Live hybrid search over the driver's dashcam footage; hits in reviewed trips first."""
         if not self.vss:
             return []
-        mine = {t["original_video"] for t in self.get_trips()}
+        trip_of = {t["original_video"]: t["trip_id"] for t in self.get_trips()}
+        moment_of = {s: m["moment_id"] for m in self.data["moments"] for s in m["sources"]}
         res = self.vss.post("search", {"query": query, "top_k": 30, "llm_top_n": 1,
                                        "min_similarity": 0.3,
                                        "metadata_filters": {"camera_id": CAMERA_ID}})
-        hits = [r for r in res.get("results", []) if r.get("original_video") in mine]
-        return [{"source": r["source"], "original_video": r["original_video"],
-                 "caption": r.get("reasoning_content", ""),
-                 "score": r.get("similarity_score")} for r in hits[:top_k]]
+        hits = [{"source": r["source"], "original_video": r.get("original_video"),
+                 "trip_id": trip_of.get(r.get("original_video")), "moment_id": moment_of.get(r["source"]),
+                 "start_sec": float(r.get("segment_start_sec") or 0),
+                 "caption": r.get("reasoning_content") or "",
+                 "score": r.get("similarity_score")} for r in res.get("results", []) if r.get("source")]
+        hits.sort(key=lambda h: (h["trip_id"] is None, -(h["score"] or 0)))
+        return hits[:top_k]
 
 
 def _ts(sec):
@@ -223,9 +227,54 @@ def _phrase(question, lead, facts, trips, steps):
     return answer
 
 
+_FOOTAGE_RE = re.compile(
+    r"\b(show|find|search|where|when|any|pedestrian|people|person|cyclist|bike|bicycl|truck|bus|"
+    r"car|van|suv|cone|construction|crosswalk|intersection|light|signal|turn|lane|street|road|clip|"
+    r"video|footage|moment|stop|park|worker|cross|rain|night|traffic)\w*", re.I)
+
+
+def _best_sentence(text, query, limit=180):
+    sents = [s for s in re.split(r"(?<=[.!?])\s+", (text or "").strip()) if s]
+    if not sents:
+        return ""
+    stems = {w[:5] for w in re.findall(r"[a-z]{4,}", query.lower())}
+    s = max(sents, key=lambda s: sum(w[:5] in stems for w in re.findall(r"[a-z]{4,}", s.lower())))
+    return s if len(s) <= limit else s[:limit].rsplit(" ", 1)[0] + "…"
+
+
+def search_answer(tools, message):
+    """Free text: live VAST search over the dashcam footage. Templated, no LLM, so it stays fast."""
+    hits = tools.find_in_my_footage(message)
+    if not hits:
+        return {"answer": f"I searched your dashcam footage for \u201c{message}\u201d and found no clear match. "
+                          "Try one of the suggestions below.",
+                "moment_ids": [], "trip_id": None, "clips": [],
+                "next_steps": [_step(label, "ask", label) for label in CHIPS.values()][:3],
+                "intent": "search", "source": "search"}
+    top = hits[0]
+    trip = tools.get_trip(top["trip_id"]) if top["trip_id"] else None
+    where = (f"on {_trip_label(trip)} at {_ts(top['start_sec'])}" if trip
+             else f"in your dashcam archive ({top['source'].split('/')[-1].split('_video')[0]})")
+    text = (f"I searched your dashcam footage. Best match {where}: \u201c{_best_sentence(top['caption'], message)}\u201d "
+            f"{len(hits)} clip(s) below.")
+    steps = [_step("See the full trip", "open_trip", trip["trip_id"])] if trip else []
+    steps += [_step(CHIPS["improve"], "ask", CHIPS["improve"])]
+    clips = [{"source": h["source"], "caption": h["caption"], "start_sec": h["start_sec"],
+              "trip_id": h["trip_id"], "label": (f"Trip {h['trip_id']} at {_ts(h['start_sec'])}" if h["trip_id"]
+                                                 else h["source"].split("/")[-1].replace(".mp4", ""))}
+             for h in hits]
+    return {"answer": text, "moment_ids": [], "trip_id": trip and trip["trip_id"], "clips": clips,
+            "next_steps": steps, "intent": "search", "source": "search"}
+
+
 def answer(tools, message):
     intent = route(message)
     if intent is None:
+        if tools.vss and _FOOTAGE_RE.search(message or ""):
+            try:
+                return _pool.submit(search_answer, tools, message).result(timeout=20)
+            except Exception:  # noqa: BLE001
+                pass
         return {"answer": HELP_TEXT, "moment_ids": [], "trip_id": None,
                 "next_steps": [_step(label, "ask", label) for label in CHIPS.values()],
                 "source": "help"}
